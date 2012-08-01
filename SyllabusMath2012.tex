@@ -1,0 +1,361 @@
+\documentclass[12pt,a4paper]{article}
+%\usepackage{harvard}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{pstricks}
+\usepackage{egameps}
+\usepackage{lscape}
+\usepackage{multirow}
+\usepackage{natbib}
+
+\usepackage[top=1.5in,right=1in,left=1in,bottom=1in]{geometry}
+
+
+\begin{document}
+
+
+ \begin{center}
+
+     {\LARGE \textbf{Math for Political Science}}\\
+     
+     {\large \textbf{August 14 - August 22, 2012}}\\
+      
+     \mbox{}
+     
+     \url{http://sites.duke.edu/psmathcamp/}
+
+     \mbox{}
+     
+     
+\end{center}
+
+\begin{small}
+
+\begin{tabular}{l l}
+\textbf{INSTRUCTOR 1:} Florian Hollenbach (fmh3@duke.edu)    &  \textbf{FACULTY ADVISOR:} Michael Ward     \\
+\textbf{INSTRUCTOR 2:} Josh Cutler (josh.cutler@duke.edu)& \textbf{EMAIL:} mw160@duke.edu\\
+      &     \\
+ \textbf{LOCATION}			&   \\
+ (AM Sessions) Old Chem 116 &\\
+ (PM Sessions) Old Chem 116 & \\
+ 
+
+
+\end{tabular}
+
+\end{small}  
+\mbox{}\\
+
+\textbf{COURSE STRUCTURE:} The class will usually meet twice a day\footnote{Please note deviations from this schedule in the class schedule below.}, 9:00am - 12:00pm and 2:00pm - 5:30pm. The course is not for credit. There will be no grades, but we will have a final test. Since mastering the basic concepts and skills taught in this course is essential for future coursework and graduate training, students will be expected to invest significant time and energy. The more you put into the class, the more you will get out of it! At a minimum, students at all levels will be expected to:
+\begin{itemize}
+\item do the assigned readings before the lectures;
+\item complete (or at least attempt to complete) assigned problem sets;
+\item participate in class discussions and come prepared with questions.
+\end{itemize}
+
+Morning lectures will focus on fundamental mathematical concepts that are used in statistics and formal modeling. Afternoon sessions will involve a practicum where you will work with your fellow students to develop basic computer skills and to complete problem sets. The goal of these sessions will be to gain practical experience in applying the basic skills from the morning lectures, and to preview the kinds of tasks you will be doing in future classes and in your own research.
+
+\mbox{}\\
+
+\textbf{LEARNING OBJECTIVES:} The purpose of this course is to provide students with the basic mathematical and computer skills needed for the introductory statistics and formal modeling courses offered at Duke. In addition, the aim will be to provide you with a foundation for acquiring the basic mathematical literacy needed to engage the modern political science research you will be encountering in all of your courses.
+Each student will be coming to this class with different levels of mathematical training and skills. The purpose of this course is not to attempt to even the playing field. Rather, the course will provide all students with the opportunity to advance, no matter where they start. Students who have little (or no) training will gain the basic skills needed to take the introductory methods courses offered in the department. Students who have learned these materials before will have the chance to learn concepts at a deeper level and to better understand the most fundamental ideas used in graduate- level political science research. Advanced students may gain the confidence needed to take graduate classes in statistics and economics.
+We are not expecting you to \textit{completely} master all of the materials we are covering in just six days. But we are expecting you to push yourself and take advantage of this opportunity to get a leg up in your methods training. Only a very few people in the world fully understand advanced math concepts right away. The rest of us have to work at it. In many cases, these ideas only really make sense the third or fourth time we learn them. In other words, getting a basic handle on these concepts is a matter of sustained effort, not native talent. This week is designed to give you a head start on this process. You will probably not have many opportunities to focus exclusively on these ideas on a daily basis once your classes get started, so take advantage of this opportunity by preparing before you show up in August and applying yourself during the week.\\
+
+\textbf{TEXTBOOKS:} The required text for this course is the textbook by Jeff Gill. The course will use the \textit{second edition} of this text. You might want to read through the chapters we will cover before you arrive in addition to reading them before each lecture.\\
+
+\textbf{Required}
+\begin{itemize}
+\item Gill, Jeff. 2006. \textit{Essential Mathematics for Political and Social Research.} Cambridge, England: Cambridge University Press. \href{http://www.amazon.com/Essential-Mathematics-Political-Research-Analytical/dp/052168403X/ref=sr_1_1?ie=UTF8&qid=1304604787&sr=8-1}{Link}
+\end{itemize}
+
+\textbf{Strongly Recommended}
+\begin{itemize}
+\item Adler, Joseph. 2010. \textit{R in a Nutshell by Joseph Adler}. O'Reilley Media. \href{http://www.amazon.com/R-Nutshell-Joseph-Adler/dp/059680170X/ref=sr_1_1?ie=UTF8&qid=1305656181&sr=8-1-spell}{Link}
+
+\item Braun, John W. and Duncan J. Murdoch. 2008. \textit{A First Course in Statistical Programming with R.} Cambridge, England: Cambridge University Press. \href{http://www.amazon.com/First-Course-Statistical-Programming/dp/0521694248/ref=sr_1_1?ie=UTF8&s=books&qid=1304605045&sr=8-1}{Link}
+
+\item Kadane, Joseph B.  \textit{Principles of Uncertainty.} Project Euclid. Available online: \href{http://uncertainty.stat.cmu.edu/}{Link}
+
+\item Maindonald, John and W. John Braun. 2010. \textit{Data Analysis and Graphics Using R}. Cambridge, England: Cambridge University Press. \href{http://www.amazon.com/Data-Analysis-Graphics-Using-Example-Based/dp/0521762936/ref=sr_1_1?ie=UTF8&s=books&qid=1305656286&sr=1-1}{Link}
+
+
+
+\end{itemize}
+
+\textbf{Additional References}
+\begin{itemize}
+\item Simon, Carl P. and Lawrence Blume. 1994. \textit{Mathematics for Economists.} New York, USA: W.W. Norton \& Company.
+\item Edwards, C. Henry and David E. Penney. 2002. \textit{Calculus.} Upper Saddle River, NJ: Prentice Hall.
+\item Poole, David. 2006. \textit{Linear Algebra. A Modern Introduction.} Thomson.
+\item Ross, Sheldon. 2006. \textit{A First Course in Probability.} Upper Saddle River, NJ: Prentice Hall.
+\item Casella, George and Roger L. Berger. 2002. \textit{Statistical Inference.} Pacific Grove, USA: Duxbury.
+\item de la Fuente, Angel. 2000. \textit{Mathematical Models for Economists.} Cambridge, England: Cambridge University Press.
+\item Sundaram, Rangarajan K. 1996. \textit{A First Course in Optimization Theory.} Cambridge, England: Cambridge University Press.
+\item Harville, David A. 2008. \textit{Matrix Algebra From A Statistician's Perspective.} Springer.
+\end{itemize}
+
+
+\mbox{}
+\textbf{ADDITIONAL RESOURCES:} Over the coming weeks we will be posting links to additional resources on the class website. These supplemental materials will be for both true beginners and the most advanced students. For people who have not taken math since freshman year, we will be posting online lectures, tutorials, and free books. Reviewing some of these materials in advance will help you get the most out of the class. The rest will be helpful resources for students who want to push beyond the course materials to more advanced topics. We will also post all of the prepared lecture notes as well as the data files and R scripts we will cover in class.\\
+
+\textbf{A NOTE ON COMPUTER:} You are \textbf{not} required to have your own laptop. However, if you have one, please bring it to the afternoon lectures (and install R before the first class). On the other hand, please do not bring out laptops, phones, tablets, etc. during the morning lectures.\\
+
+%\clearpage
+%\textbf{CLASS SCHEDULE MORNING SESSIONS:}\\
+
+%\begin{tabular} {l c l}
+%TUESDAY, AUGUST 16 & &\\
+%\hline
+%9:00 - Noon & Gill Chapter 1 & Introduction and the basics \\
+
+%2:00 - 5:30 &  & Functions, help, logicals, and data storage\\ 
+
+% & & \\
+%WEDNESDAY, AUGUST 17 & &\\
+% \hline
+%9:00 - Noon & Gill 5.1 - 5.2 & Limits and sequences \\
+ %& Gill 5.3 - 5.4 & Derivatives  \\
+ %& Gill 5.5 - 5.7 & Integration \\
+ 
+ %2:00 - 5:30 & B\&M ?? & \\
+ %&&\\
+%THURSDAY, AUGUST 18 &&\\
+ %\hline
+ %9:00 - Noon & Gill 6.1 - 6.5 & Multivariate calculus \\
+ %& Gill 6.6 - 6.8 & Infinite series, more optimization \\
+ %2:00 - 5:30 & B\&M ?? & \\
+
+ %&&\\
+%FRIDAY, AUGUST 19 &&\\
+%\hline
+%10:00 - Noon & Gill 3.1 - 3.3 & Vectors and matrices \\
+ %& Gill 3.4 - 3.6 & Matrix algebra \\
+ %& Gill 4.1 - 4.6 & Trace and matrix inversion \\
+ %& Gill 4.7 - 4.9 & Vector spaces, rank, linear systems \\
+ % 2:00 - 5:30 & B\&M ?? & \\
+ %&&\\
+%MONDAY, AUGUST 22 & & \\
+%\hline
+%9:00 - Noon & Gill 7.1 - 7.3 & Counting and sets \\
+% & Gill 7.4 - 7.5 & Probability functions \\
+ %& Gill 7.6 - 7.8 & Conditional probabilities, Bayes, independence \\
+%  2:00 - 5:30 & B\&M ?? & \\
+% &&\\
+%WEDNESDAY, AUGUST 24 &&\\
+%\hline
+%9:00 - Noon 
+ %& Gill 8.1 - 8.3 & Random variables and distribution \\
+ %& Gill 8.4 - 8.5 & Means and variances\\
+ %& Gill 8.7 - 8.8 & Expected values \\
+ %& Gill 8.6 & Correlation and covariance \\
+ %& Conclusion & Presentation of methods classes\\
+
+ %2:00 - 5:30 & B\&M ?? & \\
+%\end{tabular}
+
+
+\clearpage
+\textbf{CLASS SCHEDULE}\\
+
+\section*{Tuesday, August 14}
+\subsection*{Morning Session, 9:00-noon: Introduction and the basics}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\footnotesize
+\item \textbf{Read: Gill Chapter 1}
+\item Why math?
+\item Arithmetic principles
+\item Notation
+\item What is a function?
+\item Solving an equation
+\item Polynomial functions
+\item Logarithms and exponents
+\end{itemize}
+
+\subsection*{Afternoon Session, 2:00-5:30pm: Introducing $\mathbf{R}$}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\footnotesize
+\item Getting and installing $\mathbf{R}$, TINN-R and making the two communicate;
+\item $\mathbf{R}$ as a calculator;
+\item Introduction to object-oriented languages;
+\item Workspace \& object assignment;
+\item naming rules;
+\item Types of operations: maths, logical, relational;
+\item types of objects;
+\item Objects : Functions :: Nails : Hammers
+\item Getting help: CRAN, R-SEEK, ? and ??;
+\item Vector Operations: making and defining vectors, removing objects;
+\item element-wise operations \& common vector functions (\texttt{sum(), mean(), prod()}, etc.)
+\item Order of operations and programming $\mathbf{R}$ to do math;
+\item \textbf{Homework}: Write code for ``complex" math problems, ex.: $\sqrt{\frac{\cos(\frac{\pi}{2})}{e^{3}}}$
+\end{itemize}
+
+
+\section*{Wednesday, August 15}
+\subsection*{Morning Session, 9:00-noon: Basic calculus}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\footnotesize
+\item \textbf{Read: Gill Chapter 5}
+\item Limits and sequences
+\item What is a derivative?
+\item Basic derivative rules
+\item L'Hospital's Rule
+\item Riemann sums and integrals
+\item The Fundamental Theorem of Calculus
+\item Integration rules
+
+\end{itemize}
+
+\subsection*{Afternoon Session, 2:00-5:30pm: Vectors and Plots}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\footnotesize
+\item Vectors, continued: indexing and partitions;
+\item Symbolic logic required for partitions;
+\item cbind() and data.frames
+\item Summary statistics using \texttt{ChickWeight} data;
+\item Introduction to \texttt{plot()} - axes, scaling, labels, titles, legends, \texttt{points()}, \texttt{lines()}, \texttt{identify()}, \texttt{boxplot()}, \texttt{hist()}, \texttt{density()}.
+\end{itemize}
+
+
+\section*{Thursday, August 16}
+
+\subsection*{Morning Session, 9:00-noon: Multivariate calculus}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\footnotesize
+\item \textbf{Read: Gill Chapter 6}
+\item Partial derivatives
+\item Optimization basics
+\item Optimization example from game theory
+\item Multidimensional integrals
+\item Finite and infinite series
+\item Calculus in vector and matrix form
+
+
+\end{itemize}
+
+\subsection*{Afternoon Session, 2:00-5:30pm: Sampling, Functions \emph{I} and Data Management}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\footnotesize
+\item \texttt{sample()}, \texttt{rnorm()}, \texttt{runif()},subsetting data;
+\item Drawing and summing random normal variables;
+\item plotting random variables;
+\item Functions: defining, purpose, writing our own functions;
+\item \texttt{ifelse()},
+\item Data Management: mapping network directories, \texttt{setwd()}, packages, \texttt{library(foreign)}, reading in external data (read.csv, read.table, read.dta)
+\item Recode, reshape, generating new variables, \texttt{complete.cases()}, dealing with NAs, variable transformations, factors, sorting, local v. global objects;
+\item \textbf{Homework}: Summary statistics from small ANES or CCES data set.
+\end{itemize}
+
+
+
+\section*{Friday, August 17}
+\subsection*{Morning Session, 10:00-noon: Vector and Matrix Algebra}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\footnotesize
+\item \textbf{Read: Gill Chapter 3,4}
+\item Vectors, maps and matrices
+\item Vector norms and algebra
+\item Matrix algebra
+\item Special matrices
+\item Trace and determinant
+\item Rank
+\item Matrix inversion
+\item Application: OLS
+\item Linear systems of equations
+
+
+\end{itemize}
+
+
+
+
+\subsection*{Afternoon Session, 2:00-5:30pm: Functions \emph{II} and Basic Programming}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\footnotesize
+\item Review functions;
+\item Branching with \texttt{if()};
+\item Looping with \texttt{for()} and \texttt{while()};
+\item debugging;
+\item uses for programming: tables, graphics, MLE, simulation;
+\item the \texttt{apply()} family: \texttt{tapply()}, \texttt{sapply()}, \texttt{mapply()}
+\item \textbf{Homework}: Elevator Simulation Problem... probably something slightly easier.
+\end{itemize}
+
+
+
+\section*{Monday, August 20}
+
+\subsection*{Morning Session, 9:00-noon: Probability Theory}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\footnotesize
+\item \textbf{Read: Gill Chapter 7, Kadane Chapter 1}
+\item Why do we need probability and statistics?
+\item Counting rules
+\item Sets and set operations
+\item What is a probability? Axioms of probability
+\item Conditional probability
+\item Bayes' rule
+\item Independence
+
+\end{itemize}
+
+
+\subsection*{Afternoon Session, 2:00-5:30pm: \LaTeX, Tables and \texttt{ggplot}}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\footnotesize
+\item Introduction to \LaTeX;
+\item Tables: frequency tables and summary statistics, proportion tables, \texttt{xtable()} and \texttt{apsrtable()};
+\item Lists: making lists, \texttt{which()}, \texttt{which.min()}, etc.
+\item Plotting II: using \texttt{ggplot}
+\end{itemize}
+
+\section*{Wednesday, August 22}
+\subsection*{Morning Session, 9:00-noon: Random variables}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\footnotesize
+\item \textbf{Read: Gill Chapter 8, Kadane Chapter 2}
+\item Making life convenient: random variables
+\item Levels of measurement
+\item Continuous and discrete RVs
+\item Probability mass and density function
+\item Cumulative distribution function
+\item Joint distributions, conditional distributions
+\item Expected value and its properties
+\item Higher moments of distributions
+\item Covariance and correlation
+\item Summarizing observed data
+\item Common distributions and their use
+\end{itemize}
+
+
+
+\subsection*{Afternoon Session, 2:30-3:45pm: Putting it all together...}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\footnotesize
+\item Arrays and Matrices: matrix manipulation, matrix algebra, eigenvalues, determinants, etc.
+\item Data Management and hands on frustration: recoding, dealing with NAs... starting from a raw data set and trouble-shooting problems.
+\item Goals: read in data set, create new variables, generate summary statistics and run and report a bivariate regression.
+\item Plotting and writing up results... a one problem version of a 318 homework.
+\end{itemize}
+
+
+ 
+
+
+
+
+\end{document}
