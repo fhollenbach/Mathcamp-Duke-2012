@@ -1,0 +1,38 @@
+1) Prove that log(x/y) = log(x) - log(y)
+
+
+
+R Excercises:
+
+1) Calculate the sum n, j=1, j^2 and compare with n(n+1)(2n+1)/6 for n=200, 400, 600, 800
+
+2) calculate the sum sum, i=1 to N 1/i, and compare with ln(N)+.6
+
+3) Using rep() and seq() create the vecotrs
+
+0 0 0 0 0  1 1 1 1 1 2 2 2 2 2 3 3 3 3 3 4 4 4 4 4 
+1 2 3 4 5 1 2 3 4 5 1 2 3 4 5
+1 2 3 4 5 2 3 45 6 3 4 5 6 7 4 5 6 7 8 5 6 7 8 9
+
+4) What does the command 'options()' do?  Give one example for how you might use it.
+
+5) 
+
+a) Use the text editor to crate af ile consisting of the line:
+
+randomdata<-c(64, 38, 97, 88, 24, 14, 104, 83)
+
+Save it to a file called randomdata
+
+b) Source the file randomdata into R and confirm the randomdata vector was crated
+
+6) Create a vector called numbers wich contains
+
+3 5 8 10 12 
+
+Dump numbers to a file called numbers.R and delte numbers using the rm() function.  using ls(), confim that number has beeen delted.
+Now, use the source command to retrieve the vector numbers.
+
+7) Find out how to use the function: factorial(), choose()
+Write a sentence explaining what they do.
+

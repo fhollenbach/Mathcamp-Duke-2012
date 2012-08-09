@@ -1,0 +1,1128 @@
+%!PS-Adobe-2.0 EPSF-1.2
+%%Creator: PGL v-2.00 by AnSoft, Inc.
+%%Pages:   1
+%%BoundingBox: 0 0 611 791
+%%EndComments
+%---------------------------------------------------------------------
+%
+%------------------ Copyright (C) 1991 AnSoft,Inc.--------------------
+%
+%---------------------------------------------------------------------
+% Temporary variables used
+%---------------------------------------------------------------------
+%  PROC          VARIABLES
+%  PatternFill : fx1,fx2,fy1,fy2,fwidth
+%
+%---------------------------------------------------------------------
+%  PGL Global Data
+%---------------------------------------------------------------------
+/LineColor 1   def  % -1 turns off Line & Outline drawing
+/LineStyle []  def  % 
+/Phase     0   def  %
+/AreaColor 1   def  % -1 turns off Area Fills
+/FillFlag  1   def  % 1-Outline, 2-Fill, 3-Both
+/FillStyle 0   def  % 
+/FillMode  1   def  %  1-opaque, 0-transparent
+/MaxColor  15  def  %
+/CurFont   0   def  % FontNames index
+/topFlagV  0   def  % Text Justification(Vertical) Flags 
+/ctrFlagV  0   def  %                   (Vertical)
+/ctrFlagH  0   def  %                   (Horizonal)
+/LineWidth 1   def  %
+/UnitWidth 1   def  % Unit Line thickness in 1/300'ths inches
+/PatSize   3   def  % Fill Pattern Scale Factor
+/PatChar   48  def  % Fill Pattern Ascii Value
+/UserChar  60  def  % UserFill Pattern Ascii Value
+/FillChar  (?) def  % UserFill Pattern Ascii Value
+/UserFillPat <0000000000000000> def %- empty fill by default
+
+%--------------------------------------------------------------------
+% Bitmap support
+%--------------------------------------------------------------------
+/rleFlag   1 string def
+/rleStr    2 string def
+/bmStr     1 string def
+
+%--------------------------------------------------------------------
+%  Color Tables and Mappings
+%--------------------------------------------------------------------
+/bwColors 256 array def
+0 1 255 { bwColors exch 0 put } for  % zero all colors to black
+bwColors 0 1 put                     % index 0 - white, all others black
+
+/grayColors 256 array def
+0 1 255 { grayColors exch 0 put } for  % zero all colors to black
+grayColors  0  1.00 put 
+grayColors  1  0.11 put 
+grayColors  2  0.59 put 
+grayColors  3  0.70 put 
+grayColors  4  0.30 put 
+grayColors  5  0.41 put 
+grayColors  6  0.40 put 
+grayColors  7  0.97 put 
+grayColors  8  0.50 put 
+grayColors  9  0.40 put 
+grayColors  10 0.73 put 
+grayColors  11 0.80 put 
+grayColors  12 0.53 put 
+grayColors  13 0.60 put 
+grayColors  14 0.93 put 
+grayColors  15 0.00 put 
+
+/rgbColors 256 array def
+0 1 255 { rgbColors exch [0 0 0] put } for  % zero all colors to black
+rgbColors  0  [1 1 1]           put         % white
+rgbColors  1  [0 0 1]           put         % blue
+rgbColors  2  [0 1 0]           put         % green
+rgbColors  3  [0 1 1]           put         % cyan
+rgbColors  4  [1 0 0]           put         % red
+rgbColors  5  [1 0 1]           put         % magenta
+rgbColors  6  [0.67  0.33  0]   put         % brown
+rgbColors  7  [0.9 0.9 0.9]     put         % darkgray
+rgbColors  8  [0.75 0.75 0.75]  put         % lightgray
+rgbColors  9  [0.33 0.33 1]     put         % lightblue
+rgbColors  10 [0.33  1 0.33]    put         % lightgreen
+rgbColors  11 [0.33 1 1]        put         % lightcyan
+rgbColors  12 [1 0.33  0.33]    put         % lightred
+rgbColors  13 [1 0.33  1]       put         % lightmagenta
+rgbColors  14 [1 1 0.33]        put         % yellow
+rgbColors  15 [0 0 0]           put         % black
+        
+/ColorModel  0 def
+/ColorChoices [ bwColors grayColors rgbColors ] def
+/ColorMap ColorChoices ColorModel get def   % default colors=b&w
+
+%--------------------------------------------------------------------
+%----Page Size, Set By Main Pgm
+%--------------------------------------------------------------------
+%
+/PX  1950 def
+/PY  1194 def
+
+%--------------------------------------------------------------------
+%----Text Scale Factors
+%--------------------------------------------------------------------
+/SX  1800 def   % Base size of page width/height, 
+/SY  1194 def   % for scaling fonts against
+
+/FSX  [  6  7   8  10  12  9  10 ] def  % Unit Font Scale factors
+/FSY  [ -2.3  -4.6 -4.6 -4.6 -4.6 -4.6 -4.6 ] def  % Neg's to invert Y axis
+
+%--------------------------------------------------------------------
+%---- Users Font Scale Factors
+%--------------------------------------------------------------------
+/FSXN 1 def
+/FSXD 1 def
+/FSYN 1 def
+/FSYD 1 def
+
+%---------------------------------------------------------------------
+%  Fonts Names Used by PGL
+%  These replace the following vector fonts provided with PGL
+%  If you change these you may need to change the scale factors
+%  in FSX and FSY.
+%---------------------------------------------------------------------
+/FontNames
+[
+  /Helvetica          % small
+  /Courier            % simplex
+  /Helvetica          % duplex
+  /Times-Roman        % triplex
+  /Times-BoldItalic   % gothic 
+  /Courier-Oblique    % script simplex
+  /Helvetica-Oblique  % script duplex
+] def
+
+%---------------------------------------------------------------------
+%  Fill Pattern Font based on "PS Lang Ref Man (Red Book) - Chap 5"
+%---------------------------------------------------------------------
+/newfont 10 dict def
+newfont 
+begin
+ /FontType 3 def
+ /FontMatrix [ .125 0 0 .125 0 0 ] def
+ /FontBBox   [ 0 0 8 8 ]     def
+
+ /Encoding 256 array def
+ 0 1 255 { Encoding exch /.notdef put } for
+  Encoding  48 /empty     put  % '0'
+  Encoding  49 /solid     put  % '1'
+  Encoding  50 /lfill     put  % '2'
+  Encoding  51 /slash     put  % '3'
+  Encoding  52 /hslash    put  % '4'
+  Encoding  53 /hbkslash  put  % '5'
+  Encoding  54 /bkslash   put  % '6'
+  Encoding  55 /hatch     put  % '7'
+  Encoding  56 /xhatch    put  % '8'
+  Encoding  57 /intleav   put  % '9'
+  Encoding  58 /widedot   put  % '10'
+  Encoding  59 /closedot  put  % '11'
+  Encoding  60 /patfill   put  % '12'
+
+ /CharProcs 14 dict def
+ CharProcs 
+ begin
+  /.notdef {} bind def
+  /empty    { 8 8 true [1 0 0 1 0 0] { <0000000000000000> } imagemask } bind def
+  /solid    { 8 8 true [1 0 0 1 0 0] { <ffffffffffffffff> } imagemask } bind def
+  /lfill    { 8 8 true [1 0 0 1 0 0] { <ffff0000ffff0000> } imagemask } bind def
+  /slash    { 8 8 true [1 0 0 1 0 0] { <0102040810204080> } imagemask } bind def 
+  /hslash   { 8 8 true [1 0 0 1 0 0] { <e0c183070e1c3870> } imagemask } bind def 
+  /hbkslash { 8 8 true [1 0 0 1 0 0] { <f0783c1e0f87c3e1> } imagemask } bind def 
+  /bkslash  { 8 8 true [1 0 0 1 0 0] { <a5d269b45a2d964b> } imagemask } bind def 
+  /hatch    { 8 8 true [1 0 0 1 0 0] { <ff888888ff888888> } imagemask } bind def 
+  /xhatch   { 8 8 true [1 0 0 1 0 0] { <8142241818244281> } imagemask } bind def 
+  /intleav  { 8 8 true [1 0 0 1 0 0] { <cc33cc33cc33cc33> } imagemask } bind def 
+  /widedot  { 8 8 true [1 0 0 1 0 0] { <8000080080000800> } imagemask } bind def 
+  /closedot { 8 8 true [1 0 0 1 0 0] { <8800220088002200> } imagemask } bind def 
+  /patfill  { 8 8 true [1 0 0 1 0 0] { UserFillPat } imagemask } bind def 
+ end
+
+ /BuildChar
+ {
+    exch
+    begin  
+      dup UserChar eq{                 
+        8 0 setcharwidth            % userfillstyle
+      }{
+        8 0 0 0 8 8 setcachedevice  % standard fillstyle
+      }ifelse
+      Encoding exch get  
+      CharProcs exch get 
+    end
+    exec
+ }def
+end 
+
+/FillFont newfont definefont pop
+%----- End Of Area Fill Font Def--------------------------------------
+
+%---------------------------------------------------------------------
+%  PGL Redefinitions
+%---------------------------------------------------------------------
+/gs   { gsave } bind def         
+/gr   { grestore } bind def  
+/m    { moveto } bind def        
+/l    { lineto currentpoint stroke moveto } bind def  
+/rm   { rmoveto } bind def       
+/rl   { rlineto } bind def  
+/cp   { closepath } bind def     
+/np   { newpath } bind def   
+/sg   { setgray } bind def       
+/st   { stroke } bind def     
+/sd   { setdash } bind def       
+/ex   { exch } bind def
+/in   { index } bind def         
+/sw   { stringwidth } bind def 
+/cxy  { currentpoint } bind def  
+/slw  { setlinewidth } bind def 
+
+%---------------------------------------------------------------------
+% str strlen nchars
+%---------------------------------------------------------------------
+/strlen
+{
+    dup           % str str
+    /itmp 0 def
+    { /itmp itmp 1 add def pop } forall  % count characters
+    itmp          % nchars
+} bind def
+
+%---------------------------------------------------------------------
+% string txtCtrH   % Center Justify a string Horiz
+%---------------------------------------------------------------------
+/txtCtrH { dup sw pop 2 div neg dup 0 rm /ctrFlagH exch def } bind def 
+
+%---------------------------------------------------------------------
+% wx wy string atxtCtrH   % Center Justify a string Horiz
+%---------------------------------------------------------------------
+/atxtCtrH { 
+    3 -1 roll   % wy string wx
+    dup        % wy string wx wx
+    4 1 roll  % wx wy string wx
+    /xW ex def % wx wy string
+    strlen     % wx wy string nchars
+    xW mul
+    /xW ex def
+    dup        % str str
+    sw         % str wx wy
+    pop        % str wx
+    xW add     % str wx+xW
+    2 div neg 
+    dup 
+    0 rm 
+    /ctrFlagH exch def 
+} bind def 
+
+%---------------------------------------------------------------------
+% txtCtrHend   % Finish Center Justifying a string Horiz
+%                cp shoud be at center of string
+%---------------------------------------------------------------------
+/txtCtrHend { ctrFlagH 0 rm /ctrFlagH 0 def } bind def 
+
+%---------------------------------------------------------------------
+% string txtRtH   % Right Justify a string Horiz
+%---------------------------------------------------------------------
+/txtRtH  {dup sw pop neg 0 rm} bind def 
+
+%---------------------------------------------------------------------
+% string txtRtH   % Right Justify a string Horiz
+%---------------------------------------------------------------------
+/atxtRtH  {
+    3 -1 roll   % wy string wx
+    dup        % wy string wx wx
+    4 1 roll  % wx wy string wx
+    /xW ex def % wx wy string
+    strlen     % wx wy string nchars
+    xW mul
+    /xW ex def
+    dup 
+    sw 
+    pop 
+    xW add     % str wx+xW
+    neg 0 rm
+} bind def 
+
+%---------------------------------------------------------------------
+% txtCtrV  % Center Justify a string Vertically
+%---------------------------------------------------------------------
+/txtCtrV { gs np 0 0 m (X) true charpath flattenpath pathbbox ex pop 
+           sub neg 2 div 0 ex gr rm pop /ctrFlagV 1 def } bind def 
+
+%---------------------------------------------------------------------
+% txtCtrVend  % Center Justify a string Vertically
+%---------------------------------------------------------------------
+/txtCtrVend { gs np 0 0 m (X) true charpath flattenpath pathbbox ex pop 
+              sub neg 2 div 0 ex gr neg rm pop /ctrFlagV 0 def } bind def 
+
+%---------------------------------------------------------------------
+% string txtTopV  % Top Justify a string Vertically
+%---------------------------------------------------------------------
+/txtTopV { gs np 0 0 m (X) true charpath flattenpath pathbbox ex pop 
+           sub neg 0 ex gr rm pop /topFlagV 1 def } bind def 
+
+%---------------------------------------------------------------------
+% txtTopVend  % Top Justify a string Vertically
+%---------------------------------------------------------------------
+/txtTopVend { gs np 0 0 m (X) true charpath flattenpath pathbbox ex pop 
+           sub neg 0 ex gr neg rm pop /topFlagV 0 def } bind def 
+
+%---------------------------------------------------------------------
+%  ash   display text & readjusts cp for Top & Center Vertical
+%        text justification
+%---------------------------------------------------------------------
+/ash {
+   ashow
+   topFlagV 1 eq {
+     txtTopVend
+   } if
+   ctrFlagV 1 eq {
+     txtCtrVend
+   } if
+   ctrFlagH 0 ne {
+     txtCtrHend
+   } if
+} bind def
+
+%---------------------------------------------------------------------
+%  sh   display text & readjusts cp for Top & Center Vertical
+%       text justification
+%---------------------------------------------------------------------
+/sh {
+   show
+   topFlagV 1 eq {
+     txtTopVend
+   } if
+   ctrFlagV 1 eq {
+     txtCtrVend
+   } if
+   ctrFlagH 0 ne {
+     txtCtrHend
+   } if
+} bind def
+
+%---------------------------------------------------------------------
+% xs  % Extended Stroke 
+%---------------------------------------------------------------------
+/xs { 
+  LineColor -1 ne
+  { cxy st m }{ cxy np m }ifelse 
+} bind def                       
+
+%---------------------------------------------------------------------
+%  color SLC   % SetLineColor  % -1 turns off line drawing
+%---------------------------------------------------------------------
+/SLC { dup /LineColor exch def SCC }bind def
+
+%---------------------------------------------------------------------
+%  index [r g b] SRC   % SetRgbColor
+%---------------------------------------------------------------------
+/SRC { 
+/rgbTmp   exch def
+/rgbIndex exch def
+/rgbAbs   0.0  def
+rgbTmp 0 get 1. 255. div mul  rgbTmp exch 0 exch put
+rgbTmp 1 get 1. 255. div mul  rgbTmp exch 1 exch put
+rgbTmp 2 get 1. 255. div mul  rgbTmp exch 2 exch put
+rgbColors rgbIndex rgbTmp put  
+rgbTmp { dup mul rgbAbs add /rgbAbs exch def } forall
+grayColors rgbIndex rgbAbs sqrt put
+}bind def
+
+%---------------------------------------------------------------------
+%  color SCC  % SetCurColor
+%---------------------------------------------------------------------
+/SCC { 
+  dup -1 ne 
+  { % -1 turns of line drawing
+     ColorMap exch get 
+     dup type /arraytype ne { 
+       setgray 
+     }{ 
+       {} forall setrgbcolor 
+     } ifelse
+  }{ 
+     pop  % remove -1 from stack
+  }ifelse
+}bind def
+
+%---------------------------------------------------------------------
+%  [] phase SLS  % SetLineStyle
+%---------------------------------------------------------------------
+/SLS { 
+   /Phase exch def
+   /LineStyle exch def 
+   LineStyle Phase setdash 
+}bind def
+
+%---------------------------------------------------------------------
+%  width SLW % SetLineWidth ( 1/300 inch )
+%---------------------------------------------------------------------
+/SLW { 
+   /LineWidth exch def 
+   LineWidth UnitWidth mul setlinewidth 
+}bind def
+
+%---------------------------------------------------------------------
+%   color SFC % SetFillColor
+%---------------------------------------------------------------------
+/SFC {  /AreaColor exch def }bind def
+
+%---------------------------------------------------------------------
+%  <pattern> SUF  % SetUserFill pattern = hex no 
+%---------------------------------------------------------------------
+/SUF {  
+    /UserFillPat exch def  % set pattern
+    /FillStyle 12 def      % set flag
+}bind def
+
+%---------------------------------------------------------------------
+%  style SFS  % SetFillStyle style no (0-11)
+%---------------------------------------------------------------------
+/SFS {  /FillStyle exch def }bind def
+
+%---------------------------------------------------------------------
+%  mode SFM  % SetFillMode   ( 1-Opaque, 2-Transparent)
+%---------------------------------------------------------------------
+/SFM {  /FillMode exch def }bind def
+
+%---------------------------------------------------------------------
+%  fontno SCF SetCurFont
+%---------------------------------------------------------------------
+/SCF {
+ dup  /CurFont exch def        % save font no.
+ FontNames exch get findfont 
+   [ FSX CurFont get FSXN mul FSXD div PX mul SX div 0 0
+     FSY CurFont get FSYN mul FSYD div PY mul SY div 0 0 ]
+   makefont setfont 
+ }bind def
+
+%---------------------------------------------------------------------
+%  xn xd yn yd SFX    % SetFontScale
+%---------------------------------------------------------------------
+/SFX {
+  /FSYD exch def    /FSYN exch def  
+  /FSXD exch def    /FSXN exch def
+  CurFont SCF
+}bind def
+
+%---------------------------------------------------------------------
+%  [ f1 f2 f3 f4 f5 f6 f7 ] SFNS   % SetFontNames
+%---------------------------------------------------------------------
+/SFNS {
+  /FontNames exch def
+}bind def
+
+%---------------------------------------------------------------------
+% [7 xsizes] [7 ysizes] SFZ  % SetFontSizes
+%---------------------------------------------------------------------
+/SFSZ {
+  /FSY exch def
+  /FSX exch def
+}bind def
+
+%---------------------------------------------------------------------
+%  px py SPS  % SetPageSize
+%---------------------------------------------------------------------
+/SPS { /PY exch def  /PX exch def }bind def
+
+%---------------------------------------------------------------------
+%  x y color Pix  % SetPixel  1-Pixel = 1/300" pixel!
+%---------------------------------------------------------------------
+/Pix { 
+gsave                     %
+SCC moveto                % set color & position
+1 linewidth [] 0 setdash  % set attributes
+1 0 rlineto stroke        % do it!
+grestore                  %
+} bind def                       
+
+%---------------------------------------------------------------------
+%  x1 x2 y2 y2 Ln  % Line
+%---------------------------------------------------------------------
+/Ln { gs np 4 -2 roll m l st gr } bind def                       
+
+%---------------------------------------------------------------------
+%  x1 y1 x2 y2 flag Rect   (flag: 1-outline,2-fill,3-both)
+%---------------------------------------------------------------------
+/Rect { 
+    /FillFlag exch def 
+    gs np DrawRect FillArea OutLine gr 
+} bind def
+
+%---------------------------------------------------------------------
+% x1 y1 x2 y2 x3 y3 .... flag PolyF  % PolyFill - fill current path
+%---------------------------------------------------------------------
+/PolyF { 
+    /FillFlag exch def 
+    gs closepath FillArea OutLine gr 
+} bind def
+
+%---------------------------------------------------------------------
+%  x1 y1 x2 y2 ClipR % ClipRect 
+%---------------------------------------------------------------------
+/ClipR { 
+    cxy 6 2 roll       % cx cy x1 y1 x2 y2
+    gr gs
+    0 setlinewidth
+    np DrawRect eoclip np 
+    m 
+    %-- Reset graphics state
+    LineWidth SLW
+    LineColor SLC
+    FSXN FSXD FSYN FSYD SFX
+    CurFont   SCF
+    LineStyle 0 setdash
+} bind def
+
+%-PRIVATE-------------------------------------------------------------
+%  x1 y1 x2 y2 DrawRect 
+%---------------------------------------------------------------------
+/DrawRect { 
+    3 in 3 in moveto 
+    1 in 3 in lineto 
+    3 in 1 in 4 -2 roll lineto lineto pop pop closepath % lineto
+} bind def
+
+%-PRIVATE-------------------------------------------------------------
+%  xc yc sa ea rx ry DrawArc    
+%---------------------------------------------------------------------
+/DrawArc { 
+   /savematrix matrix currentmatrix def 
+   6 -2 roll translate    
+   scale 
+   0 0 1 5 -2 roll 
+   1 -1 scale arc 1 -1 scale
+   savematrix setmatrix
+}bind def
+
+%---------------------------------------------------------------------
+%  xc yc sa ea rx ry Arc
+%---------------------------------------------------------------------
+/Arc { gs np DrawArc [] 0 sd st gr } bind def   
+
+%---------------------------------------------------------------------
+%  xc yc sa ea rx ry flag Pie   (flag: 1-Outline,2-Fill,3-Both)
+%---------------------------------------------------------------------
+/Pie { 
+    /FillFlag exch def
+    gs np 6 -2 roll 2 copy 2 copy m 8 4 roll 
+    DrawArc cp FillArea OutLine gr 
+} bind def   
+
+%---------------------------------------------------------------------
+%  xc yc rx ry flag ELLIPSE (flag: 1-Outline,2-Fill,3-Both)
+%---------------------------------------------------------------------
+/Ellipse { 
+    /FillFlag exch def
+     gs np 0 360 4 2 roll DrawArc FillArea OutLine gr 
+}bind def   
+
+%-PRIVATE-------------------------------------------------------------
+%  OutLine
+%---------------------------------------------------------------------
+/OutLine  { 
+  FillFlag 1 and 1 eq { 
+    [] 0 sd LineColor SCC st 
+  }if 
+}bind def
+
+%-PRIVATE-------------------------------------------------------------
+%  FillArea  - fills current path
+%---------------------------------------------------------------------
+/FillArea { 
+  FillFlag 2 and 2 eq { 
+     gs eoclip 
+     AreaColor SCC
+     PatternFill
+     gr
+  }if 
+}bind def
+
+%-PRIVATE-------------------------------------------------------------
+%  PatternFill 
+%---------------------------------------------------------------------
+/PatternFill {
+   /psize 8 PatSize mul def
+   /FillFont findfont psize scalefont setfont % set Pattern font
+   FillChar 0 FillStyle PatChar add put               % fill char index
+   FillMode 1 eq { gsave 1 setgray fill grestore }if  % erase background
+   pathbbox                                           % llx lly  urx ury
+   newpath              
+   ceiling cvi /fy2 exch def 
+   ceiling cvi /fx2 exch def 
+   cvi 7 not and /fy1 exch def 
+   cvi 7 not and /fx1 exch def
+   fx2 fx1 sub psize div ceiling cvi
+   /fwidth exch def
+   fy1 psize fy2                          %
+   {                                      %
+     fx1 exch moveto                      %
+     fwidth { FillChar show } repeat      %
+   } for                                  %
+} bind def
+
+%---------------------------------------------------------------------
+%  savePGL
+%---------------------------------------------------------------------
+/savePGL{
+   /saveObj save def
+}bind def
+
+%---------------------------------------------------------------------
+%  #copies newPage
+%---------------------------------------------------------------------
+/newPage{
+   /#copies exch def
+   showpage saveObj restore
+   /#copies 1 def
+}bind def
+
+%----------------------------------------------------------------------
+% x,y,npixels bmRow  % Bitmap row data, 1 row at a time...
+%----------------------------------------------------------------------
+/bmRow {
+  /bmPixels  exch def
+  /bmY       exch def
+  /bmX       exch def
+
+  currentpoint stroke moveto % save x,y stroke and moveto
+  gsave                      % save graphics state
+  1 setlinewidth             % linewidth
+  0 setlinecap               % but cap
+  [] 0 setdash               % solid style
+  bmX .5 add bmY .5 add moveto % move to start of row
+  %
+  %  Read & decompress  a whole row of pixel color data via RLE
+  %
+  currentfile rleFlag readhexstring pop 
+  0 get 1 eq 
+  { /cumBytes 0 def
+    { 
+      currentfile rleStr readhexstring pop 
+      dup 
+      0 get 1 add exch % count rleStr
+      1 get SCC        % count 
+      dup              % dup count
+      0 rlineto        % draw
+      currentpoint stroke moveto     
+      /cumBytes exch cumBytes add def 
+      cumBytes bmPixels ge { exit } if 
+    }loop 
+  }{ 
+    1 1 bmPixels
+    {
+      pop
+      currentfile bmStr readhexstring pop 
+      0 get SCC
+      1 0 rlineto
+      currentpoint stroke moveto     
+    }for
+  }ifelse 
+
+  grestore
+}bind def
+
+%----------------------------------------------------------------------
+% DPI PMAXX PMAXY PageHght TopMgn LftMgn LandFlag ColorModel initPGL
+%----------------------------------------------------------------------
+/initPGL {
+   %---Page Constants
+   /ColorModel exch def  /LandFlag exch def 
+   /LeftMgn exch def     /TopMgn exch def
+   /PageHeight exch def  /PY exch def       /PX exch def
+
+   %---Select/Set Color model
+   /ColorMap ColorChoices ColorModel get def   % default colors=b&w
+   
+   %---Save state & set output res
+   savePGL 
+   
+   %---Set output res scaling, dpi on stack(300?)
+   /dpiRes  exch def             % dots per inch
+   /dphiRes dpiRes 100 div def   % pots per 1/100 inches (hinches)
+   72 dpiRes div dup scale
+
+   %---Set coordinate origin, & dir
+   LandFlag 1 ne { 
+      % Portrait Setup
+      LeftMgn dphiRes mul PageHeight TopMgn sub dphiRes mul 
+   }{
+      % Landscape Setup
+      90 rotate LeftMgn dphiRes mul TopMgn dphiRes mul neg 
+   }ifelse
+   translate 1 -1 scale
+
+   %---Adjust font scale factor sizes, relative to 5000x5000
+   0 1 6 { dup FSX exch get 4999 PX div mul FSX 3 1 roll put } for
+   0 1 6 { dup FSY exch get 4999 PY div mul FSY 3 1 roll put } for
+
+   %---Set default graphics state
+   np 0 0 m
+   1  SLC
+   1  SLW
+   [] 0 SLS
+   1 1 1 1 SFX
+   0 SCF
+   <0000000000000000> SUF
+   10 setmiterlimit
+    0 setlinejoin 
+    0 setlinecap
+    gs  % save for clipping
+    xs 0 0 PX PY ClipR
+}bind def
+
+1 setlinecap
+
+%%EndProlog
+ %%Page: 1 1
+ 300 3295 2543 1100 0 0 1 0 initPGL
+ 0 SCF
+ [] 0 SLS
+ 1 SLW
+ <ffffffffffffffff> SUF
+ 1 SFC
+ 1 SFS
+ 1 SFC
+ 1 SFM
+ 0 0 3295 2543 ClipR
+ 0 0 3295 2543 ClipR
+ xs 1 SLC
+ [] 0 SLS
+ 1 SLW
+ xs 0 SLC
+ 1 SLW
+ xs 15 SLC
+ 430 2311 3093 2311 Ln
+ 430 102 3093 102 Ln
+ 429 2312 3093 2312 Ln
+ 429 101 3093 101 Ln
+ 428 2313 3093 2313 Ln
+ 428 101 3093 101 Ln
+ 428 2313 3093 2313 Ln
+ 428 100 3093 100 Ln
+ 427 2314 3093 2314 Ln
+ 427 99 3093 99 Ln
+ 430 2311 430 2285 Ln
+ 430 102 430 128 Ln
+ 696 2311 696 2285 Ln
+ 696 102 696 128 Ln
+ 475 2364 460 2369 Ln
+ 460 2369 450 2384 Ln
+ 450 2384 445 2410 Ln
+ 445 2410 445 2424 Ln
+ 445 2424 450 2450 Ln
+ 450 2450 460 2465 Ln
+ 460 2465 475 2470 Ln
+ 475 2470 485 2470 Ln
+ 485 2470 500 2465 Ln
+ 500 2465 510 2450 Ln
+ 510 2450 514 2424 Ln
+ 514 2424 514 2410 Ln
+ 514 2410 510 2384 Ln
+ 510 2384 500 2369 Ln
+ 500 2369 485 2364 Ln
+ 485 2364 475 2364 Ln
+ 665 2389 665 2384 Ln
+ 665 2384 670 2375 Ln
+ 670 2375 675 2369 Ln
+ 675 2369 684 2364 Ln
+ 684 2364 704 2364 Ln
+ 704 2364 715 2369 Ln
+ 715 2369 720 2375 Ln
+ 720 2375 724 2384 Ln
+ 724 2384 724 2394 Ln
+ 724 2394 720 2405 Ln
+ 720 2405 709 2419 Ln
+ 709 2419 660 2470 Ln
+ 660 2470 729 2470 Ln
+ 963 2311 963 2285 Ln
+ 963 102 963 128 Ln
+ 976 2364 926 2435 Ln
+ 926 2435 1000 2435 Ln
+ 976 2364 976 2470 Ln
+ 1229 2311 1229 2285 Ln
+ 1229 102 1229 128 Ln
+ 1257 2379 1252 2369 Ln
+ 1252 2369 1237 2364 Ln
+ 1237 2364 1227 2364 Ln
+ 1227 2364 1212 2369 Ln
+ 1212 2369 1202 2384 Ln
+ 1202 2384 1198 2410 Ln
+ 1198 2410 1198 2435 Ln
+ 1198 2435 1202 2454 Ln
+ 1202 2454 1212 2465 Ln
+ 1212 2465 1227 2470 Ln
+ 1227 2470 1232 2470 Ln
+ 1232 2470 1247 2465 Ln
+ 1247 2465 1257 2454 Ln
+ 1257 2454 1262 2440 Ln
+ 1262 2440 1262 2435 Ln
+ 1262 2435 1257 2419 Ln
+ 1257 2419 1247 2410 Ln
+ 1247 2410 1232 2405 Ln
+ 1232 2405 1227 2405 Ln
+ 1227 2405 1212 2410 Ln
+ 1212 2410 1202 2419 Ln
+ 1202 2419 1198 2435 Ln
+ 1495 2311 1495 2285 Ln
+ 1495 102 1495 128 Ln
+ 1483 2364 1469 2369 Ln
+ 1469 2369 1464 2379 Ln
+ 1464 2379 1464 2389 Ln
+ 1464 2389 1469 2399 Ln
+ 1469 2399 1478 2405 Ln
+ 1478 2405 1499 2410 Ln
+ 1499 2410 1514 2414 Ln
+ 1514 2414 1523 2424 Ln
+ 1523 2424 1528 2435 Ln
+ 1528 2435 1528 2450 Ln
+ 1528 2450 1523 2460 Ln
+ 1523 2460 1519 2465 Ln
+ 1519 2465 1503 2470 Ln
+ 1503 2470 1483 2470 Ln
+ 1483 2470 1469 2465 Ln
+ 1469 2465 1464 2460 Ln
+ 1464 2460 1459 2450 Ln
+ 1459 2450 1459 2435 Ln
+ 1459 2435 1464 2424 Ln
+ 1464 2424 1474 2414 Ln
+ 1474 2414 1489 2410 Ln
+ 1489 2410 1508 2405 Ln
+ 1508 2405 1519 2399 Ln
+ 1519 2399 1523 2389 Ln
+ 1523 2389 1523 2379 Ln
+ 1523 2379 1519 2369 Ln
+ 1519 2369 1503 2364 Ln
+ 1503 2364 1483 2364 Ln
+ 1762 2311 1762 2285 Ln
+ 1762 102 1762 128 Ln
+ 1688 2384 1697 2379 Ln
+ 1697 2379 1713 2364 Ln
+ 1713 2364 1713 2470 Ln
+ 1807 2364 1791 2369 Ln
+ 1791 2369 1782 2384 Ln
+ 1782 2384 1777 2410 Ln
+ 1777 2410 1777 2424 Ln
+ 1777 2424 1782 2450 Ln
+ 1782 2450 1791 2465 Ln
+ 1791 2465 1807 2470 Ln
+ 1807 2470 1816 2470 Ln
+ 1816 2470 1832 2465 Ln
+ 1832 2465 1841 2450 Ln
+ 1841 2450 1846 2424 Ln
+ 1846 2424 1846 2410 Ln
+ 1846 2410 1841 2384 Ln
+ 1841 2384 1832 2369 Ln
+ 1832 2369 1816 2364 Ln
+ 1816 2364 1807 2364 Ln
+ 2028 2311 2028 2285 Ln
+ 2028 102 2028 128 Ln
+ 2294 2311 2294 2285 Ln
+ 2294 102 2294 128 Ln
+ 2220 2384 2230 2379 Ln
+ 2230 2379 2245 2364 Ln
+ 2245 2364 2245 2470 Ln
+ 2359 2364 2310 2435 Ln
+ 2310 2435 2384 2435 Ln
+ 2359 2364 2359 2470 Ln
+ 2561 2311 2561 2285 Ln
+ 2561 102 2561 128 Ln
+ 2827 2311 2827 2285 Ln
+ 2827 102 2827 128 Ln
+ 2753 2384 2763 2379 Ln
+ 2763 2379 2778 2364 Ln
+ 2778 2364 2778 2470 Ln
+ 2866 2364 2852 2369 Ln
+ 2852 2369 2847 2379 Ln
+ 2847 2379 2847 2389 Ln
+ 2847 2389 2852 2399 Ln
+ 2852 2399 2862 2405 Ln
+ 2862 2405 2882 2410 Ln
+ 2882 2410 2897 2414 Ln
+ 2897 2414 2907 2424 Ln
+ 2907 2424 2911 2435 Ln
+ 2911 2435 2911 2450 Ln
+ 2911 2450 2907 2460 Ln
+ 2907 2460 2902 2465 Ln
+ 2902 2465 2887 2470 Ln
+ 2887 2470 2866 2470 Ln
+ 2866 2470 2852 2465 Ln
+ 2852 2465 2847 2460 Ln
+ 2847 2460 2842 2450 Ln
+ 2842 2450 2842 2435 Ln
+ 2842 2435 2847 2424 Ln
+ 2847 2424 2857 2414 Ln
+ 2857 2414 2872 2410 Ln
+ 2872 2410 2891 2405 Ln
+ 2891 2405 2902 2399 Ln
+ 2902 2399 2907 2389 Ln
+ 2907 2389 2907 2379 Ln
+ 2907 2379 2902 2369 Ln
+ 2902 2369 2887 2364 Ln
+ 2887 2364 2866 2364 Ln
+ 3093 2311 3093 2285 Ln
+ 3093 102 3093 128 Ln
+ 430 2311 430 102 Ln
+ 3093 2311 3093 102 Ln
+ 429 2310 429 102 Ln
+ 3094 2312 3094 101 Ln
+ 428 2309 428 102 Ln
+ 3095 2313 3095 101 Ln
+ 428 2309 428 102 Ln
+ 3096 2313 3096 100 Ln
+ 427 2308 427 102 Ln
+ 3097 2314 3097 99 Ln
+ 430 2311 456 2311 Ln
+ 3093 2311 3068 2311 Ln
+ 349 2411 349 2321 Ln
+ 289 2231 359 2281 Ln
+ 359 2281 359 2206 Ln
+ 289 2231 394 2231 Ln
+ 430 1995 456 1995 Ln
+ 3093 1995 3068 1995 Ln
+ 430 1680 456 1680 Ln
+ 3093 1680 3068 1680 Ln
+ 349 1780 349 1690 Ln
+ 314 1645 309 1645 Ln
+ 309 1645 300 1640 Ln
+ 300 1640 294 1635 Ln
+ 294 1635 289 1625 Ln
+ 289 1625 289 1605 Ln
+ 289 1605 294 1594 Ln
+ 294 1594 300 1589 Ln
+ 300 1589 309 1584 Ln
+ 309 1584 319 1584 Ln
+ 319 1584 329 1589 Ln
+ 329 1589 344 1600 Ln
+ 344 1600 394 1650 Ln
+ 394 1650 394 1580 Ln
+ 430 1364 456 1364 Ln
+ 3093 1364 3068 1364 Ln
+ 430 1049 456 1049 Ln
+ 3093 1049 3068 1049 Ln
+ 289 1055 294 1071 Ln
+ 294 1071 309 1081 Ln
+ 309 1081 334 1086 Ln
+ 334 1086 349 1086 Ln
+ 349 1086 374 1081 Ln
+ 374 1081 389 1071 Ln
+ 389 1071 394 1055 Ln
+ 394 1055 394 1046 Ln
+ 394 1046 389 1030 Ln
+ 389 1030 374 1020 Ln
+ 374 1020 349 1015 Ln
+ 349 1015 334 1015 Ln
+ 334 1015 309 1020 Ln
+ 309 1020 294 1030 Ln
+ 294 1030 289 1046 Ln
+ 289 1046 289 1055 Ln
+ 430 733 456 733 Ln
+ 3093 733 3068 733 Ln
+ 309 755 304 746 Ln
+ 304 746 289 730 Ln
+ 289 730 394 730 Ln
+ 430 418 456 418 Ln
+ 3093 418 3068 418 Ln
+ 314 450 309 450 Ln
+ 309 450 300 445 Ln
+ 300 445 294 440 Ln
+ 294 440 289 430 Ln
+ 289 430 289 410 Ln
+ 289 410 294 399 Ln
+ 294 399 300 394 Ln
+ 300 394 309 389 Ln
+ 309 389 319 389 Ln
+ 319 389 329 394 Ln
+ 329 394 344 405 Ln
+ 344 405 394 454 Ln
+ 394 454 394 384 Ln
+ 430 102 456 102 Ln
+ 3093 102 3068 102 Ln
+ 289 129 289 74 Ln
+ 289 74 329 104 Ln
+ 329 104 329 89 Ln
+ 329 89 334 79 Ln
+ 334 79 339 74 Ln
+ 339 74 354 69 Ln
+ 354 69 364 69 Ln
+ 364 69 378 74 Ln
+ 378 74 389 83 Ln
+ 389 83 394 99 Ln
+ 394 99 394 114 Ln
+ 394 114 389 129 Ln
+ 389 129 384 134 Ln
+ 384 134 374 139 Ln
+ 1 SLW
+ 95 1381 200 1381 Ln
+ 130 1336 200 1336 Ln
+ 150 1336 135 1321 Ln
+ 135 1321 130 1311 Ln
+ 130 1311 130 1296 Ln
+ 130 1296 135 1285 Ln
+ 135 1285 150 1280 Ln
+ 150 1280 200 1280 Ln
+ 75 1200 86 1209 Ln
+ 86 1209 100 1220 Ln
+ 100 1220 120 1230 Ln
+ 120 1230 145 1235 Ln
+ 145 1235 165 1235 Ln
+ 165 1235 190 1230 Ln
+ 190 1230 210 1220 Ln
+ 210 1220 225 1209 Ln
+ 225 1209 234 1200 Ln
+ 130 1164 200 1108 Ln
+ 130 1108 200 1164 Ln
+ 75 1073 86 1063 Ln
+ 86 1063 100 1054 Ln
+ 100 1054 120 1043 Ln
+ 120 1043 145 1038 Ln
+ 145 1038 165 1038 Ln
+ 165 1038 190 1043 Ln
+ 190 1043 210 1054 Ln
+ 210 1054 225 1063 Ln
+ 225 1063 234 1073 Ln
+ xs 10 SLC
+ 437 2311 458 1538 Ln
+ 458 1538 485 1327 Ln
+ 485 1327 512 1202 Ln
+ 512 1202 539 1112 Ln
+ 539 1112 566 1042 Ln
+ 566 1042 593 986 Ln
+ 593 986 620 937 Ln
+ 620 937 646 896 Ln
+ 646 896 673 859 Ln
+ 673 859 700 825 Ln
+ 700 825 727 795 Ln
+ 727 795 754 768 Ln
+ 754 768 781 743 Ln
+ 781 743 808 719 Ln
+ 808 719 835 698 Ln
+ 835 698 861 678 Ln
+ 861 678 889 659 Ln
+ 889 659 915 641 Ln
+ 915 641 943 624 Ln
+ 943 624 969 608 Ln
+ 969 608 996 592 Ln
+ 996 592 1023 578 Ln
+ 1023 578 1050 564 Ln
+ 1050 564 1077 550 Ln
+ 1077 550 1103 538 Ln
+ 1103 538 1131 525 Ln
+ 1131 525 1157 513 Ln
+ 1157 513 1184 502 Ln
+ 1184 502 1211 490 Ln
+ 1211 490 1238 480 Ln
+ 1238 480 1265 470 Ln
+ 1265 470 1292 459 Ln
+ 1292 459 1318 450 Ln
+ 1318 450 1346 441 Ln
+ 1346 441 1372 432 Ln
+ 1372 432 1400 423 Ln
+ 1400 423 1426 414 Ln
+ 1426 414 1453 406 Ln
+ 1453 406 1480 397 Ln
+ 1480 397 1507 389 Ln
+ 1507 389 1534 382 Ln
+ 1534 382 1561 374 Ln
+ 1561 374 1588 366 Ln
+ 1588 366 1614 359 Ln
+ 1614 359 1641 353 Ln
+ 1641 353 1668 345 Ln
+ 1668 345 1695 339 Ln
+ 1695 339 1722 332 Ln
+ 1722 332 1749 326 Ln
+ 1749 326 1776 319 Ln
+ 1776 319 1803 313 Ln
+ 1803 313 1829 307 Ln
+ 1829 307 1857 300 Ln
+ 1857 300 1883 295 Ln
+ 1883 295 1911 289 Ln
+ 1911 289 1937 283 Ln
+ 1937 283 1964 278 Ln
+ 1964 278 1991 272 Ln
+ 1991 272 2018 267 Ln
+ 2018 267 2045 261 Ln
+ 2045 261 2071 256 Ln
+ 2071 256 2099 251 Ln
+ 2099 251 2125 246 Ln
+ 2125 246 2152 241 Ln
+ 2152 241 2179 236 Ln
+ 2179 236 2206 231 Ln
+ 2206 231 2233 227 Ln
+ 2233 227 2260 222 Ln
+ 2260 222 2286 217 Ln
+ 2286 217 2314 213 Ln
+ 2314 213 2340 208 Ln
+ 2340 208 2368 204 Ln
+ 2368 204 2394 199 Ln
+ 2394 199 2421 195 Ln
+ 2421 195 2448 191 Ln
+ 2448 191 2475 187 Ln
+ 2475 187 2502 183 Ln
+ 2502 183 2528 179 Ln
+ 2528 179 2556 175 Ln
+ 2556 175 2582 171 Ln
+ 2582 171 2609 167 Ln
+ 2609 167 2636 163 Ln
+ 2636 163 2663 159 Ln
+ 2663 159 2690 155 Ln
+ 2690 155 2717 152 Ln
+ 2717 152 2744 148 Ln
+ 2744 148 2771 145 Ln
+ 2771 145 2797 141 Ln
+ 2797 141 2825 137 Ln
+ 2825 137 2851 134 Ln
+ 2851 134 2879 130 Ln
+ 2879 130 2905 127 Ln
+ 2905 127 2932 123 Ln
+ 2932 123 2959 120 Ln
+ 2959 120 2986 117 Ln
+ 2986 117 3013 114 Ln
+ 3013 114 3039 110 Ln
+ 3039 110 3067 107 Ln
+ 3067 107 3093 104 Ln
+ xs 15 SLC
+ 1 newPage
+ %%Trailer
+ %!END

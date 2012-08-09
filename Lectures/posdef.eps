@@ -1,0 +1,2507 @@
+%!PS-Adobe-2.0 EPSF-1.2
+%%Creator: PGL v-2.00 by AnSoft, Inc.
+%%Pages:   1
+%%BoundingBox: 0 0 611 791
+%%EndComments
+%---------------------------------------------------------------------
+%
+%------------------ Copyright (C) 1991 AnSoft,Inc.--------------------
+%
+%---------------------------------------------------------------------
+% Temporary variables used
+%---------------------------------------------------------------------
+%  PROC          VARIABLES
+%  PatternFill : fx1,fx2,fy1,fy2,fwidth
+%
+%---------------------------------------------------------------------
+%  PGL Global Data
+%---------------------------------------------------------------------
+/LineColor 1   def  % -1 turns off Line & Outline drawing
+/LineStyle []  def  % 
+/Phase     0   def  %
+/AreaColor 1   def  % -1 turns off Area Fills
+/FillFlag  1   def  % 1-Outline, 2-Fill, 3-Both
+/FillStyle 0   def  % 
+/FillMode  1   def  %  1-opaque, 0-transparent
+/MaxColor  15  def  %
+/CurFont   0   def  % FontNames index
+/topFlagV  0   def  % Text Justification(Vertical) Flags 
+/ctrFlagV  0   def  %                   (Vertical)
+/ctrFlagH  0   def  %                   (Horizonal)
+/LineWidth 1   def  %
+/UnitWidth 1   def  % Unit Line thickness in 1/300'ths inches
+/PatSize   3   def  % Fill Pattern Scale Factor
+/PatChar   48  def  % Fill Pattern Ascii Value
+/UserChar  60  def  % UserFill Pattern Ascii Value
+/FillChar  (?) def  % UserFill Pattern Ascii Value
+/UserFillPat <0000000000000000> def %- empty fill by default
+
+%--------------------------------------------------------------------
+% Bitmap support
+%--------------------------------------------------------------------
+/rleFlag   1 string def
+/rleStr    2 string def
+/bmStr     1 string def
+
+%--------------------------------------------------------------------
+%  Color Tables and Mappings
+%--------------------------------------------------------------------
+/bwColors 256 array def
+0 1 255 { bwColors exch 0 put } for  % zero all colors to black
+bwColors 0 1 put                     % index 0 - white, all others black
+
+/grayColors 256 array def
+0 1 255 { grayColors exch 0 put } for  % zero all colors to black
+grayColors  0  1.00 put 
+grayColors  1  0.11 put 
+grayColors  2  0.59 put 
+grayColors  3  0.70 put 
+grayColors  4  0.30 put 
+grayColors  5  0.41 put 
+grayColors  6  0.40 put 
+grayColors  7  0.97 put 
+grayColors  8  0.50 put 
+grayColors  9  0.40 put 
+grayColors  10 0.73 put 
+grayColors  11 0.80 put 
+grayColors  12 0.53 put 
+grayColors  13 0.60 put 
+grayColors  14 0.93 put 
+grayColors  15 0.00 put 
+
+/rgbColors 256 array def
+0 1 255 { rgbColors exch [0 0 0] put } for  % zero all colors to black
+rgbColors  0  [1 1 1]           put         % white
+rgbColors  1  [0 0 1]           put         % blue
+rgbColors  2  [0 1 0]           put         % green
+rgbColors  3  [0 1 1]           put         % cyan
+rgbColors  4  [1 0 0]           put         % red
+rgbColors  5  [1 0 1]           put         % magenta
+rgbColors  6  [0.67  0.33  0]   put         % brown
+rgbColors  7  [0.9 0.9 0.9]     put         % darkgray
+rgbColors  8  [0.75 0.75 0.75]  put         % lightgray
+rgbColors  9  [0.33 0.33 1]     put         % lightblue
+rgbColors  10 [0.33  1 0.33]    put         % lightgreen
+rgbColors  11 [0.33 1 1]        put         % lightcyan
+rgbColors  12 [1 0.33  0.33]    put         % lightred
+rgbColors  13 [1 0.33  1]       put         % lightmagenta
+rgbColors  14 [1 1 0.33]        put         % yellow
+rgbColors  15 [0 0 0]           put         % black
+        
+/ColorModel  0 def
+/ColorChoices [ bwColors grayColors rgbColors ] def
+/ColorMap ColorChoices ColorModel get def   % default colors=b&w
+
+%--------------------------------------------------------------------
+%----Page Size, Set By Main Pgm
+%--------------------------------------------------------------------
+%
+/PX  1950 def
+/PY  1194 def
+
+%--------------------------------------------------------------------
+%----Text Scale Factors
+%--------------------------------------------------------------------
+/SX  1800 def   % Base size of page width/height, 
+/SY  1194 def   % for scaling fonts against
+
+/FSX  [  6  7   8  10  12  9  10 ] def  % Unit Font Scale factors
+/FSY  [ -2.3  -4.6 -4.6 -4.6 -4.6 -4.6 -4.6 ] def  % Neg's to invert Y axis
+
+%--------------------------------------------------------------------
+%---- Users Font Scale Factors
+%--------------------------------------------------------------------
+/FSXN 1 def
+/FSXD 1 def
+/FSYN 1 def
+/FSYD 1 def
+
+%---------------------------------------------------------------------
+%  Fonts Names Used by PGL
+%  These replace the following vector fonts provided with PGL
+%  If you change these you may need to change the scale factors
+%  in FSX and FSY.
+%---------------------------------------------------------------------
+/FontNames
+[
+  /Helvetica          % small
+  /Courier            % simplex
+  /Helvetica          % duplex
+  /Times-Roman        % triplex
+  /Times-BoldItalic   % gothic 
+  /Courier-Oblique    % script simplex
+  /Helvetica-Oblique  % script duplex
+] def
+
+%---------------------------------------------------------------------
+%  Fill Pattern Font based on "PS Lang Ref Man (Red Book) - Chap 5"
+%---------------------------------------------------------------------
+/newfont 10 dict def
+newfont 
+begin
+ /FontType 3 def
+ /FontMatrix [ .125 0 0 .125 0 0 ] def
+ /FontBBox   [ 0 0 8 8 ]     def
+
+ /Encoding 256 array def
+ 0 1 255 { Encoding exch /.notdef put } for
+  Encoding  48 /empty     put  % '0'
+  Encoding  49 /solid     put  % '1'
+  Encoding  50 /lfill     put  % '2'
+  Encoding  51 /slash     put  % '3'
+  Encoding  52 /hslash    put  % '4'
+  Encoding  53 /hbkslash  put  % '5'
+  Encoding  54 /bkslash   put  % '6'
+  Encoding  55 /hatch     put  % '7'
+  Encoding  56 /xhatch    put  % '8'
+  Encoding  57 /intleav   put  % '9'
+  Encoding  58 /widedot   put  % '10'
+  Encoding  59 /closedot  put  % '11'
+  Encoding  60 /patfill   put  % '12'
+
+ /CharProcs 14 dict def
+ CharProcs 
+ begin
+  /.notdef {} bind def
+  /empty    { 8 8 true [1 0 0 1 0 0] { <0000000000000000> } imagemask } bind def
+  /solid    { 8 8 true [1 0 0 1 0 0] { <ffffffffffffffff> } imagemask } bind def
+  /lfill    { 8 8 true [1 0 0 1 0 0] { <ffff0000ffff0000> } imagemask } bind def
+  /slash    { 8 8 true [1 0 0 1 0 0] { <0102040810204080> } imagemask } bind def 
+  /hslash   { 8 8 true [1 0 0 1 0 0] { <e0c183070e1c3870> } imagemask } bind def 
+  /hbkslash { 8 8 true [1 0 0 1 0 0] { <f0783c1e0f87c3e1> } imagemask } bind def 
+  /bkslash  { 8 8 true [1 0 0 1 0 0] { <a5d269b45a2d964b> } imagemask } bind def 
+  /hatch    { 8 8 true [1 0 0 1 0 0] { <ff888888ff888888> } imagemask } bind def 
+  /xhatch   { 8 8 true [1 0 0 1 0 0] { <8142241818244281> } imagemask } bind def 
+  /intleav  { 8 8 true [1 0 0 1 0 0] { <cc33cc33cc33cc33> } imagemask } bind def 
+  /widedot  { 8 8 true [1 0 0 1 0 0] { <8000080080000800> } imagemask } bind def 
+  /closedot { 8 8 true [1 0 0 1 0 0] { <8800220088002200> } imagemask } bind def 
+  /patfill  { 8 8 true [1 0 0 1 0 0] { UserFillPat } imagemask } bind def 
+ end
+
+ /BuildChar
+ {
+    exch
+    begin  
+      dup UserChar eq{                 
+        8 0 setcharwidth            % userfillstyle
+      }{
+        8 0 0 0 8 8 setcachedevice  % standard fillstyle
+      }ifelse
+      Encoding exch get  
+      CharProcs exch get 
+    end
+    exec
+ }def
+end 
+
+/FillFont newfont definefont pop
+%----- End Of Area Fill Font Def--------------------------------------
+
+%---------------------------------------------------------------------
+%  PGL Redefinitions
+%---------------------------------------------------------------------
+/gs   { gsave } bind def         
+/gr   { grestore } bind def  
+/m    { moveto } bind def        
+/l    { lineto currentpoint stroke moveto } bind def  
+/rm   { rmoveto } bind def       
+/rl   { rlineto } bind def  
+/cp   { closepath } bind def     
+/np   { newpath } bind def   
+/sg   { setgray } bind def       
+/st   { stroke } bind def     
+/sd   { setdash } bind def       
+/ex   { exch } bind def
+/in   { index } bind def         
+/sw   { stringwidth } bind def 
+/cxy  { currentpoint } bind def  
+/slw  { setlinewidth } bind def 
+
+%---------------------------------------------------------------------
+% str strlen nchars
+%---------------------------------------------------------------------
+/strlen
+{
+    dup           % str str
+    /itmp 0 def
+    { /itmp itmp 1 add def pop } forall  % count characters
+    itmp          % nchars
+} bind def
+
+%---------------------------------------------------------------------
+% string txtCtrH   % Center Justify a string Horiz
+%---------------------------------------------------------------------
+/txtCtrH { dup sw pop 2 div neg dup 0 rm /ctrFlagH exch def } bind def 
+
+%---------------------------------------------------------------------
+% wx wy string atxtCtrH   % Center Justify a string Horiz
+%---------------------------------------------------------------------
+/atxtCtrH { 
+    3 -1 roll   % wy string wx
+    dup        % wy string wx wx
+    4 1 roll  % wx wy string wx
+    /xW ex def % wx wy string
+    strlen     % wx wy string nchars
+    xW mul
+    /xW ex def
+    dup        % str str
+    sw         % str wx wy
+    pop        % str wx
+    xW add     % str wx+xW
+    2 div neg 
+    dup 
+    0 rm 
+    /ctrFlagH exch def 
+} bind def 
+
+%---------------------------------------------------------------------
+% txtCtrHend   % Finish Center Justifying a string Horiz
+%                cp shoud be at center of string
+%---------------------------------------------------------------------
+/txtCtrHend { ctrFlagH 0 rm /ctrFlagH 0 def } bind def 
+
+%---------------------------------------------------------------------
+% string txtRtH   % Right Justify a string Horiz
+%---------------------------------------------------------------------
+/txtRtH  {dup sw pop neg 0 rm} bind def 
+
+%---------------------------------------------------------------------
+% string txtRtH   % Right Justify a string Horiz
+%---------------------------------------------------------------------
+/atxtRtH  {
+    3 -1 roll   % wy string wx
+    dup        % wy string wx wx
+    4 1 roll  % wx wy string wx
+    /xW ex def % wx wy string
+    strlen     % wx wy string nchars
+    xW mul
+    /xW ex def
+    dup 
+    sw 
+    pop 
+    xW add     % str wx+xW
+    neg 0 rm
+} bind def 
+
+%---------------------------------------------------------------------
+% txtCtrV  % Center Justify a string Vertically
+%---------------------------------------------------------------------
+/txtCtrV { gs np 0 0 m (X) true charpath flattenpath pathbbox ex pop 
+           sub neg 2 div 0 ex gr rm pop /ctrFlagV 1 def } bind def 
+
+%---------------------------------------------------------------------
+% txtCtrVend  % Center Justify a string Vertically
+%---------------------------------------------------------------------
+/txtCtrVend { gs np 0 0 m (X) true charpath flattenpath pathbbox ex pop 
+              sub neg 2 div 0 ex gr neg rm pop /ctrFlagV 0 def } bind def 
+
+%---------------------------------------------------------------------
+% string txtTopV  % Top Justify a string Vertically
+%---------------------------------------------------------------------
+/txtTopV { gs np 0 0 m (X) true charpath flattenpath pathbbox ex pop 
+           sub neg 0 ex gr rm pop /topFlagV 1 def } bind def 
+
+%---------------------------------------------------------------------
+% txtTopVend  % Top Justify a string Vertically
+%---------------------------------------------------------------------
+/txtTopVend { gs np 0 0 m (X) true charpath flattenpath pathbbox ex pop 
+           sub neg 0 ex gr neg rm pop /topFlagV 0 def } bind def 
+
+%---------------------------------------------------------------------
+%  ash   display text & readjusts cp for Top & Center Vertical
+%        text justification
+%---------------------------------------------------------------------
+/ash {
+   ashow
+   topFlagV 1 eq {
+     txtTopVend
+   } if
+   ctrFlagV 1 eq {
+     txtCtrVend
+   } if
+   ctrFlagH 0 ne {
+     txtCtrHend
+   } if
+} bind def
+
+%---------------------------------------------------------------------
+%  sh   display text & readjusts cp for Top & Center Vertical
+%       text justification
+%---------------------------------------------------------------------
+/sh {
+   show
+   topFlagV 1 eq {
+     txtTopVend
+   } if
+   ctrFlagV 1 eq {
+     txtCtrVend
+   } if
+   ctrFlagH 0 ne {
+     txtCtrHend
+   } if
+} bind def
+
+%---------------------------------------------------------------------
+% xs  % Extended Stroke 
+%---------------------------------------------------------------------
+/xs { 
+  LineColor -1 ne
+  { cxy st m }{ cxy np m }ifelse 
+} bind def                       
+
+%---------------------------------------------------------------------
+%  color SLC   % SetLineColor  % -1 turns off line drawing
+%---------------------------------------------------------------------
+/SLC { dup /LineColor exch def SCC }bind def
+
+%---------------------------------------------------------------------
+%  index [r g b] SRC   % SetRgbColor
+%---------------------------------------------------------------------
+/SRC { 
+/rgbTmp   exch def
+/rgbIndex exch def
+/rgbAbs   0.0  def
+rgbTmp 0 get 1. 255. div mul  rgbTmp exch 0 exch put
+rgbTmp 1 get 1. 255. div mul  rgbTmp exch 1 exch put
+rgbTmp 2 get 1. 255. div mul  rgbTmp exch 2 exch put
+rgbColors rgbIndex rgbTmp put  
+rgbTmp { dup mul rgbAbs add /rgbAbs exch def } forall
+grayColors rgbIndex rgbAbs sqrt put
+}bind def
+
+%---------------------------------------------------------------------
+%  color SCC  % SetCurColor
+%---------------------------------------------------------------------
+/SCC { 
+  dup -1 ne 
+  { % -1 turns of line drawing
+     ColorMap exch get 
+     dup type /arraytype ne { 
+       setgray 
+     }{ 
+       {} forall setrgbcolor 
+     } ifelse
+  }{ 
+     pop  % remove -1 from stack
+  }ifelse
+}bind def
+
+%---------------------------------------------------------------------
+%  [] phase SLS  % SetLineStyle
+%---------------------------------------------------------------------
+/SLS { 
+   /Phase exch def
+   /LineStyle exch def 
+   LineStyle Phase setdash 
+}bind def
+
+%---------------------------------------------------------------------
+%  width SLW % SetLineWidth ( 1/300 inch )
+%---------------------------------------------------------------------
+/SLW { 
+   /LineWidth exch def 
+   LineWidth UnitWidth mul setlinewidth 
+}bind def
+
+%---------------------------------------------------------------------
+%   color SFC % SetFillColor
+%---------------------------------------------------------------------
+/SFC {  /AreaColor exch def }bind def
+
+%---------------------------------------------------------------------
+%  <pattern> SUF  % SetUserFill pattern = hex no 
+%---------------------------------------------------------------------
+/SUF {  
+    /UserFillPat exch def  % set pattern
+    /FillStyle 12 def      % set flag
+}bind def
+
+%---------------------------------------------------------------------
+%  style SFS  % SetFillStyle style no (0-11)
+%---------------------------------------------------------------------
+/SFS {  /FillStyle exch def }bind def
+
+%---------------------------------------------------------------------
+%  mode SFM  % SetFillMode   ( 1-Opaque, 2-Transparent)
+%---------------------------------------------------------------------
+/SFM {  /FillMode exch def }bind def
+
+%---------------------------------------------------------------------
+%  fontno SCF SetCurFont
+%---------------------------------------------------------------------
+/SCF {
+ dup  /CurFont exch def        % save font no.
+ FontNames exch get findfont 
+   [ FSX CurFont get FSXN mul FSXD div PX mul SX div 0 0
+     FSY CurFont get FSYN mul FSYD div PY mul SY div 0 0 ]
+   makefont setfont 
+ }bind def
+
+%---------------------------------------------------------------------
+%  xn xd yn yd SFX    % SetFontScale
+%---------------------------------------------------------------------
+/SFX {
+  /FSYD exch def    /FSYN exch def  
+  /FSXD exch def    /FSXN exch def
+  CurFont SCF
+}bind def
+
+%---------------------------------------------------------------------
+%  [ f1 f2 f3 f4 f5 f6 f7 ] SFNS   % SetFontNames
+%---------------------------------------------------------------------
+/SFNS {
+  /FontNames exch def
+}bind def
+
+%---------------------------------------------------------------------
+% [7 xsizes] [7 ysizes] SFZ  % SetFontSizes
+%---------------------------------------------------------------------
+/SFSZ {
+  /FSY exch def
+  /FSX exch def
+}bind def
+
+%---------------------------------------------------------------------
+%  px py SPS  % SetPageSize
+%---------------------------------------------------------------------
+/SPS { /PY exch def  /PX exch def }bind def
+
+%---------------------------------------------------------------------
+%  x y color Pix  % SetPixel  1-Pixel = 1/300" pixel!
+%---------------------------------------------------------------------
+/Pix { 
+gsave                     %
+SCC moveto                % set color & position
+1 linewidth [] 0 setdash  % set attributes
+1 0 rlineto stroke        % do it!
+grestore                  %
+} bind def                       
+
+%---------------------------------------------------------------------
+%  x1 x2 y2 y2 Ln  % Line
+%---------------------------------------------------------------------
+/Ln { gs np 4 -2 roll m l st gr } bind def                       
+
+%---------------------------------------------------------------------
+%  x1 y1 x2 y2 flag Rect   (flag: 1-outline,2-fill,3-both)
+%---------------------------------------------------------------------
+/Rect { 
+    /FillFlag exch def 
+    gs np DrawRect FillArea OutLine gr 
+} bind def
+
+%---------------------------------------------------------------------
+% x1 y1 x2 y2 x3 y3 .... flag PolyF  % PolyFill - fill current path
+%---------------------------------------------------------------------
+/PolyF { 
+    /FillFlag exch def 
+    gs closepath FillArea OutLine gr 
+} bind def
+
+%---------------------------------------------------------------------
+%  x1 y1 x2 y2 ClipR % ClipRect 
+%---------------------------------------------------------------------
+/ClipR { 
+    cxy 6 2 roll       % cx cy x1 y1 x2 y2
+    gr gs
+    0 setlinewidth
+    np DrawRect eoclip np 
+    m 
+    %-- Reset graphics state
+    LineWidth SLW
+    LineColor SLC
+    FSXN FSXD FSYN FSYD SFX
+    CurFont   SCF
+    LineStyle 0 setdash
+} bind def
+
+%-PRIVATE-------------------------------------------------------------
+%  x1 y1 x2 y2 DrawRect 
+%---------------------------------------------------------------------
+/DrawRect { 
+    3 in 3 in moveto 
+    1 in 3 in lineto 
+    3 in 1 in 4 -2 roll lineto lineto pop pop closepath % lineto
+} bind def
+
+%-PRIVATE-------------------------------------------------------------
+%  xc yc sa ea rx ry DrawArc    
+%---------------------------------------------------------------------
+/DrawArc { 
+   /savematrix matrix currentmatrix def 
+   6 -2 roll translate    
+   scale 
+   0 0 1 5 -2 roll 
+   1 -1 scale arc 1 -1 scale
+   savematrix setmatrix
+}bind def
+
+%---------------------------------------------------------------------
+%  xc yc sa ea rx ry Arc
+%---------------------------------------------------------------------
+/Arc { gs np DrawArc [] 0 sd st gr } bind def   
+
+%---------------------------------------------------------------------
+%  xc yc sa ea rx ry flag Pie   (flag: 1-Outline,2-Fill,3-Both)
+%---------------------------------------------------------------------
+/Pie { 
+    /FillFlag exch def
+    gs np 6 -2 roll 2 copy 2 copy m 8 4 roll 
+    DrawArc cp FillArea OutLine gr 
+} bind def   
+
+%---------------------------------------------------------------------
+%  xc yc rx ry flag ELLIPSE (flag: 1-Outline,2-Fill,3-Both)
+%---------------------------------------------------------------------
+/Ellipse { 
+    /FillFlag exch def
+     gs np 0 360 4 2 roll DrawArc FillArea OutLine gr 
+}bind def   
+
+%-PRIVATE-------------------------------------------------------------
+%  OutLine
+%---------------------------------------------------------------------
+/OutLine  { 
+  FillFlag 1 and 1 eq { 
+    [] 0 sd LineColor SCC st 
+  }if 
+}bind def
+
+%-PRIVATE-------------------------------------------------------------
+%  FillArea  - fills current path
+%---------------------------------------------------------------------
+/FillArea { 
+  FillFlag 2 and 2 eq { 
+     gs eoclip 
+     AreaColor SCC
+     PatternFill
+     gr
+  }if 
+}bind def
+
+%-PRIVATE-------------------------------------------------------------
+%  PatternFill 
+%---------------------------------------------------------------------
+/PatternFill {
+   /psize 8 PatSize mul def
+   /FillFont findfont psize scalefont setfont % set Pattern font
+   FillChar 0 FillStyle PatChar add put               % fill char index
+   FillMode 1 eq { gsave 1 setgray fill grestore }if  % erase background
+   pathbbox                                           % llx lly  urx ury
+   newpath              
+   ceiling cvi /fy2 exch def 
+   ceiling cvi /fx2 exch def 
+   cvi 7 not and /fy1 exch def 
+   cvi 7 not and /fx1 exch def
+   fx2 fx1 sub psize div ceiling cvi
+   /fwidth exch def
+   fy1 psize fy2                          %
+   {                                      %
+     fx1 exch moveto                      %
+     fwidth { FillChar show } repeat      %
+   } for                                  %
+} bind def
+
+%---------------------------------------------------------------------
+%  savePGL
+%---------------------------------------------------------------------
+/savePGL{
+   /saveObj save def
+}bind def
+
+%---------------------------------------------------------------------
+%  #copies newPage
+%---------------------------------------------------------------------
+/newPage{
+   /#copies exch def
+   showpage saveObj restore
+   /#copies 1 def
+}bind def
+
+%----------------------------------------------------------------------
+% x,y,npixels bmRow  % Bitmap row data, 1 row at a time...
+%----------------------------------------------------------------------
+/bmRow {
+  /bmPixels  exch def
+  /bmY       exch def
+  /bmX       exch def
+
+  currentpoint stroke moveto % save x,y stroke and moveto
+  gsave                      % save graphics state
+  1 setlinewidth             % linewidth
+  0 setlinecap               % but cap
+  [] 0 setdash               % solid style
+  bmX .5 add bmY .5 add moveto % move to start of row
+  %
+  %  Read & decompress  a whole row of pixel color data via RLE
+  %
+  currentfile rleFlag readhexstring pop 
+  0 get 1 eq 
+  { /cumBytes 0 def
+    { 
+      currentfile rleStr readhexstring pop 
+      dup 
+      0 get 1 add exch % count rleStr
+      1 get SCC        % count 
+      dup              % dup count
+      0 rlineto        % draw
+      currentpoint stroke moveto     
+      /cumBytes exch cumBytes add def 
+      cumBytes bmPixels ge { exit } if 
+    }loop 
+  }{ 
+    1 1 bmPixels
+    {
+      pop
+      currentfile bmStr readhexstring pop 
+      0 get SCC
+      1 0 rlineto
+      currentpoint stroke moveto     
+    }for
+  }ifelse 
+
+  grestore
+}bind def
+
+%----------------------------------------------------------------------
+% DPI PMAXX PMAXY PageHght TopMgn LftMgn LandFlag ColorModel initPGL
+%----------------------------------------------------------------------
+/initPGL {
+   %---Page Constants
+   /ColorModel exch def  /LandFlag exch def 
+   /LeftMgn exch def     /TopMgn exch def
+   /PageHeight exch def  /PY exch def       /PX exch def
+
+   %---Select/Set Color model
+   /ColorMap ColorChoices ColorModel get def   % default colors=b&w
+   
+   %---Save state & set output res
+   savePGL 
+   
+   %---Set output res scaling, dpi on stack(300?)
+   /dpiRes  exch def             % dots per inch
+   /dphiRes dpiRes 100 div def   % pots per 1/100 inches (hinches)
+   72 dpiRes div dup scale
+
+   %---Set coordinate origin, & dir
+   LandFlag 1 ne { 
+      % Portrait Setup
+      LeftMgn dphiRes mul PageHeight TopMgn sub dphiRes mul 
+   }{
+      % Landscape Setup
+      90 rotate LeftMgn dphiRes mul TopMgn dphiRes mul neg 
+   }ifelse
+   translate 1 -1 scale
+
+   %---Adjust font scale factor sizes, relative to 5000x5000
+   0 1 6 { dup FSX exch get 4999 PX div mul FSX 3 1 roll put } for
+   0 1 6 { dup FSY exch get 4999 PY div mul FSY 3 1 roll put } for
+
+   %---Set default graphics state
+   np 0 0 m
+   1  SLC
+   1  SLW
+   [] 0 SLS
+   1 1 1 1 SFX
+   0 SCF
+   <0000000000000000> SUF
+   10 setmiterlimit
+    0 setlinejoin 
+    0 setlinecap
+    gs  % save for clipping
+    xs 0 0 PX PY ClipR
+}bind def
+
+1 setlinecap
+
+%%EndProlog
+ %%Page: 1 1
+ 300 3295 2543 1100 0 0 1 0 initPGL
+ 0 SCF
+ [] 0 SLS
+ 1 SLW
+ <ffffffffffffffff> SUF
+ 1 SFC
+ 1 SFS
+ 1 SFC
+ 1 SFM
+ 0 0 3295 2543 ClipR
+ 0 0 3295 2543 ClipR
+ xs 1 SLC
+ [] 0 SLS
+ 1 SLW
+ xs 0 SLC
+ 1 SLW
+ xs 13 SLC
+ 2222 536 2309 376 Ln
+ 2309 376 2333 529 Ln
+ 2141 675 2223 536 Ln
+ 2223 536 2248 679 Ln
+ 2248 679 2334 529 Ln
+ 2334 529 2356 662 Ln
+ 2063 798 2141 675 Ln
+ 2141 675 2170 811 Ln
+ 2170 811 2249 679 Ln
+ 2249 679 2274 803 Ln
+ 2274 803 2357 662 Ln
+ 2357 662 2378 774 Ln
+ 1990 904 2064 798 Ln
+ 2064 798 2094 926 Ln
+ 2094 926 2170 811 Ln
+ 2170 811 2197 927 Ln
+ 2197 927 2275 803 Ln
+ 2275 803 2298 909 Ln
+ 2298 909 2379 774 Ln
+ 2379 774 2400 869 Ln
+ 1920 994 1991 904 Ln
+ 1991 904 2023 1024 Ln
+ 2023 1024 2095 926 Ln
+ 2095 926 2124 1035 Ln
+ 2124 1035 2198 927 Ln
+ 2198 927 2223 1025 Ln
+ 2223 1025 2299 909 Ln
+ 2299 909 2322 997 Ln
+ 2322 997 2401 869 Ln
+ 2401 869 2421 949 Ln
+ 1853 1071 1921 994 Ln
+ 1921 994 1955 1110 Ln
+ 1955 1110 2024 1024 Ln
+ 2024 1024 2054 1129 Ln
+ 2054 1129 2125 1035 Ln
+ 2125 1035 2151 1128 Ln
+ 2151 1128 2224 1025 Ln
+ 2224 1025 2248 1109 Ln
+ 2248 1109 2322 997 Ln
+ 2322 997 2344 1071 Ln
+ 2344 1071 2421 949 Ln
+ 2421 949 2441 1015 Ln
+ 1790 1135 1853 1071 Ln
+ 1853 1071 1889 1183 Ln
+ 1889 1183 1956 1110 Ln
+ 1956 1110 1987 1209 Ln
+ 1987 1209 2055 1129 Ln
+ 2055 1129 2083 1218 Ln
+ 2083 1218 2152 1128 Ln
+ 2152 1128 2178 1207 Ln
+ 2178 1207 2248 1109 Ln
+ 2248 1109 2272 1179 Ln
+ 2272 1179 2345 1071 Ln
+ 2345 1071 2366 1133 Ln
+ 2366 1133 2442 1015 Ln
+ 2442 1015 2461 1068 Ln
+ 1728 1188 1790 1134 Ln
+ 1790 1134 1827 1243 Ln
+ 1827 1243 1889 1182 Ln
+ 1889 1182 1923 1278 Ln
+ 1923 1278 1988 1209 Ln
+ 1988 1209 2018 1294 Ln
+ 2018 1294 2084 1218 Ln
+ 2084 1218 2111 1293 Ln
+ 2111 1293 2178 1207 Ln
+ 2178 1207 2203 1273 Ln
+ 2203 1273 2273 1179 Ln
+ 2273 1179 2295 1236 Ln
+ 2295 1236 2367 1133 Ln
+ 2367 1133 2388 1183 Ln
+ 2388 1183 2462 1068 Ln
+ 2462 1068 2480 1110 Ln
+ 1668 1231 1728 1187 Ln
+ 1728 1187 1766 1293 Ln
+ 1766 1293 1827 1242 Ln
+ 1827 1242 1861 1335 Ln
+ 1861 1335 1923 1277 Ln
+ 1923 1277 1955 1359 Ln
+ 1955 1359 2018 1294 Ln
+ 2018 1294 2047 1366 Ln
+ 2047 1366 2112 1293 Ln
+ 2112 1293 2137 1355 Ln
+ 2137 1355 2203 1273 Ln
+ 2203 1273 2228 1327 Ln
+ 2228 1327 2296 1236 Ln
+ 2296 1236 2318 1282 Ln
+ 2318 1282 2388 1183 Ln
+ 2388 1183 2409 1221 Ln
+ 2409 1221 2481 1110 Ln
+ 2481 1110 2500 1142 Ln
+ 1609 1262 1668 1230 Ln
+ 1668 1230 1707 1332 Ln
+ 1707 1332 1766 1292 Ln
+ 1766 1292 1802 1382 Ln
+ 1802 1382 1861 1334 Ln
+ 1861 1334 1894 1414 Ln
+ 1894 1414 1955 1359 Ln
+ 1955 1359 1985 1428 Ln
+ 1985 1428 2047 1365 Ln
+ 2047 1365 2074 1426 Ln
+ 2074 1426 2138 1355 Ln
+ 2138 1355 2163 1406 Ln
+ 2163 1406 2228 1327 Ln
+ 2228 1327 2252 1370 Ln
+ 2252 1370 2318 1282 Ln
+ 2318 1282 2340 1318 Ln
+ 2340 1318 2409 1221 Ln
+ 2409 1221 2430 1249 Ln
+ 2430 1249 2500 1142 Ln
+ 2500 1142 2520 1164 Ln
+ 1552 1284 1609 1262 Ln
+ 1609 1262 1649 1361 Ln
+ 1649 1361 1707 1331 Ln
+ 1707 1331 1744 1419 Ln
+ 1744 1419 1802 1381 Ln
+ 1802 1381 1836 1458 Ln
+ 1836 1458 1894 1413 Ln
+ 1894 1413 1925 1480 Ln
+ 1925 1480 1985 1427 Ln
+ 1985 1427 2014 1485 Ln
+ 2014 1485 2074 1425 Ln
+ 2074 1425 2101 1474 Ln
+ 2101 1474 2163 1406 Ln
+ 2163 1406 2188 1447 Ln
+ 2188 1447 2252 1370 Ln
+ 2252 1370 2274 1403 Ln
+ 2274 1403 2340 1318 Ln
+ 2340 1318 2361 1344 Ln
+ 2361 1344 2430 1249 Ln
+ 2430 1249 2448 1269 Ln
+ 2448 1269 2520 1164 Ln
+ 2520 1164 2537 1177 Ln
+ 1495 1296 1552 1284 Ln
+ 1552 1284 1593 1381 Ln
+ 1593 1381 1649 1361 Ln
+ 1649 1361 1688 1446 Ln
+ 1688 1446 1744 1419 Ln
+ 1744 1419 1779 1492 Ln
+ 1779 1492 1836 1457 Ln
+ 1836 1457 1868 1522 Ln
+ 1868 1522 1925 1479 Ln
+ 1925 1479 1956 1535 Ln
+ 1956 1535 2014 1484 Ln
+ 2014 1484 2042 1531 Ln
+ 2042 1531 2100 1473 Ln
+ 2100 1473 2127 1512 Ln
+ 2127 1512 2188 1447 Ln
+ 2188 1447 2212 1477 Ln
+ 2212 1477 2274 1403 Ln
+ 2274 1403 2297 1426 Ln
+ 2297 1426 2361 1344 Ln
+ 2361 1344 2381 1361 Ln
+ 2381 1361 2449 1268 Ln
+ 2449 1268 2468 1278 Ln
+ 2468 1278 2538 1176 Ln
+ 2538 1176 2556 1179 Ln
+ 1441 1300 1495 1296 Ln
+ 1495 1296 1539 1392 Ln
+ 1539 1392 1593 1381 Ln
+ 1593 1381 1633 1464 Ln
+ 1633 1464 1688 1446 Ln
+ 1688 1446 1725 1518 Ln
+ 1725 1518 1779 1492 Ln
+ 1779 1492 1813 1554 Ln
+ 1813 1554 1867 1521 Ln
+ 1867 1521 1899 1575 Ln
+ 1899 1575 1955 1534 Ln
+ 1955 1534 1984 1579 Ln
+ 1984 1579 2041 1530 Ln
+ 2041 1530 2068 1567 Ln
+ 2068 1567 2126 1511 Ln
+ 2126 1511 2152 1540 Ln
+ 2152 1540 2212 1477 Ln
+ 2212 1477 2234 1500 Ln
+ 2234 1500 2297 1426 Ln
+ 2297 1426 2318 1443 Ln
+ 2318 1443 2382 1360 Ln
+ 2382 1360 2402 1368 Ln
+ 2402 1368 2469 1278 Ln
+ 2469 1278 2487 1280 Ln
+ 2487 1280 2557 1179 Ln
+ 2557 1179 2574 1175 Ln
+ 1386 1294 1441 1300 Ln
+ 1441 1300 1485 1394 Ln
+ 1485 1394 1539 1392 Ln
+ 1539 1392 1580 1474 Ln
+ 1580 1474 1633 1464 Ln
+ 1633 1464 1671 1535 Ln
+ 1671 1535 1724 1518 Ln
+ 1724 1518 1758 1579 Ln
+ 1758 1579 1812 1554 Ln
+ 1812 1554 1844 1606 Ln
+ 1844 1606 1898 1574 Ln
+ 1898 1574 1928 1617 Ln
+ 1928 1617 1983 1578 Ln
+ 1983 1578 2011 1614 Ln
+ 2011 1614 2067 1567 Ln
+ 2067 1567 2094 1594 Ln
+ 2094 1594 2151 1540 Ln
+ 2151 1540 2175 1562 Ln
+ 2175 1562 2235 1499 Ln
+ 2235 1499 2257 1513 Ln
+ 2257 1513 2318 1442 Ln
+ 2318 1442 2339 1448 Ln
+ 2339 1448 2403 1368 Ln
+ 2403 1368 2422 1369 Ln
+ 2422 1369 2488 1280 Ln
+ 2488 1280 2507 1274 Ln
+ 2507 1274 2575 1175 Ln
+ 2575 1175 2594 1162 Ln
+ 1333 1281 1386 1294 Ln
+ 1386 1294 1432 1388 Ln
+ 1432 1388 1485 1394 Ln
+ 1485 1394 1527 1475 Ln
+ 1527 1475 1579 1474 Ln
+ 1579 1474 1618 1544 Ln
+ 1618 1544 1670 1535 Ln
+ 1670 1535 1705 1594 Ln
+ 1705 1594 1758 1579 Ln
+ 1758 1579 1791 1629 Ln
+ 1791 1629 1843 1606 Ln
+ 1843 1606 1874 1647 Ln
+ 1874 1647 1927 1616 Ln
+ 1927 1616 1956 1651 Ln
+ 1956 1651 2010 1613 Ln
+ 2010 1613 2037 1640 Ln
+ 2037 1640 2093 1593 Ln
+ 2093 1593 2117 1614 Ln
+ 2117 1614 2175 1560 Ln
+ 2175 1560 2199 1572 Ln
+ 2199 1572 2257 1512 Ln
+ 2257 1512 2279 1517 Ln
+ 2279 1517 2340 1448 Ln
+ 2340 1448 2360 1447 Ln
+ 2360 1447 2423 1369 Ln
+ 2423 1369 2442 1362 Ln
+ 2442 1362 2508 1274 Ln
+ 2508 1274 2526 1260 Ln
+ 2526 1260 2594 1163 Ln
+ 2594 1163 2613 1143 Ln
+ 1280 1259 1333 1281 Ln
+ 1333 1281 1380 1374 Ln
+ 1380 1374 1432 1388 Ln
+ 1432 1388 1474 1469 Ln
+ 1474 1469 1526 1475 Ln
+ 1526 1475 1566 1544 Ln
+ 1566 1544 1617 1544 Ln
+ 1617 1544 1654 1602 Ln
+ 1654 1602 1705 1594 Ln
+ 1705 1594 1739 1643 Ln
+ 1739 1643 1791 1629 Ln
+ 1791 1629 1822 1669 Ln
+ 1822 1669 1874 1647 Ln
+ 1874 1647 1903 1680 Ln
+ 1903 1680 1956 1650 Ln
+ 1956 1650 1983 1677 Ln
+ 1983 1677 2037 1638 Ln
+ 2037 1638 2063 1658 Ln
+ 2063 1658 2117 1612 Ln
+ 2117 1612 2141 1624 Ln
+ 2141 1624 2199 1571 Ln
+ 2199 1571 2221 1576 Ln
+ 2221 1576 2280 1517 Ln
+ 2280 1517 2301 1515 Ln
+ 2301 1515 2361 1447 Ln
+ 2361 1447 2381 1439 Ln
+ 2381 1439 2443 1362 Ln
+ 2443 1362 2463 1346 Ln
+ 2463 1346 2527 1261 Ln
+ 2527 1261 2546 1240 Ln
+ 2546 1240 2613 1143 Ln
+ 2613 1143 2631 1116 Ln
+ 1227 1229 1280 1260 Ln
+ 1280 1260 1328 1352 Ln
+ 1328 1352 1379 1374 Ln
+ 1379 1374 1424 1454 Ln
+ 1424 1454 1474 1469 Ln
+ 1474 1469 1515 1537 Ln
+ 1515 1537 1565 1544 Ln
+ 1565 1544 1602 1602 Ln
+ 1602 1602 1653 1602 Ln
+ 1653 1602 1688 1651 Ln
+ 1688 1651 1738 1643 Ln
+ 1738 1643 1771 1683 Ln
+ 1771 1683 1821 1669 Ln
+ 1821 1669 1851 1700 Ln
+ 1851 1700 1902 1680 Ln
+ 1902 1680 1930 1704 Ln
+ 1930 1704 1983 1675 Ln
+ 1983 1675 2009 1693 Ln
+ 2009 1693 2063 1656 Ln
+ 2063 1656 2087 1667 Ln
+ 2087 1667 2141 1623 Ln
+ 2141 1623 2165 1627 Ln
+ 2165 1627 2221 1576 Ln
+ 2221 1576 2244 1573 Ln
+ 2244 1573 2301 1515 Ln
+ 2301 1515 2322 1505 Ln
+ 2322 1505 2382 1439 Ln
+ 2382 1439 2401 1422 Ln
+ 2401 1422 2463 1347 Ln
+ 2463 1347 2483 1326 Ln
+ 2483 1326 2546 1240 Ln
+ 2546 1240 2566 1213 Ln
+ 2566 1213 2631 1116 Ln
+ 2631 1116 2651 1083 Ln
+ 1174 1192 1227 1230 Ln
+ 1227 1230 1276 1322 Ln
+ 1276 1322 1327 1353 Ln
+ 1327 1353 1372 1432 Ln
+ 1372 1432 1423 1454 Ln
+ 1423 1454 1464 1523 Ln
+ 1464 1523 1514 1537 Ln
+ 1514 1537 1552 1594 Ln
+ 1552 1594 1602 1602 Ln
+ 1602 1602 1638 1650 Ln
+ 1638 1650 1687 1651 Ln
+ 1687 1651 1721 1690 Ln
+ 1721 1690 1770 1683 Ln
+ 1770 1683 1800 1714 Ln
+ 1800 1714 1850 1700 Ln
+ 1850 1700 1879 1725 Ln
+ 1879 1725 1930 1704 Ln
+ 1930 1704 1957 1720 Ln
+ 1957 1720 2009 1691 Ln
+ 2009 1691 2034 1701 Ln
+ 2034 1701 2087 1666 Ln
+ 2087 1666 2111 1669 Ln
+ 2111 1669 2165 1626 Ln
+ 2165 1626 2188 1623 Ln
+ 2188 1623 2244 1572 Ln
+ 2244 1572 2265 1563 Ln
+ 2265 1563 2322 1505 Ln
+ 2322 1505 2343 1488 Ln
+ 2343 1488 2402 1423 Ln
+ 2402 1423 2423 1401 Ln
+ 2423 1401 2483 1326 Ln
+ 2483 1326 2487 1320 Ln
+ 2489 1318 2491 1316 Ln
+ 2491 1315 2493 1314 Ln
+ 2494 1311 2495 1311 Ln
+ 2526 1267 2528 1267 Ln
+ 2528 1264 2530 1263 Ln
+ 2531 1261 2533 1260 Ln
+ 2533 1258 2535 1257 Ln
+ 2536 1254 2537 1253 Ln
+ 2538 1251 2540 1250 Ln
+ 2541 1248 2542 1247 Ln
+ 2543 1245 2545 1244 Ln
+ 2545 1241 2548 1237 Ln
+ 2549 1236 2552 1234 Ln
+ 2552 1232 2554 1231 Ln
+ 2554 1229 2557 1227 Ln
+ 2557 1226 2566 1213 Ln
+ 2566 1213 2567 1210 Ln
+ 2600 1156 2651 1083 Ln
+ 2651 1083 2669 1042 Ln
+ 1122 1145 1174 1192 Ln
+ 1174 1192 1225 1284 Ln
+ 1225 1284 1276 1323 Ln
+ 1276 1323 1322 1403 Ln
+ 1322 1403 1371 1433 Ln
+ 1371 1433 1414 1501 Ln
+ 1414 1501 1463 1523 Ln
+ 1463 1523 1503 1580 Ln
+ 1503 1580 1552 1594 Ln
+ 1552 1594 1588 1642 Ln
+ 1588 1642 1637 1650 Ln
+ 1637 1650 1671 1689 Ln
+ 1671 1689 1720 1690 Ln
+ 1720 1690 1750 1721 Ln
+ 1750 1721 1800 1714 Ln
+ 1800 1714 1829 1737 Ln
+ 1829 1737 1879 1724 Ln
+ 1879 1724 1906 1740 Ln
+ 1906 1740 1957 1719 Ln
+ 1957 1719 1983 1728 Ln
+ 1983 1728 2034 1700 Ln
+ 2034 1700 2059 1703 Ln
+ 2059 1703 2111 1668 Ln
+ 2111 1668 2134 1664 Ln
+ 2134 1664 2188 1622 Ln
+ 2188 1622 2211 1612 Ln
+ 2211 1612 2265 1562 Ln
+ 2265 1562 2287 1545 Ln
+ 2287 1545 2343 1489 Ln
+ 2343 1489 2364 1466 Ln
+ 2364 1466 2365 1466 Ln
+ 2367 1463 2423 1401 Ln
+ 2423 1401 2425 1397 Ln
+ 2592 1164 2604 1138 Ln
+ 2604 1138 2670 1042 Ln
+ 2670 1042 2689 996 Ln
+ 1070 1092 1122 1145 Ln
+ 1122 1145 1173 1240 Ln
+ 1173 1240 1224 1285 Ln
+ 1224 1285 1272 1365 Ln
+ 1272 1365 1321 1403 Ln
+ 1321 1403 1365 1471 Ln
+ 1365 1471 1413 1501 Ln
+ 1413 1501 1453 1558 Ln
+ 1453 1558 1502 1580 Ln
+ 1502 1580 1540 1628 Ln
+ 1540 1628 1587 1642 Ln
+ 1587 1642 1622 1681 Ln
+ 1622 1681 1670 1689 Ln
+ 1670 1689 1702 1720 Ln
+ 1702 1720 1750 1720 Ln
+ 1750 1720 1780 1743 Ln
+ 1780 1743 1829 1736 Ln
+ 1829 1736 1857 1752 Ln
+ 1857 1752 1906 1739 Ln
+ 1906 1739 1933 1747 Ln
+ 1933 1747 1983 1728 Ln
+ 1983 1728 2008 1729 Ln
+ 2008 1729 2059 1702 Ln
+ 2059 1702 2083 1698 Ln
+ 2083 1698 2134 1664 Ln
+ 2134 1664 2158 1653 Ln
+ 2158 1653 2211 1611 Ln
+ 2211 1611 2232 1594 Ln
+ 2232 1594 2287 1545 Ln
+ 2287 1545 2303 1529 Ln
+ 2361 1470 2364 1466 Ln
+ 2364 1466 2365 1466 Ln
+ 2367 1463 2368 1462 Ln
+ 2579 1172 2603 1139 Ln
+ 2604 1138 2623 1090 Ln
+ 2623 1090 2689 996 Ln
+ 2689 996 2708 943 Ln
+ 1017 1030 1070 1092 Ln
+ 1070 1092 1123 1187 Ln
+ 1123 1187 1172 1238 Ln
+ 1173 1240 1222 1321 Ln
+ 1222 1321 1271 1366 Ln
+ 1271 1366 1315 1434 Ln
+ 1315 1434 1364 1472 Ln
+ 1364 1472 1405 1529 Ln
+ 1405 1529 1453 1558 Ln
+ 1453 1558 1491 1606 Ln
+ 1491 1606 1539 1628 Ln
+ 1539 1628 1574 1666 Ln
+ 1574 1666 1622 1681 Ln
+ 1622 1681 1654 1712 Ln
+ 1654 1712 1702 1719 Ln
+ 1702 1719 1733 1742 Ln
+ 1733 1742 1780 1742 Ln
+ 1780 1742 1809 1757 Ln
+ 1809 1757 1857 1752 Ln
+ 1857 1752 1884 1759 Ln
+ 1884 1759 1933 1747 Ln
+ 1933 1747 1958 1748 Ln
+ 1958 1748 2008 1729 Ln
+ 2008 1729 2032 1724 Ln
+ 2032 1724 2083 1697 Ln
+ 2083 1697 2106 1686 Ln
+ 2106 1686 2158 1652 Ln
+ 2158 1652 2180 1635 Ln
+ 2180 1635 2201 1619 Ln
+ 2203 1618 2206 1616 Ln
+ 2206 1615 2209 1614 Ln
+ 2209 1613 2211 1612 Ln
+ 2213 1610 2216 1608 Ln
+ 2216 1607 2222 1602 Ln
+ 2224 1602 2232 1594 Ln
+ 2232 1594 2241 1586 Ln
+ 2561 1178 2562 1174 Ln
+ 2562 1174 2623 1092 Ln
+ 2623 1090 2644 1037 Ln
+ 2644 1037 2709 943 Ln
+ 2709 943 2727 882 Ln
+ 963 962 1017 1030 Ln
+ 1017 1030 1071 1127 Ln
+ 1071 1127 1121 1185 Ln
+ 1122 1187 1171 1270 Ln
+ 1171 1270 1221 1321 Ln
+ 1221 1321 1266 1391 Ln
+ 1266 1391 1314 1435 Ln
+ 1314 1435 1357 1493 Ln
+ 1357 1493 1404 1530 Ln
+ 1404 1530 1443 1577 Ln
+ 1443 1577 1490 1607 Ln
+ 1490 1607 1527 1644 Ln
+ 1527 1644 1573 1666 Ln
+ 1573 1666 1606 1697 Ln
+ 1606 1697 1654 1711 Ln
+ 1654 1711 1685 1734 Ln
+ 1685 1734 1733 1741 Ln
+ 1733 1741 1762 1757 Ln
+ 1762 1757 1809 1757 Ln
+ 1809 1757 1836 1765 Ln
+ 1836 1765 1884 1759 Ln
+ 1884 1759 1910 1760 Ln
+ 1910 1760 1958 1748 Ln
+ 1958 1748 1983 1743 Ln
+ 1983 1743 2032 1724 Ln
+ 2032 1724 2056 1711 Ln
+ 2056 1711 2106 1686 Ln
+ 2106 1686 2108 1684 Ln
+ 2174 1639 2176 1639 Ln
+ 2176 1638 2180 1635 Ln
+ 2180 1635 2184 1632 Ln
+ 2560 1178 2561 1176 Ln
+ 2562 1174 2582 1121 Ln
+ 2582 1121 2643 1038 Ln
+ 2644 1037 2664 978 Ln
+ 2664 978 2728 882 Ln
+ 2728 882 2748 816 Ln
+ 910 883 964 962 Ln
+ 964 962 1019 1059 Ln
+ 1019 1059 1070 1125 Ln
+ 1070 1127 1121 1210 Ln
+ 1121 1210 1169 1268 Ln
+ 1170 1270 1217 1340 Ln
+ 1217 1340 1264 1390 Ln
+ 1265 1391 1309 1450 Ln
+ 1309 1450 1356 1494 Ln
+ 1356 1494 1396 1541 Ln
+ 1396 1541 1442 1578 Ln
+ 1442 1578 1479 1616 Ln
+ 1479 1616 1526 1645 Ln
+ 1526 1645 1560 1675 Ln
+ 1560 1675 1606 1696 Ln
+ 1606 1696 1639 1719 Ln
+ 1639 1719 1685 1733 Ln
+ 1685 1733 1715 1748 Ln
+ 1715 1748 1762 1756 Ln
+ 1762 1756 1790 1763 Ln
+ 1790 1763 1836 1765 Ln
+ 1836 1765 1862 1765 Ln
+ 1862 1765 1910 1760 Ln
+ 1910 1760 1935 1754 Ln
+ 1935 1754 1983 1743 Ln
+ 1983 1743 1986 1741 Ln
+ 1988 1740 1989 1740 Ln
+ 2050 1714 2051 1714 Ln
+ 2051 1713 2056 1712 Ln
+ 2056 1712 2059 1710 Ln
+ 2539 1177 2582 1122 Ln
+ 2582 1121 2603 1061 Ln
+ 2603 1061 2663 980 Ln
+ 2664 978 2684 912 Ln
+ 2684 912 2749 816 Ln
+ 2749 816 2768 743 Ln
+ 856 798 911 883 Ln
+ 911 883 967 984 Ln
+ 967 984 1017 1055 Ln
+ 1017 1057 1019 1057 Ln
+ 1018 1059 1070 1144 Ln
+ 1070 1144 1120 1209 Ln
+ 1120 1210 1168 1282 Ln
+ 1168 1282 1215 1338 Ln
+ 1216 1340 1260 1400 Ln
+ 1260 1400 1307 1448 Ln
+ 1308 1450 1348 1500 Ln
+ 1348 1500 1395 1542 Ln
+ 1395 1542 1433 1581 Ln
+ 1433 1581 1478 1617 Ln
+ 1478 1617 1513 1647 Ln
+ 1513 1647 1560 1675 Ln
+ 1560 1675 1592 1698 Ln
+ 1592 1698 1639 1718 Ln
+ 1639 1718 1669 1733 Ln
+ 1669 1733 1715 1748 Ln
+ 1715 1748 1744 1755 Ln
+ 1744 1755 1790 1763 Ln
+ 1790 1763 1800 1763 Ln
+ 1803 1764 1817 1764 Ln
+ 1817 1764 1824 1764 Ln
+ 1839 1765 1862 1765 Ln
+ 1862 1765 1865 1765 Ln
+ 1865 1764 1869 1764 Ln
+ 1930 1755 1932 1755 Ln
+ 1933 1754 1935 1754 Ln
+ 1935 1754 1937 1754 Ln
+ 1937 1753 1939 1753 Ln
+ 2532 1173 2544 1136 Ln
+ 2544 1136 2602 1063 Ln
+ 2603 1061 2623 997 Ln
+ 2623 997 2683 913 Ln
+ 2684 912 2705 839 Ln
+ 2705 839 2769 743 Ln
+ 2769 743 2789 664 Ln
+ 801 703 856 798 Ln
+ 856 798 914 900 Ln
+ 914 900 964 980 Ln
+ 965 982 967 982 Ln
+ 966 984 1019 1070 Ln
+ 1019 1070 1068 1141 Ln
+ 1069 1143 1070 1143 Ln
+ 1070 1144 1118 1218 Ln
+ 1118 1218 1166 1280 Ln
+ 1167 1282 1212 1343 Ln
+ 1212 1343 1259 1399 Ln
+ 1260 1400 1301 1451 Ln
+ 1301 1451 1346 1498 Ln
+ 1347 1500 1386 1540 Ln
+ 1386 1540 1432 1582 Ln
+ 1432 1582 1467 1613 Ln
+ 1467 1613 1513 1647 Ln
+ 1513 1647 1547 1670 Ln
+ 1547 1670 1592 1698 Ln
+ 1592 1698 1623 1712 Ln
+ 1623 1712 1669 1733 Ln
+ 1669 1733 1672 1734 Ln
+ 1673 1735 1676 1735 Ln
+ 1676 1735 1679 1735 Ln
+ 1680 1736 1681 1736 Ln
+ 1734 1752 1736 1752 Ln
+ 1738 1753 1739 1753 Ln
+ 1740 1754 1742 1754 Ln
+ 1742 1755 1746 1755 Ln
+ 1744 1755 1746 1755 Ln
+ 1815 1764 1817 1764 Ln
+ 1817 1764 1820 1764 Ln
+ 2520 1165 2543 1138 Ln
+ 2544 1136 2565 1071 Ln
+ 2565 1071 2622 998 Ln
+ 2623 997 2644 925 Ln
+ 2644 925 2704 841 Ln
+ 2705 839 2726 761 Ln
+ 2726 761 2790 664 Ln
+ 2790 664 2811 578 Ln
+ 745 600 802 703 Ln
+ 802 703 860 807 Ln
+ 860 807 905 885 Ln
+ 906 887 907 889 Ln
+ 908 891 910 891 Ln
+ 909 892 910 895 Ln
+ 911 896 913 896 Ln
+ 912 898 914 898 Ln
+ 913 900 915 903 Ln
+ 916 905 918 905 Ln
+ 918 907 967 988 Ln
+ 967 988 1013 1060 Ln
+ 1013 1062 1016 1063 Ln
+ 1015 1064 1017 1067 Ln
+ 1017 1068 1019 1068 Ln
+ 1018 1070 1068 1145 Ln
+ 1068 1145 1114 1212 Ln
+ 1115 1214 1117 1214 Ln
+ 1116 1216 1118 1216 Ln
+ 1117 1218 1163 1280 Ln
+ 1163 1280 1210 1342 Ln
+ 1211 1343 1253 1395 Ln
+ 1253 1395 1299 1449 Ln
+ 1300 1451 1340 1492 Ln
+ 1340 1492 1384 1538 Ln
+ 1385 1540 1393 1548 Ln
+ 1395 1549 1399 1553 Ln
+ 1401 1554 1405 1558 Ln
+ 1408 1561 1411 1563 Ln
+ 1415 1567 1417 1569 Ln
+ 1428 1578 1430 1580 Ln
+ 1432 1581 1437 1586 Ln
+ 1441 1589 1443 1592 Ln
+ 1446 1594 1449 1598 Ln
+ 1452 1599 1456 1603 Ln
+ 1458 1605 1462 1609 Ln
+ 1464 1610 1467 1613 Ln
+ 1467 1613 1470 1615 Ln
+ 1471 1615 1474 1616 Ln
+ 1474 1618 1476 1618 Ln
+ 1538 1664 1540 1664 Ln
+ 1540 1665 1543 1666 Ln
+ 1543 1667 1547 1670 Ln
+ 1547 1670 1549 1670 Ln
+ 1549 1671 1551 1671 Ln
+ 1619 1710 1621 1710 Ln
+ 1621 1711 1622 1711 Ln
+ 1622 1712 1625 1712 Ln
+ 1623 1712 1626 1712 Ln
+ 2505 1147 2508 1137 Ln
+ 2508 1137 2564 1072 Ln
+ 2565 1071 2586 1001 Ln
+ 2586 1001 2643 927 Ln
+ 2644 925 2664 847 Ln
+ 2664 847 2725 763 Ln
+ 2726 761 2747 676 Ln
+ 2747 676 2812 578 Ln
+ 2812 578 2833 486 Ln
+ 688 488 745 600 Ln
+ 745 600 806 707 Ln
+ 806 707 834 760 Ln
+ 836 762 836 764 Ln
+ 840 769 841 770 Ln
+ 850 790 852 790 Ln
+ 851 791 852 791 Ln
+ 853 795 855 795 Ln
+ 854 797 856 797 Ln
+ 855 799 856 799 Ln
+ 856 801 858 801 Ln
+ 857 803 859 803 Ln
+ 858 804 860 804 Ln
+ 859 806 860 806 Ln
+ 860 807 862 808 Ln
+ 861 810 864 811 Ln
+ 863 812 864 812 Ln
+ 864 814 865 814 Ln
+ 865 816 867 816 Ln
+ 868 821 869 821 Ln
+ 958 973 959 973 Ln
+ 960 977 962 977 Ln
+ 963 981 964 981 Ln
+ 963 983 966 984 Ln
+ 965 985 967 985 Ln
+ 966 987 967 987 Ln
+ 967 988 970 990 Ln
+ 969 992 971 992 Ln
+ 971 994 972 994 Ln
+ 972 997 974 997 Ln
+ 974 999 976 999 Ln
+ 976 1002 977 1002 Ln
+ 1061 1134 1062 1134 Ln
+ 1062 1137 1064 1137 Ln
+ 1064 1139 1066 1139 Ln
+ 1065 1141 1067 1142 Ln
+ 1066 1143 1068 1143 Ln
+ 1067 1145 1070 1147 Ln
+ 1070 1149 1073 1150 Ln
+ 1073 1152 1074 1152 Ln
+ 1156 1270 1157 1270 Ln
+ 1157 1272 1160 1273 Ln
+ 1160 1275 1162 1276 Ln
+ 1161 1278 1163 1278 Ln
+ 1162 1280 1165 1283 Ln
+ 1168 1286 1170 1287 Ln
+ 1172 1291 1173 1291 Ln
+ 1246 1386 1248 1386 Ln
+ 1248 1389 1252 1390 Ln
+ 1251 1392 1253 1393 Ln
+ 1252 1395 1259 1401 Ln
+ 1337 1488 1340 1490 Ln
+ 1339 1492 1349 1501 Ln
+ 2502 1144 2508 1139 Ln
+ 2508 1137 2529 1067 Ln
+ 2529 1067 2585 1002 Ln
+ 2586 1001 2607 924 Ln
+ 2607 924 2664 849 Ln
+ 2664 847 2686 763 Ln
+ 2686 763 2746 678 Ln
+ 2747 676 2768 585 Ln
+ 2768 585 2833 486 Ln
+ 2833 486 2854 388 Ln
+ 630 366 688 488 Ln
+ 688 488 751 599 Ln
+ 751 599 806 707 Ln
+ 806 707 862 802 Ln
+ 862 802 881 837 Ln
+ 882 838 884 839 Ln
+ 2484 1116 2528 1068 Ln
+ 2529 1067 2550 991 Ln
+ 2550 991 2606 926 Ln
+ 2607 924 2627 841 Ln
+ 2627 841 2685 765 Ln
+ 2686 763 2708 674 Ln
+ 2708 674 2767 587 Ln
+ 2768 585 2791 488 Ln
+ 2791 488 2855 388 Ln
+ 2855 388 2878 282 Ln
+ 570 235 630 366 Ln
+ 630 366 694 481 Ln
+ 694 481 750 599 Ln
+ 750 599 808 696 Ln
+ 808 696 862 802 Ln
+ 862 802 915 882 Ln
+ 915 882 932 915 Ln
+ 934 917 935 918 Ln
+ 2480 1108 2496 1049 Ln
+ 2496 1049 2549 993 Ln
+ 2550 991 2572 909 Ln
+ 2572 909 2627 843 Ln
+ 2627 841 2649 752 Ln
+ 2649 752 2707 675 Ln
+ 2708 674 2730 578 Ln
+ 2730 578 2790 490 Ln
+ 2791 488 2813 384 Ln
+ 2813 384 2879 282 Ln
+ 2879 282 2901 170 Ln
+ 570 235 637 353 Ln
+ 637 353 693 481 Ln
+ 693 481 753 581 Ln
+ 753 581 807 696 Ln
+ 807 696 863 780 Ln
+ 863 780 915 882 Ln
+ 915 882 965 953 Ln
+ 965 953 982 985 Ln
+ 984 987 985 988 Ln
+ 2467 1077 2496 1048 Ln
+ 2496 1048 2518 969 Ln
+ 2518 969 2571 911 Ln
+ 2572 909 2593 821 Ln
+ 2593 821 2648 754 Ln
+ 2649 752 2672 657 Ln
+ 2672 657 2729 579 Ln
+ 2730 578 2752 475 Ln
+ 2752 475 2813 385 Ln
+ 2813 384 2837 273 Ln
+ 2837 273 2902 170 Ln
+ 637 354 698 457 Ln
+ 698 457 753 581 Ln
+ 753 581 809 668 Ln
+ 809 668 862 780 Ln
+ 862 780 914 852 Ln
+ 914 852 965 953 Ln
+ 965 953 1012 1011 Ln
+ 1012 1011 1029 1044 Ln
+ 2457 1055 2466 1019 Ln
+ 2466 1019 2518 968 Ln
+ 2518 968 2539 882 Ln
+ 2539 882 2592 823 Ln
+ 2593 821 2615 728 Ln
+ 2615 728 2671 658 Ln
+ 2672 657 2693 556 Ln
+ 2693 556 2751 476 Ln
+ 2752 475 2776 366 Ln
+ 2776 366 2836 275 Ln
+ 698 458 755 547 Ln
+ 755 547 808 668 Ln
+ 808 668 861 743 Ln
+ 861 743 913 852 Ln
+ 913 852 962 913 Ln
+ 962 913 1012 1011 Ln
+ 1012 1011 1056 1061 Ln
+ 1056 1061 1076 1099 Ln
+ 2449 1033 2466 1019 Ln
+ 2466 1019 2487 934 Ln
+ 2487 934 2539 882 Ln
+ 2539 882 2561 789 Ln
+ 2561 789 2615 729 Ln
+ 2615 728 2637 627 Ln
+ 2637 627 2693 557 Ln
+ 2693 556 2717 448 Ln
+ 2717 448 2775 367 Ln
+ 755 548 808 626 Ln
+ 808 626 860 743 Ln
+ 860 743 910 807 Ln
+ 910 807 961 913 Ln
+ 961 913 1007 965 Ln
+ 1007 965 1056 1061 Ln
+ 1056 1061 1097 1103 Ln
+ 1097 1103 1120 1144 Ln
+ 2434 990 2437 979 Ln
+ 2437 979 2487 933 Ln
+ 2487 933 2509 842 Ln
+ 2509 842 2561 789 Ln
+ 2561 789 2583 690 Ln
+ 2583 690 2636 629 Ln
+ 2637 627 2660 520 Ln
+ 2660 520 2716 450 Ln
+ 808 626 859 693 Ln
+ 859 693 910 807 Ln
+ 910 807 957 860 Ln
+ 957 860 1006 965 Ln
+ 1006 965 1049 1008 Ln
+ 1049 1008 1098 1102 Ln
+ 1098 1102 1137 1134 Ln
+ 1137 1134 1165 1184 Ln
+ 2432 982 2437 978 Ln
+ 2437 978 2458 887 Ln
+ 2458 887 2509 841 Ln
+ 2509 841 2531 744 Ln
+ 2531 744 2582 692 Ln
+ 2583 690 2606 585 Ln
+ 2606 585 2660 522 Ln
+ 859 693 906 749 Ln
+ 906 749 956 860 Ln
+ 956 860 1000 905 Ln
+ 1000 905 1049 1007 Ln
+ 1049 1007 1090 1041 Ln
+ 1090 1041 1138 1134 Ln
+ 1138 1134 1175 1159 Ln
+ 1175 1159 1206 1215 Ln
+ 2414 922 2458 887 Ln
+ 2458 887 2480 790 Ln
+ 2480 790 2531 743 Ln
+ 2531 743 2553 640 Ln
+ 2553 640 2605 587 Ln
+ 906 750 951 795 Ln
+ 951 795 1000 905 Ln
+ 1000 905 1042 942 Ln
+ 1042 942 1090 1041 Ln
+ 1090 1041 1128 1068 Ln
+ 1128 1068 1176 1158 Ln
+ 1176 1158 1211 1174 Ln
+ 1211 1174 1248 1242 Ln
+ 2413 914 2432 830 Ln
+ 2432 830 2480 790 Ln
+ 2480 790 2503 688 Ln
+ 2503 688 2553 640 Ln
+ 951 796 993 834 Ln
+ 993 834 1042 941 Ln
+ 1042 941 1082 970 Ln
+ 1082 970 1128 1067 Ln
+ 1128 1067 1165 1085 Ln
+ 1165 1085 1212 1174 Ln
+ 1212 1174 1246 1184 Ln
+ 1246 1184 1289 1264 Ln
+ 1294 1266 1323 1267 Ln
+ 1323 1267 1331 1281 Ln
+ 2397 852 2432 829 Ln
+ 2432 829 2454 728 Ln
+ 2454 728 2503 687 Ln
+ 993 834 1034 864 Ln
+ 1034 864 1082 969 Ln
+ 1082 969 1120 989 Ln
+ 1120 989 1165 1085 Ln
+ 1165 1085 1201 1095 Ln
+ 1201 1095 1247 1184 Ln
+ 1247 1184 1279 1187 Ln
+ 1279 1187 1324 1267 Ln
+ 1324 1267 1355 1263 Ln
+ 1355 1263 1371 1292 Ln
+ 2392 830 2406 760 Ln
+ 2406 760 2454 727 Ln
+ 1034 863 1073 885 Ln
+ 1073 885 1120 988 Ln
+ 1120 988 1156 1001 Ln
+ 1156 1001 1201 1095 Ln
+ 1201 1095 1235 1100 Ln
+ 1235 1100 1280 1187 Ln
+ 1280 1187 1311 1183 Ln
+ 1311 1183 1355 1263 Ln
+ 1355 1263 1384 1252 Ln
+ 1384 1252 1411 1297 Ln
+ 2379 776 2406 759 Ln
+ 1073 884 1110 899 Ln
+ 1110 899 1156 1001 Ln
+ 1156 1001 1190 1006 Ln
+ 1190 1006 1235 1100 Ln
+ 1235 1100 1268 1098 Ln
+ 1268 1098 1312 1183 Ln
+ 1312 1183 1342 1174 Ln
+ 1342 1174 1385 1252 Ln
+ 1385 1252 1414 1235 Ln
+ 1414 1235 1451 1299 Ln
+ 1464 1298 1483 1283 Ln
+ 1483 1283 1491 1296 Ln
+ 1110 899 1145 905 Ln
+ 1145 905 1190 1006 Ln
+ 1190 1006 1224 1006 Ln
+ 1224 1006 1268 1098 Ln
+ 1268 1098 1299 1089 Ln
+ 1299 1089 1342 1174 Ln
+ 1342 1174 1371 1157 Ln
+ 1371 1157 1415 1236 Ln
+ 1415 1236 1442 1212 Ln
+ 1442 1212 1484 1284 Ln
+ 1484 1284 1511 1255 Ln
+ 1511 1255 1532 1288 Ln
+ 1145 905 1179 906 Ln
+ 1179 906 1224 1006 Ln
+ 1224 1006 1256 998 Ln
+ 1256 998 1299 1089 Ln
+ 1299 1089 1330 1074 Ln
+ 1330 1074 1372 1158 Ln
+ 1372 1158 1400 1135 Ln
+ 1400 1135 1443 1213 Ln
+ 1443 1213 1470 1185 Ln
+ 1470 1185 1511 1255 Ln
+ 1511 1255 1537 1221 Ln
+ 1537 1221 1572 1275 Ln
+ 1585 1271 1603 1244 Ln
+ 1603 1244 1613 1258 Ln
+ 1179 906 1212 900 Ln
+ 1212 900 1256 998 Ln
+ 1256 998 1287 984 Ln
+ 1287 984 1330 1074 Ln
+ 1330 1074 1359 1052 Ln
+ 1359 1052 1401 1136 Ln
+ 1401 1136 1429 1108 Ln
+ 1429 1108 1470 1185 Ln
+ 1470 1185 1497 1152 Ln
+ 1497 1152 1537 1221 Ln
+ 1537 1221 1563 1181 Ln
+ 1563 1181 1603 1244 Ln
+ 1603 1244 1627 1198 Ln
+ 1627 1198 1655 1236 Ln
+ 1684 1218 1690 1204 Ln
+ 1690 1204 1696 1210 Ln
+ 1212 900 1243 887 Ln
+ 1243 887 1287 984 Ln
+ 1287 984 1317 963 Ln
+ 1317 963 1359 1053 Ln
+ 1359 1053 1387 1026 Ln
+ 1387 1026 1429 1109 Ln
+ 1429 1109 1457 1076 Ln
+ 1457 1076 1497 1152 Ln
+ 1497 1152 1523 1112 Ln
+ 1523 1112 1563 1181 Ln
+ 1563 1181 1588 1136 Ln
+ 1588 1136 1627 1198 Ln
+ 1627 1198 1651 1147 Ln
+ 1651 1147 1691 1204 Ln
+ 1691 1204 1713 1147 Ln
+ 1713 1147 1738 1178 Ln
+ 1771 1151 1776 1135 Ln
+ 1776 1135 1782 1141 Ln
+ 1243 887 1274 867 Ln
+ 1274 867 1317 964 Ln
+ 1317 964 1346 938 Ln
+ 1346 938 1387 1027 Ln
+ 1387 1027 1416 995 Ln
+ 1416 995 1457 1076 Ln
+ 1457 1076 1482 1037 Ln
+ 1482 1037 1523 1112 Ln
+ 1523 1112 1548 1068 Ln
+ 1548 1068 1588 1136 Ln
+ 1588 1136 1613 1086 Ln
+ 1613 1086 1651 1147 Ln
+ 1651 1147 1675 1092 Ln
+ 1675 1092 1714 1147 Ln
+ 1714 1147 1737 1086 Ln
+ 1737 1086 1777 1135 Ln
+ 1777 1135 1799 1068 Ln
+ 1799 1068 1826 1099 Ln
+ 1848 1077 1859 1039 Ln
+ 1859 1039 1871 1051 Ln
+ 1274 868 1303 843 Ln
+ 1303 843 1346 939 Ln
+ 1346 939 1374 908 Ln
+ 1374 908 1415 995 Ln
+ 1415 995 1442 958 Ln
+ 1442 958 1482 1037 Ln
+ 1482 1037 1508 995 Ln
+ 1508 995 1548 1068 Ln
+ 1548 1068 1572 1019 Ln
+ 1572 1019 1613 1086 Ln
+ 1613 1086 1635 1031 Ln
+ 1635 1031 1676 1092 Ln
+ 1676 1092 1698 1031 Ln
+ 1698 1031 1738 1086 Ln
+ 1738 1086 1759 1019 Ln
+ 1759 1019 1799 1068 Ln
+ 1799 1068 1820 997 Ln
+ 1820 997 1860 1039 Ln
+ 1860 1039 1881 962 Ln
+ 1881 962 1917 997 Ln
+ 1921 993 1941 916 Ln
+ 1941 916 1966 935 Ln
+ 1991 903 2002 857 Ln
+ 2002 857 2016 866 Ln
+ 2059 804 2063 786 Ln
+ 2063 786 2069 790 Ln
+ 1303 843 1332 813 Ln
+ 1332 813 1373 908 Ln
+ 1373 908 1401 870 Ln
+ 1401 870 1441 958 Ln
+ 1441 958 1468 914 Ln
+ 1468 914 1508 995 Ln
+ 1508 995 1533 946 Ln
+ 1533 946 1573 1019 Ln
+ 1573 1019 1597 965 Ln
+ 1597 965 1636 1031 Ln
+ 1636 1031 1659 971 Ln
+ 1659 971 1699 1031 Ln
+ 1699 1031 1721 966 Ln
+ 1721 966 1760 1019 Ln
+ 1760 1019 1782 949 Ln
+ 1782 949 1821 997 Ln
+ 1821 997 1842 920 Ln
+ 1842 920 1882 962 Ln
+ 1882 962 1902 879 Ln
+ 1902 879 1941 917 Ln
+ 1941 917 1963 827 Ln
+ 1963 827 2002 858 Ln
+ 2002 858 2024 763 Ln
+ 2024 763 2063 787 Ln
+ 1331 813 1360 777 Ln
+ 1360 777 1400 870 Ln
+ 1400 870 1428 828 Ln
+ 1428 828 1467 914 Ln
+ 1467 914 1494 866 Ln
+ 1494 866 1533 946 Ln
+ 1533 946 1557 891 Ln
+ 1557 891 1598 965 Ln
+ 1598 965 1620 905 Ln
+ 1620 905 1660 971 Ln
+ 1660 971 1682 905 Ln
+ 1682 905 1721 966 Ln
+ 1721 966 1744 895 Ln
+ 1744 895 1783 949 Ln
+ 1783 949 1804 872 Ln
+ 1804 872 1843 920 Ln
+ 1843 920 1864 838 Ln
+ 1864 838 1903 879 Ln
+ 1903 879 1924 791 Ln
+ 1924 791 1963 828 Ln
+ 1963 828 1985 733 Ln
+ 1985 733 2024 763 Ln
+ 1359 777 1387 735 Ln
+ 1387 735 1427 828 Ln
+ 1427 828 1453 781 Ln
+ 1453 781 1493 866 Ln
+ 1493 866 1518 812 Ln
+ 1518 812 1558 891 Ln
+ 1558 891 1581 832 Ln
+ 1581 832 1621 905 Ln
+ 1621 905 1643 839 Ln
+ 1643 839 1683 905 Ln
+ 1683 905 1705 834 Ln
+ 1705 834 1745 895 Ln
+ 1745 895 1766 818 Ln
+ 1766 818 1805 872 Ln
+ 1805 872 1826 790 Ln
+ 1826 790 1865 838 Ln
+ 1865 838 1886 750 Ln
+ 1886 750 1925 791 Ln
+ 1925 791 1946 697 Ln
+ 1946 697 1985 734 Ln
+ 1386 735 1412 688 Ln
+ 1412 688 1453 781 Ln
+ 1453 781 1478 727 Ln
+ 1478 727 1518 812 Ln
+ 1518 812 1542 753 Ln
+ 1542 753 1582 832 Ln
+ 1582 832 1605 767 Ln
+ 1605 767 1644 839 Ln
+ 1644 839 1667 768 Ln
+ 1667 768 1706 834 Ln
+ 1706 834 1728 759 Ln
+ 1728 759 1766 818 Ln
+ 1766 818 1788 737 Ln
+ 1788 737 1827 790 Ln
+ 1827 790 1848 702 Ln
+ 1848 702 1886 750 Ln
+ 1886 750 1907 657 Ln
+ 1907 657 1947 697 Ln
+ 1412 688 1437 635 Ln
+ 1437 635 1478 727 Ln
+ 1478 727 1503 668 Ln
+ 1503 668 1542 753 Ln
+ 1542 753 1565 688 Ln
+ 1565 688 1606 767 Ln
+ 1606 767 1628 697 Ln
+ 1628 697 1668 768 Ln
+ 1668 768 1689 693 Ln
+ 1689 693 1729 759 Ln
+ 1729 759 1750 677 Ln
+ 1750 677 1789 737 Ln
+ 1789 737 1810 649 Ln
+ 1810 649 1849 702 Ln
+ 1849 702 1869 609 Ln
+ 1869 609 1908 657 Ln
+ 1437 635 1462 577 Ln
+ 1462 577 1503 668 Ln
+ 1503 668 1527 604 Ln
+ 1527 604 1565 688 Ln
+ 1565 688 1589 619 Ln
+ 1589 619 1629 697 Ln
+ 1629 697 1651 622 Ln
+ 1651 622 1690 693 Ln
+ 1690 693 1712 612 Ln
+ 1712 612 1750 677 Ln
+ 1750 677 1772 590 Ln
+ 1772 590 1811 649 Ln
+ 1811 649 1832 556 Ln
+ 1832 556 1870 609 Ln
+ 1462 577 1486 513 Ln
+ 1486 513 1527 604 Ln
+ 1527 604 1550 534 Ln
+ 1550 534 1589 619 Ln
+ 1589 619 1612 543 Ln
+ 1612 543 1651 622 Ln
+ 1651 622 1673 540 Ln
+ 1673 540 1713 612 Ln
+ 1713 612 1733 525 Ln
+ 1733 525 1773 590 Ln
+ 1773 590 1794 498 Ln
+ 1794 498 1832 556 Ln
+ 1486 513 1511 444 Ln
+ 1511 444 1550 534 Ln
+ 1550 534 1573 459 Ln
+ 1573 459 1612 543 Ln
+ 1612 543 1635 463 Ln
+ 1635 463 1674 540 Ln
+ 1674 540 1696 454 Ln
+ 1696 454 1734 525 Ln
+ 1734 525 1756 432 Ln
+ 1756 432 1795 498 Ln
+ 1511 444 1534 369 Ln
+ 1534 369 1573 459 Ln
+ 1573 459 1596 379 Ln
+ 1596 379 1635 463 Ln
+ 1635 463 1657 376 Ln
+ 1657 376 1696 454 Ln
+ 1696 454 1717 362 Ln
+ 1717 362 1757 432 Ln
+ 1534 369 1557 288 Ln
+ 1557 288 1596 379 Ln
+ 1596 379 1618 292 Ln
+ 1618 292 1657 376 Ln
+ 1657 376 1680 284 Ln
+ 1680 284 1717 362 Ln
+ 1557 288 1580 202 Ln
+ 1580 202 1618 292 Ln
+ 1618 292 1641 200 Ln
+ 1641 200 1680 284 Ln
+ 1580 202 1602 110 Ln
+ 1602 110 1641 200 Ln
+ xs 7 SLC
+ 2308 376 2215 2433 Ln
+ 570 235 766 1859 Ln
+ 2901 170 2903 171 Ln
+ 2901 172 2903 172 Ln
+ 2900 176 2760 1571 Ln
+ 2215 2433 766 1859 Ln
+ 2215 2433 2761 1571 Ln
+ 766 1859 1335 1487 Ln
+ 2760 1571 2359 1473 Ln
+ 1602 110 1604 111 Ln
+ 1603 144 1605 144 Ln
+ 1604 176 1606 176 Ln
+ 1605 209 1606 209 Ln
+ 1606 242 1607 242 Ln
+ 1606 274 1608 274 Ln
+ 1606 307 1608 307 Ln
+ 1607 339 1609 339 Ln
+ 1608 372 1610 372 Ln
+ 1609 405 1610 405 Ln
+ 1610 437 1611 437 Ln
+ 1610 470 1612 470 Ln
+ 1611 503 1613 503 Ln
+ 1612 535 1614 535 Ln
+ 1613 568 1614 568 Ln
+ 1614 600 1615 600 Ln
+ 1614 633 1616 633 Ln
+ 1614 666 1616 666 Ln
+ 1615 698 1617 698 Ln
+ 1616 731 1618 731 Ln
+ 1617 763 1618 763 Ln
+ 1618 796 1619 796 Ln
+ 1618 829 1620 829 Ln
+ 1619 861 1621 861 Ln
+ 1620 894 1622 894 Ln
+ 1621 927 1622 927 Ln
+ 1622 959 1623 959 Ln
+ 1622 992 1624 992 Ln
+ 1622 1024 1624 1024 Ln
+ 1623 1057 1625 1057 Ln
+ 1624 1090 1626 1090 Ln
+ 1625 1122 1626 1122 Ln
+ 1626 1155 1627 1155 Ln
+ 1626 1187 1628 1187 Ln
+ 1627 1220 1629 1220 Ln
+ 1628 1253 1630 1253 Ln
+ 1629 1285 1631 1285 Ln
+ 766 1859 769 1858 Ln
+ 799 1837 801 1837 Ln
+ 831 1816 833 1816 Ln
+ 864 1795 865 1795 Ln
+ 896 1774 897 1774 Ln
+ 928 1753 930 1753 Ln
+ 960 1732 962 1732 Ln
+ 992 1711 994 1711 Ln
+ 1025 1690 1026 1690 Ln
+ 1057 1668 1058 1668 Ln
+ 1089 1647 1091 1647 Ln
+ 1121 1627 1123 1627 Ln
+ 1153 1606 1155 1606 Ln
+ 1186 1584 1187 1584 Ln
+ 1218 1563 1219 1563 Ln
+ 1250 1542 1252 1542 Ln
+ 1282 1522 1284 1522 Ln
+ 1314 1501 1316 1501 Ln
+ 1346 1479 1348 1479 Ln
+ 1379 1458 1380 1458 Ln
+ 1411 1437 1412 1437 Ln
+ 1443 1416 1445 1416 Ln
+ 1475 1395 1477 1395 Ln
+ 1507 1374 1509 1374 Ln
+ 1540 1353 1541 1353 Ln
+ 1572 1332 1573 1332 Ln
+ 1604 1311 1606 1311 Ln
+ 2760 1571 2761 1571 Ln
+ 2727 1563 2729 1563 Ln
+ 2695 1555 2697 1555 Ln
+ 2663 1548 2664 1548 Ln
+ 2631 1540 2632 1540 Ln
+ 2598 1531 2600 1531 Ln
+ 2566 1524 2568 1524 Ln
+ 2534 1516 2536 1516 Ln
+ 2502 1508 2504 1508 Ln
+ 2470 1501 2471 1501 Ln
+ 2438 1492 2439 1492 Ln
+ 2405 1484 2407 1484 Ln
+ 2373 1477 2375 1477 Ln
+ 2341 1469 2343 1469 Ln
+ 2309 1461 2310 1461 Ln
+ 2277 1453 2278 1453 Ln
+ 2244 1445 2246 1445 Ln
+ 2212 1438 2214 1438 Ln
+ 2180 1430 2182 1430 Ln
+ 2148 1421 2149 1421 Ln
+ 2116 1414 2117 1414 Ln
+ 2084 1406 2085 1406 Ln
+ 2051 1398 2053 1398 Ln
+ 2019 1390 2021 1390 Ln
+ 1987 1382 1989 1382 Ln
+ 1955 1374 1956 1374 Ln
+ 1923 1367 1924 1367 Ln
+ 1890 1359 1892 1359 Ln
+ 1858 1350 1860 1350 Ln
+ 1826 1343 1828 1343 Ln
+ 1794 1335 1795 1335 Ln
+ 1762 1328 1763 1328 Ln
+ 1729 1320 1731 1320 Ln
+ 1697 1311 1699 1311 Ln
+ 1665 1304 1667 1304 Ln
+ 1633 1296 1635 1296 Ln
+ 1 SLW
+ xs 15 SLC
+ 766 1859 2215 2433 Ln
+ 766 1859 2215 2434 Ln
+ 766 1860 2216 2435 Ln
+ 765 1860 2216 2436 Ln
+ 765 1860 2217 2437 Ln
+ 764 1861 2217 2437 Ln
+ 764 1861 2218 2437 Ln
+ 763 1861 2218 2438 Ln
+ 762 1862 2219 2439 Ln
+ 762 1862 2219 2440 Ln
+ 761 1862 2220 2441 Ln
+ 2215 2433 2760 1571 Ln
+ 2215 2434 2761 1571 Ln
+ 2216 2435 2762 1571 Ln
+ 2216 2436 2762 1571 Ln
+ 2217 2437 2763 1572 Ln
+ 2218 2437 2763 1572 Ln
+ 2218 2438 2764 1572 Ln
+ 2219 2439 2764 1572 Ln
+ 2219 2440 2765 1572 Ln
+ 2220 2441 2766 1572 Ln
+ 766 1859 570 235 Ln
+ 766 1859 570 235 Ln
+ 766 1858 569 235 Ln
+ 765 1858 569 235 Ln
+ 765 1858 568 235 Ln
+ 764 1858 568 235 Ln
+ 763 1858 567 235 Ln
+ 762 1858 566 235 Ln
+ 2215 2433 2188 2423 Ln
+ 2269 2490 2268 2480 Ln
+ 2268 2480 2257 2460 Ln
+ 2257 2460 2385 2511 Ln
+ 2409 2443 2412 2450 Ln
+ 2412 2450 2421 2448 Ln
+ 2421 2448 2417 2441 Ln
+ 2417 2441 2409 2443 Ln
+ 2330 2340 2329 2354 Ln
+ 2329 2354 2342 2369 Ln
+ 2342 2369 2368 2384 Ln
+ 2368 2384 2386 2391 Ln
+ 2386 2391 2418 2397 Ln
+ 2418 2397 2441 2397 Ln
+ 2441 2397 2454 2387 Ln
+ 2454 2387 2458 2379 Ln
+ 2458 2379 2458 2366 Ln
+ 2458 2366 2445 2351 Ln
+ 2445 2351 2417 2336 Ln
+ 2417 2336 2400 2330 Ln
+ 2400 2330 2369 2323 Ln
+ 2369 2323 2347 2324 Ln
+ 2347 2324 2335 2333 Ln
+ 2335 2333 2330 2340 Ln
+ 2397 2146 2372 2138 Ln
+ 2433 2310 2470 2246 Ln
+ 2431 2175 2431 2186 Ln
+ 2431 2186 2443 2199 Ln
+ 2443 2199 2469 2212 Ln
+ 2469 2212 2486 2218 Ln
+ 2486 2218 2516 2225 Ln
+ 2516 2225 2537 2224 Ln
+ 2537 2224 2549 2215 Ln
+ 2549 2215 2552 2208 Ln
+ 2552 2208 2552 2196 Ln
+ 2552 2196 2539 2184 Ln
+ 2539 2184 2513 2171 Ln
+ 2513 2171 2496 2165 Ln
+ 2496 2165 2467 2159 Ln
+ 2467 2159 2446 2160 Ln
+ 2446 2160 2435 2168 Ln
+ 2435 2168 2431 2175 Ln
+ 2569 2154 2573 2159 Ln
+ 2573 2159 2580 2158 Ln
+ 2580 2158 2576 2153 Ln
+ 2576 2153 2569 2154 Ln
+ 2504 2055 2486 2085 Ln
+ 2486 2085 2533 2104 Ln
+ 2533 2104 2528 2100 Ln
+ 2528 2100 2528 2088 Ln
+ 2528 2088 2534 2079 Ln
+ 2534 2079 2545 2072 Ln
+ 2545 2072 2559 2070 Ln
+ 2559 2070 2577 2071 Ln
+ 2577 2071 2587 2075 Ln
+ 2587 2075 2602 2083 Ln
+ 2602 2083 2609 2092 Ln
+ 2609 2092 2610 2104 Ln
+ 2610 2104 2604 2114 Ln
+ 2604 2114 2594 2121 Ln
+ 2594 2121 2587 2123 Ln
+ 2587 2123 2574 2122 Ln
+ 2542 1916 2520 1910 Ln
+ 2553 1976 2553 1986 Ln
+ 2553 1986 2565 1996 Ln
+ 2565 1996 2589 2008 Ln
+ 2589 2008 2604 2013 Ln
+ 2604 2013 2632 2017 Ln
+ 2632 2017 2652 2017 Ln
+ 2652 2017 2661 2010 Ln
+ 2661 2010 2664 2004 Ln
+ 2664 2004 2664 1994 Ln
+ 2664 1994 2652 1983 Ln
+ 2652 1983 2627 1973 Ln
+ 2627 1973 2611 1968 Ln
+ 2611 1968 2585 1963 Ln
+ 2585 1963 2566 1964 Ln
+ 2566 1964 2556 1970 Ln
+ 2556 1970 2553 1976 Ln
+ 2677 1960 2681 1964 Ln
+ 2681 1964 2688 1963 Ln
+ 2688 1963 2684 1958 Ln
+ 2684 1958 2677 1960 Ln
+ 2604 1891 2605 1900 Ln
+ 2605 1900 2617 1910 Ln
+ 2617 1910 2640 1920 Ln
+ 2640 1920 2655 1924 Ln
+ 2655 1924 2682 1929 Ln
+ 2682 1929 2700 1929 Ln
+ 2700 1929 2710 1922 Ln
+ 2710 1922 2713 1917 Ln
+ 2713 1917 2712 1907 Ln
+ 2712 1907 2699 1898 Ln
+ 2699 1898 2676 1888 Ln
+ 2676 1888 2661 1884 Ln
+ 2661 1884 2635 1879 Ln
+ 2635 1879 2617 1880 Ln
+ 2617 1880 2607 1886 Ln
+ 2607 1886 2604 1891 Ln
+ 2661 1729 2640 1723 Ln
+ 2673 1778 2674 1786 Ln
+ 2674 1786 2685 1794 Ln
+ 2685 1794 2708 1803 Ln
+ 2708 1803 2722 1807 Ln
+ 2722 1807 2748 1812 Ln
+ 2748 1812 2765 1811 Ln
+ 2765 1811 2774 1805 Ln
+ 2774 1805 2776 1801 Ln
+ 2776 1801 2776 1792 Ln
+ 2776 1792 2763 1783 Ln
+ 2763 1783 2741 1775 Ln
+ 2741 1775 2727 1771 Ln
+ 2727 1771 2702 1767 Ln
+ 2702 1767 2685 1767 Ln
+ 2685 1767 2677 1773 Ln
+ 2677 1773 2673 1778 Ln
+ 2786 1764 2789 1767 Ln
+ 2789 1767 2796 1766 Ln
+ 2796 1766 2792 1763 Ln
+ 2792 1763 2786 1764 Ln
+ 2724 1695 2711 1716 Ln
+ 2711 1716 2751 1729 Ln
+ 2751 1729 2748 1726 Ln
+ 2748 1726 2747 1718 Ln
+ 2747 1718 2751 1712 Ln
+ 2751 1712 2759 1706 Ln
+ 2759 1706 2771 1704 Ln
+ 2771 1704 2787 1706 Ln
+ 2787 1706 2796 1708 Ln
+ 2796 1708 2808 1714 Ln
+ 2808 1714 2815 1721 Ln
+ 2815 1721 2817 1729 Ln
+ 2817 1729 2813 1735 Ln
+ 2813 1735 2804 1741 Ln
+ 2804 1741 2799 1742 Ln
+ 2799 1742 2788 1741 Ln
+ 2760 1571 2741 1567 Ln
+ 2788 1623 2786 1618 Ln
+ 2786 1618 2776 1609 Ln
+ 2776 1609 2870 1632 Ln
+ 2877 1601 2880 1604 Ln
+ 2880 1604 2886 1603 Ln
+ 2886 1603 2882 1600 Ln
+ 2882 1600 2877 1601 Ln
+ 2810 1554 2812 1560 Ln
+ 2812 1560 2822 1567 Ln
+ 2822 1567 2842 1574 Ln
+ 2842 1574 2855 1577 Ln
+ 2855 1577 2879 1580 Ln
+ 2879 1580 2893 1580 Ln
+ 2893 1580 2901 1576 Ln
+ 2901 1576 2903 1571 Ln
+ 2903 1571 2901 1565 Ln
+ 2901 1565 2891 1558 Ln
+ 2891 1558 2870 1552 Ln
+ 2870 1552 2857 1549 Ln
+ 2857 1549 2835 1545 Ln
+ 2835 1545 2820 1545 Ln
+ 2820 1545 2813 1550 Ln
+ 2813 1550 2810 1554 Ln
+ 2215 2433 2227 2414 Ln
+ 1782 2261 1795 2245 Ln
+ 1538 2259 1627 2295 Ln
+ 1738 2282 1720 2279 Ln
+ 1720 2279 1700 2286 Ln
+ 1700 2286 1679 2302 Ln
+ 1679 2302 1669 2313 Ln
+ 1669 2313 1658 2334 Ln
+ 1658 2334 1658 2349 Ln
+ 1658 2349 1670 2360 Ln
+ 1670 2360 1680 2364 Ln
+ 1680 2364 1700 2367 Ln
+ 1700 2367 1720 2360 Ln
+ 1720 2360 1742 2343 Ln
+ 1742 2343 1751 2331 Ln
+ 1751 2331 1762 2311 Ln
+ 1762 2311 1761 2295 Ln
+ 1761 2295 1749 2286 Ln
+ 1749 2286 1738 2282 Ln
+ 1767 2390 1759 2392 Ln
+ 1759 2392 1761 2398 Ln
+ 1761 2398 1770 2397 Ln
+ 1770 2397 1767 2390 Ln
+ 1939 2362 1885 2340 Ln
+ 1885 2340 1853 2373 Ln
+ 1853 2373 1861 2371 Ln
+ 1861 2371 1880 2375 Ln
+ 1880 2375 1897 2381 Ln
+ 1897 2381 1911 2392 Ln
+ 1911 2392 1915 2404 Ln
+ 1915 2404 1911 2419 Ln
+ 1911 2419 1906 2427 Ln
+ 1906 2427 1890 2437 Ln
+ 1890 2437 1874 2440 Ln
+ 1874 2440 1853 2437 Ln
+ 1853 2437 1837 2430 Ln
+ 1837 2430 1824 2419 Ln
+ 1824 2419 1822 2413 Ln
+ 1822 2413 1823 2402 Ln
+ 1401 2110 1416 2096 Ln
+ 1297 2104 1280 2101 Ln
+ 1280 2101 1260 2108 Ln
+ 1260 2108 1238 2121 Ln
+ 1238 2121 1227 2131 Ln
+ 1227 2131 1214 2149 Ln
+ 1214 2149 1211 2163 Ln
+ 1211 2163 1221 2172 Ln
+ 1221 2172 1230 2175 Ln
+ 1230 2175 1247 2177 Ln
+ 1247 2177 1267 2171 Ln
+ 1267 2171 1289 2157 Ln
+ 1289 2157 1301 2147 Ln
+ 1301 2147 1313 2129 Ln
+ 1313 2129 1315 2116 Ln
+ 1315 2116 1305 2107 Ln
+ 1305 2107 1297 2104 Ln
+ 1305 2197 1297 2198 Ln
+ 1297 2198 1298 2204 Ln
+ 1298 2204 1307 2203 Ln
+ 1307 2203 1305 2197 Ln
+ 1442 2163 1425 2160 Ln
+ 1425 2160 1405 2166 Ln
+ 1405 2166 1383 2180 Ln
+ 1383 2180 1372 2191 Ln
+ 1372 2191 1359 2210 Ln
+ 1359 2210 1358 2224 Ln
+ 1358 2224 1368 2233 Ln
+ 1368 2233 1378 2238 Ln
+ 1378 2238 1396 2239 Ln
+ 1396 2239 1416 2233 Ln
+ 1416 2233 1438 2218 Ln
+ 1438 2218 1449 2207 Ln
+ 1449 2207 1461 2189 Ln
+ 1461 2189 1462 2175 Ln
+ 1462 2175 1451 2166 Ln
+ 1451 2166 1442 2163 Ln
+ 1065 1977 1082 1964 Ln
+ 968 1972 952 1970 Ln
+ 952 1970 934 1975 Ln
+ 934 1975 910 1987 Ln
+ 910 1987 899 1995 Ln
+ 899 1995 884 2012 Ln
+ 884 2012 880 2023 Ln
+ 880 2023 887 2031 Ln
+ 887 2031 895 2035 Ln
+ 895 2035 911 2037 Ln
+ 911 2037 930 2031 Ln
+ 930 2031 954 2018 Ln
+ 954 2018 966 2010 Ln
+ 966 2010 980 1994 Ln
+ 980 1994 984 1982 Ln
+ 984 1982 976 1975 Ln
+ 976 1975 968 1972 Ln
+ 963 2054 956 2056 Ln
+ 956 2056 955 2060 Ln
+ 955 2060 964 2059 Ln
+ 964 2059 963 2054 Ln
+ 1122 2034 1080 2017 Ln
+ 1080 2017 1043 2041 Ln
+ 1043 2041 1050 2040 Ln
+ 1050 2040 1066 2042 Ln
+ 1066 2042 1079 2048 Ln
+ 1079 2048 1088 2055 Ln
+ 1088 2055 1088 2065 Ln
+ 1088 2065 1082 2075 Ln
+ 1082 2075 1074 2082 Ln
+ 1074 2082 1058 2089 Ln
+ 1058 2089 1042 2092 Ln
+ 1042 2092 1026 2089 Ln
+ 1026 2089 1013 2084 Ln
+ 1013 2084 1004 2076 Ln
+ 1004 2076 1004 2071 Ln
+ 1004 2071 1009 2063 Ln
+ 766 1859 784 1848 Ln
+ 649 1859 660 1860 Ln
+ 660 1860 682 1857 Ln
+ 682 1857 598 1910 Ln
+ 660 1928 653 1929 Ln
+ 653 1929 652 1933 Ln
+ 652 1933 660 1932 Ln
+ 660 1932 660 1928 Ln
+ 790 1900 775 1898 Ln
+ 775 1898 756 1903 Ln
+ 756 1903 733 1915 Ln
+ 733 1915 721 1922 Ln
+ 721 1922 705 1938 Ln
+ 705 1938 700 1948 Ln
+ 700 1948 707 1955 Ln
+ 707 1955 714 1959 Ln
+ 714 1959 730 1960 Ln
+ 730 1960 749 1955 Ln
+ 749 1955 773 1944 Ln
+ 773 1944 785 1936 Ln
+ 785 1936 800 1921 Ln
+ 800 1921 804 1910 Ln
+ 804 1910 797 1903 Ln
+ 797 1903 790 1900 Ln
+ 766 1859 782 1866 Ln
+ 723 1502 741 1508 Ln
+ 633 1549 638 1564 Ln
+ 638 1564 650 1577 Ln
+ 650 1577 668 1588 Ln
+ 668 1588 679 1592 Ln
+ 679 1592 696 1593 Ln
+ 696 1593 706 1588 Ln
+ 706 1588 708 1576 Ln
+ 708 1576 707 1566 Ln
+ 707 1566 701 1551 Ln
+ 701 1551 689 1538 Ln
+ 689 1538 671 1527 Ln
+ 671 1527 660 1523 Ln
+ 660 1523 642 1523 Ln
+ 642 1523 634 1527 Ln
+ 634 1527 631 1540 Ln
+ 631 1540 633 1549 Ln
+ 691 1494 695 1500 Ln
+ 695 1500 698 1496 Ln
+ 698 1496 694 1491 Ln
+ 694 1491 691 1494 Ln
+ 609 1373 616 1421 Ln
+ 616 1421 649 1435 Ln
+ 649 1435 644 1430 Ln
+ 644 1430 639 1414 Ln
+ 639 1414 638 1400 Ln
+ 638 1400 638 1387 Ln
+ 638 1387 645 1380 Ln
+ 645 1380 655 1378 Ln
+ 655 1378 663 1381 Ln
+ 663 1381 674 1389 Ln
+ 674 1389 683 1400 Ln
+ 683 1400 688 1417 Ln
+ 688 1417 690 1430 Ln
+ 690 1430 687 1443 Ln
+ 687 1443 685 1447 Ln
+ 685 1447 678 1449 Ln
+ 676 1115 694 1119 Ln
+ 600 1194 595 1183 Ln
+ 595 1183 582 1165 Ln
+ 582 1165 660 1187 Ln
+ 643 1109 647 1115 Ln
+ 647 1115 650 1112 Ln
+ 650 1112 646 1105 Ln
+ 646 1105 643 1109 Ln
+ 563 1015 568 1032 Ln
+ 568 1032 580 1044 Ln
+ 580 1044 600 1054 Ln
+ 600 1054 611 1057 Ln
+ 611 1057 629 1056 Ln
+ 629 1056 639 1049 Ln
+ 639 1049 641 1034 Ln
+ 641 1034 640 1024 Ln
+ 640 1024 634 1008 Ln
+ 634 1008 621 995 Ln
+ 621 995 602 985 Ln
+ 602 985 591 983 Ln
+ 591 983 572 984 Ln
+ 572 984 563 992 Ln
+ 563 992 561 1006 Ln
+ 561 1006 563 1015 Ln
+ 626 694 644 697 Ln
+ 547 790 543 778 Ln
+ 543 778 529 760 Ln
+ 529 760 609 775 Ln
+ 591 692 596 697 Ln
+ 596 697 599 693 Ln
+ 599 693 594 687 Ln
+ 594 687 591 692 Ln
+ 503 563 510 619 Ln
+ 510 619 546 630 Ln
+ 546 630 541 624 Ln
+ 541 624 535 607 Ln
+ 535 607 533 590 Ln
+ 533 590 535 573 Ln
+ 535 573 541 564 Ln
+ 541 564 551 560 Ln
+ 551 560 560 560 Ln
+ 560 560 572 569 Ln
+ 572 569 581 581 Ln
+ 581 581 587 598 Ln
+ 587 598 589 615 Ln
+ 589 615 588 631 Ln
+ 588 631 584 636 Ln
+ 584 636 577 640 Ln
+ 570 235 589 237 Ln
+ 496 361 492 360 Ln
+ 492 360 484 353 Ln
+ 484 353 479 347 Ln
+ 479 347 473 335 Ln
+ 473 335 470 312 Ln
+ 470 312 473 300 Ln
+ 473 300 476 295 Ln
+ 476 295 483 290 Ln
+ 483 290 490 291 Ln
+ 490 291 499 297 Ln
+ 499 297 512 309 Ln
+ 512 309 560 373 Ln
+ 560 373 549 290 Ln
+ 535 236 539 242 Ln
+ 539 242 543 237 Ln
+ 543 237 538 229 Ln
+ 538 229 535 236 Ln
+ 448 139 454 158 Ln
+ 454 158 467 171 Ln
+ 467 171 488 178 Ln
+ 488 178 500 179 Ln
+ 500 179 518 174 Ln
+ 518 174 530 163 Ln
+ 530 163 531 145 Ln
+ 531 145 530 132 Ln
+ 530 132 523 114 Ln
+ 523 114 510 101 Ln
+ 510 101 489 93 Ln
+ 489 93 477 92 Ln
+ 477 92 458 98 Ln
+ 458 98 448 110 Ln
+ 448 110 446 128 Ln
+ 446 128 448 139 Ln
+ 2215 2433 2760 1571 Ln
+ 2215 2433 766 1859 Ln
+ 2760 1571 2359 1473 Ln
+ 766 1859 1335 1487 Ln
+ 2308 376 2901 170 Ln
+ 2308 376 570 235 Ln
+ 2901 170 1602 110 Ln
+ 570 235 1602 110 Ln
+ 2215 2433 2308 376 Ln
+ 2760 1571 2901 170 Ln
+ 766 1859 570 235 Ln
+ 1 newPage
+ %%Trailer
+ %!END
