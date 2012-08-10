@@ -1,0 +1,1450 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  10 AUG 2012 13:36
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**12lecture2BIG.tex
+(./12lecture2BIG.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
+ icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
+iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
+ lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
+ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
+ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
+.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/extsizes/extarticle.cls
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
+(/usr/local/texlive/2011/texmf-dist/tex/latex/extsizes/size20.clo
+File: size20.clo 1999/11/11 NON-Standard LaTeX file (size option)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/exscale.sty
+Package: exscale 2007/10/29 v2.1h Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 52.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 52.
+\big@size=\dimen102
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen103
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen104
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen105
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks15
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks16
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/local/texlive/2011/texmf-dist/tex/generic/epsf/epsf.sty
+This is `epsf.tex' v2.7.4 <14 February 2011>
+\epsffilein=\read1
+\epsfframemargin=\dimen113
+\epsfframethickness=\dimen114
+\epsfrsize=\dimen115
+\epsftmp=\dimen116
+\epsftsize=\dimen117
+\epsfxsize=\dimen118
+\epsfysize=\dimen119
+\pspoints=\dimen120
+) (/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count99
+))
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
+)
+\epsfxsize=\dimen123
+\epsfysize=\dimen124
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/dvips/rotate.sty
+\@rotdimen=\dimen125
+\@rotbox=\box28
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2011/04/17 v6.82g Hypertext links for LaTeX
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/04/04 v1.12 Provides string conversions (HO)
+Package: bigintcalc 2011/01/30 v1.2 Expandable big integer calculations (HO)
+Package: bitset 2011/01/30 v1.1 Data type bit set (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provides unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/01/30 v1.0 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/04/23 v1.7 Hooks at very end of document (HO)
+Package atveryend Info: \enddocument detected (standard).
+Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
+Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+)
+\@linkdim=\dimen126
+\Hy@linkcounter=\count100
+\Hy@pagecounter=\count101
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2011/04/17 v6.82g Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count102
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4026.
+Package hyperref Info: Link nesting OFF on input line 4031.
+Package hyperref Info: Hyper index ON on input line 4034.
+Package hyperref Info: Plain pages OFF on input line 4041.
+Package hyperref Info: Backreferencing OFF on input line 4046.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4264.
+\c@Hy@tempcnt=\count103
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4617.
+\Fld@menulength=\count104
+\Field@Width=\dimen127
+\Fld@charsize=\dimen128
+Package hyperref Info: Hyper figures OFF on input line 5701.
+Package hyperref Info: Link nesting OFF on input line 5706.
+Package hyperref Info: Hyper index ON on input line 5709.
+Package hyperref Info: backreferencing OFF on input line 5716.
+Package hyperref Info: Link coloring OFF on input line 5721.
+Package hyperref Info: Link coloring with OCG OFF on input line 5726.
+Package hyperref Info: PDF/A mode OFF on input line 5731.
+LaTeX Info: Redefining \ref on input line 5771.
+LaTeX Info: Redefining \pageref on input line 5775.
+\Hy@abspage=\count105
+\c@Item=\count106
+\c@Hfootnote=\count107
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2011/04/17 v6.82g Hyperref driver for pdfTeX
+\Fld@listcount=\count108
+\c@bookmark@seq@number=\count109
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip46
+)
+No file 12lecture2BIG.aux.
+\openout1 = `12lecture2BIG.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+(/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count110
+\scratchdimen=\dimen129
+\scratchbox=\box29
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen130
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks21
+) (/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box30
+Package hyperref Info: Link coloring OFF on input line 66.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count116
+)
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
+\@outlinefile=\write3
+\openout3 = `12lecture2BIG.out'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 80.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 80.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 86.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <20.74> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
+ [1
+
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<Limits.jpg, id=17, 120.45pt x 87.4467pt>
+File: Limits.jpg Graphic file (type jpg)
+ <use Limits.jpg>
+Package pdftex.def Info: Limits.jpg used on input line 124.
+(pdftex.def)             Requested size: 216.81pt x 157.41992pt.
+ [2 <./Limits.jpg>]
+<abs2.jpeg, id=24, 613.29124pt x 793.96625pt>
+File: abs2.jpeg Graphic file (type jpg)
+ <use abs2.jpeg>
+Package pdftex.def Info: abs2.jpeg used on input line 145.
+(pdftex.def)             Requested size: 72.26999pt x 93.55151pt.
+
+Overfull \hbox (21.28152pt too wide) in paragraph at lines 145--145
+[][] 
+ []
+
+
+Overfull \hbox (14.66257pt too wide) in paragraph at lines 147--147
+[]$[] [] \OT1/cmr/m/n/20.74 =
+ []
+
+<this.pdf, id=25, 444.66125pt x 443.6575pt>
+File: this.pdf Graphic file (type pdf)
+ <use this.pdf>
+Package pdftex.def Info: this.pdf used on input line 147.
+(pdftex.def)             Requested size: 72.26999pt x 72.10364pt.
+
+Overfull \hbox (8.32736pt too wide) in paragraph at lines 150--152
+[]\OT1/cmr/m/n/20.74 Properties: Let $\OML/cmm/m/it/20.74 f$ \OT1/cmr/m/n/20.74
+ and $\OML/cmm/m/it/20.74 g$ \OT1/cmr/m/n/20.74 be func-tions with $[] \OML/cmm
+/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20.74 ) =
+ []
+
+[3 <./abs2.jpeg> <./this.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
+[]\OT1/cmr/bx/n/20.74 Right-hand
+ []
+
+<sqrtJ.pdf, id=37, 444.66125pt x 443.6575pt>
+File: sqrtJ.pdf Graphic file (type pdf)
+ <use sqrtJ.pdf>
+Package pdftex.def Info: sqrtJ.pdf used on input line 170.
+(pdftex.def)             Requested size: 72.26999pt x 72.10364pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+[]\OT1/cmr/bx/n/20.74 Left-hand
+ []
+
+
+Overfull \hbox (7.23639pt too wide) in paragraph at lines 173--175
+[][] $[] \OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr
+/m/n/20.74 ) = \OML/cmm/m/it/20.74 L$\OT1/cmr/m/n/20.74 , if $\OML/cmm/m/it/20.
+74 x > N \OT1/cmr/m/n/20.74 =[]\OMS/cmsy/m/n/20.74 )
+ []
+
+[4 <./sqrtJ.pdf>] <1ovrxJ.jpeg, id=53, 613.29124pt x 793.96625pt>
+File: 1ovrxJ.jpeg Graphic file (type jpg)
+
+<use 1ovrxJ.jpeg>
+Package pdftex.def Info: 1ovrxJ.jpeg used on input line 178.
+(pdftex.def)             Requested size: 72.26999pt x 93.55151pt.
+
+Overfull \hbox (34.56758pt too wide) in paragraph at lines 175--179
+[][] $[] \OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr
+/m/n/20.74 ) = \OML/cmm/m/it/20.74 L$\OT1/cmr/m/n/20.74 , if $\OML/cmm/m/it/20.
+74 x < \OMS/cmsy/m/n/20.74 ^^@\OML/cmm/m/it/20.74 N \OT1/cmr/m/n/20.74 =[]\OMS/
+cmsy/m/n/20.74 )
+ []
+
+File: sqrtJ.pdf Graphic file (type pdf)
+<use sqrtJ.pdf>
+Package pdftex.def Info: sqrtJ.pdf used on input line 197.
+(pdftex.def)             Requested size: 72.26999pt x 72.10364pt.
+ <expJ.jpeg, id=54, 613.29124pt x 793.96625pt>
+File: expJ.jpeg Graphic file (type jpg)
+ <use expJ.jpeg>
+Package pdftex.def Info: expJ.jpeg used on input line 198.
+(pdftex.def)             Requested size: 72.26999pt x 93.55151pt.
+
+Overfull \hbox (21.28152pt too wide) in paragraph at lines 198--198
+[][] 
+ []
+
+[5 <./1ovrxJ.jpeg>] <floorJ.jpeg, id=62, 613.29124pt x 793.96625pt>
+File: floorJ.jpeg Graphic file (type jpg)
+
+<use floorJ.jpeg>
+Package pdftex.def Info: floorJ.jpeg used on input line 200.
+(pdftex.def)             Requested size: 72.26999pt x 93.55151pt.
+
+Overfull \hbox (21.28152pt too wide) in paragraph at lines 200--200
+[][] 
+ []
+
+<1p1ovrx2J.jpeg, id=63, 613.29124pt x 793.96625pt>
+File: 1p1ovrx2J.jpeg Graphic file (type jpg)
+ <use 1p1ovrx2J.jpeg>
+Package pdftex.def Info: 1p1ovrx2J.jpeg used on input line 201.
+(pdftex.def)             Requested size: 72.26999pt x 93.55151pt.
+
+Overfull \hbox (21.28152pt too wide) in paragraph at lines 201--201
+[][] 
+ []
+
+
+Overfull \hbox (11.66951pt too wide) in paragraph at lines 207--210
+[]\OT1/cmr/bx/n/20.74 Boundedness\OT1/cmr/m/n/20.74 : If $\OML/cmm/m/it/20.74 f
+$ \OT1/cmr/m/n/20.74 is con-tin-u-ous on the closed
+ []
+
+[6 <./expJ.jpeg> <./floorJ.jpeg> <./1p1ovrx2J.jpeg>]
+Underfull \hbox (badness 3019) in paragraph at lines 303--303
+[]$\OMS/cmsy/m/n/20.74 f\OML/cmm/m/it/20.74 y[]\OMS/cmsy/m/n/20.74 g \OT1/cmr/m
+/n/20.74 = [] =
+ []
+
+<limitJ.jpeg, id=72, 137.51375pt x 107.40125pt>
+File: limitJ.jpeg Graphic file (type jpg)
+ <use limitJ.jpeg>
+Package pdftex.def Info: limitJ.jpeg used on input line 304.
+(pdftex.def)             Requested size: 108.405pt x 84.66905pt.
+
+Overfull \hbox (36.13501pt too wide) in paragraph at lines 304--304
+[][] 
+ []
+
+
+Underfull \hbox (badness 5878) in paragraph at lines 306--306
+[]$\OMS/cmsy/m/n/20.74 f\OML/cmm/m/it/20.74 y[]\OMS/cmsy/m/n/20.74 g \OT1/cmr/m
+/n/20.74 = [] =
+ []
+
+<unboundJ.jpeg, id=73, 135.50626pt x 107.40125pt>
+File: unboundJ.jpeg Graphic file (type jpg)
+ <use unboundJ.jpeg>
+Package pdftex.def Info: unboundJ.jpeg used on input line 306.
+(pdftex.def)             Requested size: 108.405pt x 85.92438pt.
+
+Overfull \hbox (36.13501pt too wide) in paragraph at lines 306--306
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--308
+[]$\OMS/cmsy/m/n/20.74 f\OML/cmm/m/it/20.74 y[]\OMS/cmsy/m/n/20.74 g \OT1/cmr/m
+/n/20.74 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--308
+[] \OT1/cmr/m/n/20.74 =
+ []
+
+<altrnateJ.jpeg, id=74, 134.5025pt x 100.375pt>
+File: altrnateJ.jpeg Graphic file (type jpg)
+ <use altrnateJ.jpeg>
+Package pdftex.def Info: altrnateJ.jpeg used on input line 308.
+(pdftex.def)             Requested size: 108.405pt x 80.90048pt.
+
+Overfull \hbox (36.13501pt too wide) in paragraph at lines 308--308
+[][] 
+ []
+
+[7 <./limitJ.jpeg> <./unboundJ.jpeg> <./altrnateJ.jpeg>] [8]
+<limit2J.jpeg, id=95, 135.50626pt x 107.40125pt>
+File: limit2J.jpeg Graphic file (type jpg)
+ <use limit2J.jpeg>
+Package pdftex.def Info: limit2J.jpeg used on input line 345.
+(pdftex.def)             Requested size: 108.405pt x 85.92438pt.
+
+Overfull \hbox (36.13501pt too wide) in paragraph at lines 345--345
+[][] 
+ []
+
+[9 <./limit2J.jpeg>] <newton.png, id=105, 703.68158pt x 207.3008pt>
+File: newton.png Graphic file (type png)
+
+<use newton.png>
+Package pdftex.def Info: newton.png used on input line 382.
+(pdftex.def)             Requested size: 433.62pt x 127.74385pt.
+ [10 <./newton.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 408--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+
+ []
+
+[11] [12] [13] <derivxJ.jpeg, id=128, 613.29124pt x 793.96625pt>
+File: derivxJ.jpeg Graphic file (type jpg)
+
+<use derivxJ.jpeg>
+Package pdftex.def Info: derivxJ.jpeg used on input line 472.
+(pdftex.def)             Requested size: 72.26999pt x 93.55151pt.
+
+Overfull \hbox (21.28152pt too wide) in paragraph at lines 472--472
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--476
+\OML/cmm/m/it/20.74 f[]\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20
+.74 ) = [] [] =
+ []
+
+<derivx2J.jpeg, id=129, 613.29124pt x 793.96625pt>
+File: derivx2J.jpeg Graphic file (type jpg)
+ <use derivx2J.jpeg>
+Package pdftex.def Info: derivx2J.jpeg used on input line 477.
+(pdftex.def)             Requested size: 72.26999pt x 93.55151pt.
+
+Overfull \hbox (21.28152pt too wide) in paragraph at lines 477--477
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 482--482
+\OML/cmm/m/it/20.74 f[]\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20
+.74 ) = [] [] =
+ []
+
+<derivx3J.jpeg, id=130, 613.29124pt x 793.96625pt>
+File: derivx3J.jpeg Graphic file (type jpg)
+ <use derivx3J.jpeg>
+Package pdftex.def Info: derivx3J.jpeg used on input line 483.
+(pdftex.def)             Requested size: 72.26999pt x 93.55151pt.
+
+Overfull \hbox (21.28152pt too wide) in paragraph at lines 483--483
+[][] 
+ []
+
+[14 <./derivxJ.jpeg> <./derivx2J.jpeg> <./derivx3J.jpeg>] [15]
+Overfull \hbox (17.0085pt too wide) in paragraph at lines 517--527
+[] $\OT1/cmr/m/n/20.74 [\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/
+20.74 x\OT1/cmr/m/n/20.74 )\OML/cmm/m/it/20.74 g\OT1/cmr/m/n/20.74 (\OML/cmm/m/
+it/20.74 x\OT1/cmr/m/n/20.74 )][] = \OML/cmm/m/it/20.74 f[]\OT1/cmr/m/n/20.74 (
+\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20.74 )\OML/cmm/m/it/20.74 g\OT1/cmr/m/n/20.7
+4 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20.74 ) + \OML/cmm/m/it/20.74 f\OT1/cmr/m/
+n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20.74 )\OML/cmm/m/it/20.74 g[]\OT1/c
+mr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20.74 )$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--527
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--535
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--541
+
+ []
+
+[16]
+Overfull \hbox (62.01001pt too wide) in paragraph at lines 541--545
+\OML/cmm/m/it/20.74 f[]\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20
+.74 ) = [] = [] =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 562--562
+[]\OT1/cmr/bx/n/20.74 First deriva-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--564
+[]\OT1/cmr/bx/n/20.74 Second
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 566--566
+[]$\OT1/cmr/bx/n/20.74 n$th deriva-
+ []
+
+[17]
+Overfull \hbox (2.79547pt too wide) in paragraph at lines 584--586
+[]\OT1/cmr/m/n/20.74 The first deriva-tive $\OML/cmm/m/it/20.74 f[]\OT1/cmr/m/n
+/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20.74 )$ iden-ti-fies whether the fun
+c-
+ []
+
+
+Overfull \hbox (47.74164pt too wide) in paragraph at lines 589--589
+[]\OT1/cmr/bx/n/20.74 Extremum/Saddle\OT1/cmr/m/n/20.74 : 
+ []
+
+<deriv1J.jpeg, id=161, 613.29124pt x 793.96625pt>
+File: deriv1J.jpeg Graphic file (type jpg)
+ <use deriv1J.jpeg>
+Package pdftex.def Info: deriv1J.jpeg used on input line 596.
+(pdftex.def)             Requested size: 72.26999pt x 93.55151pt.
+
+Overfull \hbox (21.28152pt too wide) in paragraph at lines 596--596
+[][] 
+ []
+
+[18] <deriv2J.jpeg, id=170, 613.29124pt x 793.96625pt>
+File: deriv2J.jpeg Graphic file (type jpg)
+ <use deriv2J.jpeg>
+Package pdftex.def Info: deriv2J.jpeg used on input line 598.
+(pdftex.def)             Requested size: 72.26999pt x 93.55151pt.
+
+Overfull \hbox (21.28152pt too wide) in paragraph at lines 598--598
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 605--605
+[]\OT1/cmr/bx/n/20.74 Concave
+ []
+
+
+Overfull \hbox (6.22879pt too wide) in paragraph at lines 615--617
+\OT1/cmr/m/n/20.74 over do-main $\OML/cmm/m/it/20.74 D$\OT1/cmr/m/n/20.74 , all
+ of the fol-low-ing are crit-i-cal points: 
+ []
+
+[19 <./deriv1J.jpeg> <./deriv2J.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 627--627
+[]\OT1/cmr/bx/n/20.74 Local Max-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 628--628
+[]\OT1/cmr/bx/n/20.74 Local Min-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--629
+[]\OT1/cmr/bx/n/20.74 Need more
+ []
+
+
+Overfull \hbox (0.43591pt too wide) in paragraph at lines 641--643
+[]\OT1/cmr/bx/n/20.74 Functions over closed and bounded in-
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 647--647
+[]$\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/2
+0.74 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 647--647
+\OML/cmm/m/it/20.74 f[]\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20
+.74 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 652--652
+
+ []
+
+
+Overfull \hbox (39.30194pt too wide) in paragraph at lines 647--653
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 653--653
+[]$\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/2
+0.74 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 653--653
+\OML/cmm/m/it/20.74 f[]\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20
+.74 ) =
+ []
+
+
+Underfull \hbox (badness 6173) in paragraph at lines 653--653
+\OML/cmm/m/it/20.74 f[]\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20
+.74 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
+
+ []
+
+
+Overfull \hbox (39.30194pt too wide) in paragraph at lines 653--660
+[][] [] 
+ []
+
+<absx2m1J.jpeg, id=189, 613.29124pt x 793.96625pt>
+File: absx2m1J.jpeg Graphic file (type jpg)
+ <use absx2m1J.jpeg>
+Package pdftex.def Info: absx2m1J.jpeg used on input line 674.
+(pdftex.def)             Requested size: 72.26999pt x 93.55151pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 674--674
+[]$\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/2
+0.74 ) = \OMS/cmsy/m/n/20.74 j\OML/cmm/m/it/20.74 x[] \OMS/cmsy/m/n/20.74 ^^@ \
+OT1/cmr/m/n/20.74 1\OMS/cmsy/m/n/20.74 j$\OT1/cmr/m/n/20.74 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 674--674
+\OML/cmm/m/it/20.74 f[]\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20
+.74 ) =
+ []
+
+
+Overfull \hbox (78.88365pt too wide) in paragraph at lines 674--674
+[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 674--674
+\OML/cmm/m/it/20.74 f[]\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20
+.74 ) =
+ []
+
+
+Overfull \hbox (67.34352pt too wide) in paragraph at lines 674--674
+[]$ 
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 681--681
+[]\OT1/cmr/m/n/20.74 There are five crit-i-cal
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 681--681
+\OT1/cmr/m/n/20.74 (\OMS/cmsy/m/n/20.74 ^^@\OT1/cmr/m/n/20.74 1\OML/cmm/m/it/20
+.74 ; \OT1/cmr/m/n/20.74 0)$ and $(1\OML/cmm/m/it/20.74 ; \OT1/cmr/m/n/20.74 0)
+$ are
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 681--681
+\OT1/cmr/m/n/20.74 par-ing $\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OML/cmm/m
+/it/20.74 x\OT1/cmr/m/n/20.74 )$ for these
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 681--681
+\OT1/cmr/m/n/20.74 (\OMS/cmsy/m/n/20.74 ^^@\OT1/cmr/m/n/20.74 1\OML/cmm/m/it/20
+.74 ; \OT1/cmr/m/n/20.74 0)$ and $(1\OML/cmm/m/it/20.74 ; \OT1/cmr/m/n/20.74 0)
+$ are
+ []
+
+
+Overfull \hbox (39.30194pt too wide) in paragraph at lines 674--682
+[][] [] 
+ []
+
+[21] [22 <./absx2m1J.jpeg>]
+Underfull \hbox (badness 6016) in paragraph at lines 697--697
+[]$\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 g \OMS/cmsy/m/n/20.74 ^^N \OML/cmm/m
+/it/20.74 f\OT1/cmr/m/n/20.74 )(\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20.74 ) =
+ []
+
+[23]pdfTeX warning (ext4): destination with the same identifier (name{equation.
+3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.724 \beqa
+           pdfTeX warning (ext4): destination with the same identifier (name{eq
+uation.3.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.732 \beqa
+            [24]
+Overfull \hbox (17.14037pt too wide) in paragraph at lines 751--753
+[][][] 
+ []
+
+
+Overfull \hbox (17.14037pt too wide) in paragraph at lines 753--755
+[][][] 
+ []
+
+
+Underfull \hbox (badness 4316) in paragraph at lines 756--756
+[]\OT1/cmr/m/n/20.74 Let $\OML/cmm/m/it/20.74 u\OT1/cmr/m/n/20.74 (\OML/cmm/m/i
+t/20.74 x\OT1/cmr/m/n/20.74 ) = [] 2\OML/cmm/m/it/20.74 x$\OT1/cmr/m/n/20.74 . 
+Then
+ []
+
+
+Overfull \hbox (17.14037pt too wide) in paragraph at lines 755--757
+[][][] 
+ []
+
+[25]
+Overfull \hbox (17.14037pt too wide) in paragraph at lines 768--770
+[][][] 
+ []
+
+
+Overfull \hbox (17.14037pt too wide) in paragraph at lines 770--772
+[][][] 
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 773--773
+[]\OT1/cmr/m/n/20.74 Use the gen-er-al-ized power rule.
+ []
+
+
+Overfull \hbox (17.14037pt too wide) in paragraph at lines 772--774
+[][][] 
+ []
+
+
+Overfull \hbox (17.14037pt too wide) in paragraph at lines 774--777
+[][][] 
+ []
+
+[26]
+Underfull \hbox (badness 1748) in paragraph at lines 807--807
+\OML/cmm/m/it/20.74 x[]$\OT1/cmr/m/n/20.74 . Then $\OML/cmm/m/it/20.74 f[]\OT1/
+cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20.74 ) = 2\OML/cmm/m/it/20.74
+ x=\OT1/cmr/m/n/20.74 (1 +
+ []
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 807--807
+\OML/cmm/m/it/20.74 x[]\OT1/cmr/m/n/20.74 )$ and $\OML/cmm/m/it/20.74 g[]\OT1/c
+mr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20.74 ) = 3\OML/cmm/m/it/20.74 
+x[]$\OT1/cmr/m/n/20.74 . Us-ing
+ []
+
+
+Overfull \hbox (21.23444pt too wide) in paragraph at lines 804--808
+[][] [] 
+ []
+
+
+Overfull \hbox (21.23444pt too wide) in paragraph at lines 808--813
+[][] [] 
+ []
+
+[27]
+Overfull \hbox (21.23444pt too wide) in paragraph at lines 813--817
+[][] [] 
+ []
+
+
+Overfull \hbox (5.75066pt too wide) in paragraph at lines 824--830
+\OT1/cmr/m/it/20.74 Newton-Raphson \OT1/cmr/m/n/20.74 and \OT1/cmr/m/it/20.74 T
+ay-lor Se-ries ex-pan-sion \OT1/cmr/m/n/20.74 ap-
+ []
+
+[28] <integrand.jpg, id=253, 240.9pt x 167.1846pt>
+File: integrand.jpg Graphic file (type jpg)
+ <use integrand.jpg>
+Package pdftex.def Info: integrand.jpg used on input line 842.
+(pdftex.def)             Requested size: 289.07999pt x 200.6409pt.
+
+<Area.pdf, id=254, 444.66125pt x 443.6575pt>
+File: Area.pdf Graphic file (type pdf)
+ <use Area.pdf>
+Package pdftex.def Info: Area.pdf used on input line 851.
+(pdftex.def)             Requested size: 144.54pt x 144.21405pt.
+ [29 <./integrand.jpg> <./Area.pdf>]
+Overfull \hbox (0.53024pt too wide) in paragraph at lines 871--882
+\OT1/cmr/m/n/20.74 whose in-def-i-nite in-te-gral has never been de-rived. Baye
+sian
+ []
+
+[30] <derintegJ.jpeg, id=267, 613.29124pt x 793.96625pt>
+File: derintegJ.jpeg Graphic file (type jpg)
+ <use derintegJ.jpeg>
+Package pdftex.def Info: derintegJ.jpeg used on input line 904.
+(pdftex.def)             Requested size: 72.26999pt x 93.55151pt.
+
+Overfull \hbox (21.28152pt too wide) in paragraph at lines 904--904
+[][] 
+ []
+
+[31 <./derintegJ.jpeg>] [32] <riemann.png, id=294, 421.575pt x 316.18124pt>
+File: riemann.png Graphic file (type png)
+
+<use riemann.png>
+Package pdftex.def Info: riemann.png used on input line 948.
+(pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
+ [33 <./riemann.png (PNG copy)>] [34] [35]
+Overfull \hbox (53.27536pt too wide) in paragraph at lines 994--995
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+[]$[] \OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/
+n/20.74 )\OML/cmm/m/it/20.74 dx \OT1/cmr/m/n/20.74 =
+ []
+
+
+Overfull \hbox (53.27536pt too wide) in paragraph at lines 995--997
+[][][] 
+ []
+
+
+Overfull \hbox (9.53432pt too wide) in paragraph at lines 997--999
+[]$[]\OT1/cmr/m/n/20.74 [\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OML/cmm/m/i
+t/20.74 x\OT1/cmr/m/n/20.74 ) + \OML/cmm/m/it/20.74 ^^Lg\OT1/cmr/m/n/20.74 (\OM
+L/cmm/m/it/20.74 x\OT1/cmr/m/n/20.74 )]\OML/cmm/m/it/20.74 dx \OT1/cmr/m/n/20.7
+4 = \OML/cmm/m/it/20.74  [] f\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr
+/m/n/20.74 )\OML/cmm/m/it/20.74 dx \OT1/cmr/m/n/20.74 + \OML/cmm/m/it/20.74 ^^L
+ [] g\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20.74 )\OML/cmm/m/it
+/20.74 dx$ 
+ []
+
+[36]
+Overfull \hbox (30.9094pt too wide) in paragraph at lines 1023--1027
+[]\OT1/cmr/m/n/20.74 Suppose we want to find the in-def-i-nite in-te-gral $[] \
+OML/cmm/m/it/20.74 g\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20.74
+ )\OML/cmm/m/it/20.74 dx$
+ []
+
+
+Overfull \hbox (111.71896pt too wide) detected at line 1028
+[] \OML/cmm/m/it/20.74 g\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/2
+0.74 )\OML/cmm/m/it/20.74 dx \OT1/cmr/m/n/20.74 = [] \OML/cmm/m/it/20.74 f\OT1/
+cmr/m/n/20.74 [\OML/cmm/m/it/20.74 u\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\O
+T1/cmr/m/n/20.74 )]\OML/cmm/m/it/20.74 u[]\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.
+74 x\OT1/cmr/m/n/20.74 )\OML/cmm/m/it/20.74 dx \OT1/cmr/m/n/20.74 = [] []\OML/c
+mm/m/it/20.74 F\OT1/cmr/m/n/20.74 [\OML/cmm/m/it/20.74 u\OT1/cmr/m/n/20.74 (\OM
+L/cmm/m/it/20.74 x\OT1/cmr/m/n/20.74 )]\OML/cmm/m/it/20.74 dx \OT1/cmr/m/n/20.7
+4 = \OML/cmm/m/it/20.74 F\OT1/cmr/m/n/20.74 [\OML/cmm/m/it/20.74 u\OT1/cmr/m/n/
+20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20.74 )] + \OML/cmm/m/it/20.74 c
+ []
+
+
+Overfull \hbox (27.51546pt too wide) in paragraph at lines 1030--1032
+[]\OT1/cmr/m/n/20.74 Procedure to de-ter-mine the in-def-i-nite in-te-gral $[] 
+\OML/cmm/m/it/20.74 g\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x\OT1/cmr/m/n/20.7
+4 )\OML/cmm/m/it/20.74 dx$
+ []
+
+[37]
+Overfull \hbox (2.07426pt too wide) in alignment at lines 1053--1057
+ [][][] []
+ []
+
+[38]
+Overfull \hbox (117.37712pt too wide) detected at line 1061
+[] \OML/cmm/m/it/20.74 x[][]dx \OT1/cmr/m/n/20.74 = 2(\OML/cmm/m/it/20.74 x \OT
+1/cmr/m/n/20.74 + 1)[] [] + \OML/cmm/m/it/20.74 c
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1073 \beqa
+             [39] [40]
+Overfull \hbox (5.53674pt too wide) in paragraph at lines 1097--1100
+\OT1/cmr/m/n/20.74 that, when sub-sti-tuted into the above equa-tion, yield
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1106 \beqa
+             [41]pdfTeX warning (ext4): destination with the same identifier (n
+ame{equation.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1116 \beqa
+            
+Overfull \hbox (3.80072pt too wide) in alignment at lines 1116--1122
+ [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1122--1127
+
+ []
+
+[42]pdfTeX warning (ext4): destination with the same identifier (name{equation.
+4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1135 \beqa
+            
+Overfull \hbox (65.76642pt too wide) in alignment at lines 1135--1141
+ [][][] []
+ []
+
+<signs.jpg, id=360, 340.27126pt x 501.875pt>
+File: signs.jpg Graphic file (type jpg)
+ <use signs.jpg>
+Package pdftex.def Info: signs.jpg used on input line 1151.
+(pdftex.def)             Requested size: 216.81pt x 319.78217pt.
+ [43]
+Overfull \hbox (0.41246pt too wide) in paragraph at lines 1163--1168
+[]\OT1/cmr/m/n/20.74 Unfortunately, there aren't a set of equally clean meth-
+ []
+
+[44 <./signs.jpg>]
+Overfull \hbox (3.92397pt too wide) in paragraph at lines 1170--1170
+[]\OT1/cmr/bx/n/24.88 Differentiation in sev-eral vari-ables 
+ []
+
+
+Overfull \hbox (9.43742pt too wide) in paragraph at lines 1172--1176
+\OT1/cmr/m/n/20.74 vari-ables and we want to de-ter-mine the rate of change
+ []
+
+
+Overfull \hbox (180.26286pt too wide) detected at line 1181
+[]\OT1/cmr/m/n/20.74 (\OML/cmm/m/it/20.74 x[]; [] ; x[]\OT1/cmr/m/n/20.74 ) = [
+] []
+ []
+
+[45] [46] [47] [48]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1286.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 1286.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1286.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1295--1295
+[]$\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[]\OT1/cmr/m/n
+/20.74 ) \OML/cmm/m/it/20.74 >
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1295--1295
+\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x\OT1/cmr/m/n/20.7
+4 )\OML/cmm/m/it/20.74 ;  \OMS/cmsy/m/n/20.74 8\OT1/cmr/bx/n/20.74 x \OMS/cmsy/
+m/n/20.74 2
+ []
+
+
+Overfull \hbox (17.42526pt too wide) in paragraph at lines 1295--1297
+[][] $ \OT1/cmr/m/n/20.74 =[]\OMS/cmsy/m/n/20.74 ) $ \OT1/cmr/m/n/20.74 Strict 
+Lo-cal Max 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1297--1297
+[]$\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[]\OT1/cmr/m/n
+/20.74 ) \OMS/cmsy/m/n/20.74 ^^U
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1297--1297
+\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x\OT1/cmr/m/n/20.7
+4 )\OML/cmm/m/it/20.74 ;  \OMS/cmsy/m/n/20.74 8\OT1/cmr/bx/n/20.74 x \OMS/cmsy/
+m/n/20.74 2
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1299--1299
+[]$\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[]\OT1/cmr/m/n
+/20.74 ) \OML/cmm/m/it/20.74 <
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1299--1299
+\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x\OT1/cmr/m/n/20.7
+4 )\OML/cmm/m/it/20.74 ;  \OMS/cmsy/m/n/20.74 8\OT1/cmr/bx/n/20.74 x \OMS/cmsy/
+m/n/20.74 2
+ []
+
+
+Overfull \hbox (13.63289pt too wide) in paragraph at lines 1299--1301
+[][] $ \OT1/cmr/m/n/20.74 =[]\OMS/cmsy/m/n/20.74 ) $ \OT1/cmr/m/n/20.74 Strict 
+Lo-cal Min 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1301--1301
+[]$\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[]\OT1/cmr/m/n
+/20.74 ) \OMS/cmsy/m/n/20.74 ^^T
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1301--1301
+\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x\OT1/cmr/m/n/20.7
+4 )\OML/cmm/m/it/20.74 ;  \OMS/cmsy/m/n/20.74 8\OT1/cmr/bx/n/20.74 x \OMS/cmsy/
+m/n/20.74 2
+ []
+
+[49] [50]
+Overfull \hbox (34.60324pt too wide) detected at line 1347
+\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[] \OT1/cmr/m/n/2
+0.74 + \OT1/cmr/bx/n/20.74 h\OT1/cmr/m/n/20.74 ) = \OML/cmm/m/it/20.74 f\OT1/cm
+r/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[]\OT1/cmr/m/n/20.74 ) + \OMS/cmsy/m/n/20.74 
+r\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[]\OT1/cmr/m/n/2
+0.74 )\OT1/cmr/bx/n/20.74 h \OT1/cmr/m/n/20.74 + []\OT1/cmr/bx/n/20.74 h[][]h \
+OT1/cmr/m/n/20.74 + \OML/cmm/m/it/20.74 R\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.7
+4 h\OT1/cmr/m/n/20.74 )
+ []
+
+
+Overfull \hbox (10.998pt too wide) in paragraph at lines 1348--1350
+[]\OT1/cmr/m/n/20.74 Since we're look-ing at a crit-i-cal point, $\OMS/cmsy/m/n
+/20.74 r\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[]\OT1/cm
+r/m/n/20.74 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1352--1354
+
+ []
+
+[51]
+Overfull \hbox (60.78404pt too wide) detected at line 1357
+\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[] \OT1/cmr/m/n/2
+0.74 + \OT1/cmr/bx/n/20.74 h\OT1/cmr/m/n/20.74 ) \OMS/cmsy/m/n/20.74 ^^@ \OML/c
+mm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[]\OT1/cmr/m/n/20.74 ) 
+\OML/cmm/m/it/20.74 > \OT1/cmr/m/n/20.74 0  =[]\OMS/cmsy/m/n/20.74 )  \OML/cmm/
+m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[] \OT1/cmr/m/n/20.74 + \O
+T1/cmr/bx/n/20.74 h\OT1/cmr/m/n/20.74 ) \OML/cmm/m/it/20.74 > f\OT1/cmr/m/n/20.
+74 (\OT1/cmr/bx/n/20.74 x[]\OT1/cmr/m/n/20.74 )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1357--1360
+
+ []
+
+
+Overfull \hbox (60.78404pt too wide) detected at line 1362
+\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[] \OT1/cmr/m/n/2
+0.74 + \OT1/cmr/bx/n/20.74 h\OT1/cmr/m/n/20.74 ) \OMS/cmsy/m/n/20.74 ^^@ \OML/c
+mm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[]\OT1/cmr/m/n/20.74 ) 
+\OML/cmm/m/it/20.74 < \OT1/cmr/m/n/20.74 0  =[]\OMS/cmsy/m/n/20.74 )  \OML/cmm/
+m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[] \OT1/cmr/m/n/20.74 + \O
+T1/cmr/bx/n/20.74 h\OT1/cmr/m/n/20.74 ) \OML/cmm/m/it/20.74 < f\OT1/cmr/m/n/20.
+74 (\OT1/cmr/bx/n/20.74 x[]\OT1/cmr/m/n/20.74 )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1362--1365
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1374--1374
+[]$\OT1/cmr/bx/n/20.74 H\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[]\OT1/cmr/m/n
+/20.74 )$ Pos-i-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1377--1377
+[]$\OT1/cmr/bx/n/20.74 H\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x\OT1/cmr/m/n/2
+0.74 )$ Pos-i-tive
+ []
+
+
+Underfull \hbox (badness 6445) in paragraph at lines 1379--1379
+[]$\OT1/cmr/bx/n/20.74 H\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x[]\OT1/cmr/m/n
+/20.74 )$ Neg-a-tive
+ []
+
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+[]$\OT1/cmr/bx/n/20.74 H\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x\OT1/cmr/m/n/2
+0.74 )$ Neg-a-tive
+ []
+
+
+Overfull \hbox (52.89484pt too wide) detected at line 1406
+[] \OT1/cmr/m/n/20.74 = [] [] [] = 2\OML/cmm/m/it/20.74 x[] \OT1/cmr/m/n/20.74 
++ 2\OML/cmm/m/it/20.74 x[]
+ []
+
+[53]
+Overfull \hbox (16.22813pt too wide) in paragraph at lines 1429--1432
+[]\OT1/cmr/m/n/20.74 When some $\OML/cmm/m/it/20.74 n \OMS/cmsy/m/n/20.74 ^^B \
+OML/cmm/m/it/20.74 n$ \OT1/cmr/m/n/20.74 ma-trix $\OT1/cmr/bx/n/20.74 A$ \OT1/c
+mr/m/n/20.74 is pre- and post-multiplied
+ []
+
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 1453--1453
+
+ []
+
+
+Overfull \hbox (41.06007pt too wide) in paragraph at lines 1453--1453
+[]$[]$ 
+ []
+
+<posdefJ.jpeg, id=445, 613.29124pt x 793.96625pt>
+File: posdefJ.jpeg Graphic file (type jpg)
+ <use posdefJ.jpeg>
+Package pdftex.def Info: posdefJ.jpeg used on input line 1454.
+(pdftex.def)             Requested size: 613.28973pt x 793.96431pt.
+
+Overfull \hbox (36.13pt too wide) in paragraph at lines 1454--1454
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+
+ []
+
+
+Overfull \hbox (73.3224pt too wide) in paragraph at lines 1461--1461
+[]$[]$ 
+ []
+
+<possemJ.jpeg, id=446, 613.29124pt x 793.96625pt>
+File: possemJ.jpeg Graphic file (type jpg)
+ <use possemJ.jpeg>
+Package pdftex.def Info: possemJ.jpeg used on input line 1462.
+(pdftex.def)             Requested size: 613.28973pt x 793.96431pt.
+
+Overfull \hbox (36.13pt too wide) in paragraph at lines 1462--1462
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1469--1469
+
+ []
+
+
+Overfull \hbox (57.19124pt too wide) in paragraph at lines 1469--1469
+[]$[]$ 
+ []
+
+<indefJ.jpeg, id=447, 613.29124pt x 793.96625pt>
+File: indefJ.jpeg Graphic file (type jpg)
+ <use indefJ.jpeg>
+Package pdftex.def Info: indefJ.jpeg used on input line 1470.
+(pdftex.def)             Requested size: 613.28973pt x 793.96431pt.
+
+Overfull \hbox (36.13pt too wide) in paragraph at lines 1470--1470
+[][] 
+ []
+
+[55 <./posdefJ.jpeg> <./possemJ.jpeg>] [56 <./indefJ.jpeg>]
+Overfull \hbox (19.18333pt too wide) detected at line 1505
+\OML/cmm/m/it/20.74 M[] \OT1/cmr/m/n/20.74 = \OMS/cmsy/m/n/20.74 j\OML/cmm/m/it
+/20.74 a[]\OMS/cmsy/m/n/20.74 j\OML/cmm/m/it/20.74 ;  M[] \OT1/cmr/m/n/20.74 = 
+[] \OML/cmm/m/it/20.74 ;  M[] \OT1/cmr/m/n/20.74 = []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1512--1512
+[]$\OML/cmm/m/it/20.74 M[] <
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1512--1512
+\OT1/cmr/m/n/20.74 0\OML/cmm/m/it/20.74 ;  []k$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1512--1512
+\OML/cmm/m/it/20.74 M[] >
+ []
+
+[57]
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
+[]\OT1/cmr/m/n/20.74 Every prin-ci-pal
+ []
+
+
+Overfull \hbox (21.09425pt too wide) in paragraph at lines 1521--1523
+[][] $ \OT1/cmr/m/n/20.74 =[]\OMS/cmsy/m/n/20.74 ) $ \OT1/cmr/m/n/20.74 Pos-i-t
+ive Semidef-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1524--1524
+[]\OT1/cmr/m/n/20.74 Every prin-ci-pal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1524--1524
+\OT1/cmr/m/n/20.74 mi-nor of odd
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 1524--1524
+\OT1/cmr/m/n/20.74 or-der $\OMS/cmsy/m/n/20.74 ^^T \OT1/cmr/m/n/20.74 0$ and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1524--1524
+\OT1/cmr/m/n/20.74 ev-ery prin-ci-pal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1524--1524
+\OT1/cmr/m/n/20.74 mi-nor of even
+ []
+
+
+Overfull \hbox (28.29561pt too wide) in paragraph at lines 1524--1526
+[][] $ \OT1/cmr/m/n/20.74 =[]\OMS/cmsy/m/n/20.74 ) $ \OT1/cmr/m/n/20.74 Neg-a-t
+ive Semidef-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1539--1539
+[]$\OT1/cmr/bx/n/20.74 H\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x\OT1/cmr/m/n/2
+0.74 )$ Pos-i-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1541--1541
+[]$\OT1/cmr/bx/n/20.74 H\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x\OT1/cmr/m/n/2
+0.74 )$ Neg-a-tive
+ []
+
+
+Overfull \hbox (7.9774pt too wide) in paragraph at lines 1541--1543
+[][] $ \OT1/cmr/m/n/20.74 =[]\OMS/cmsy/m/n/20.74 ) $ \OT1/cmr/m/n/20.74 Glob-al
+ly Con-cave 
+ []
+
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 1550--1550
+[]$\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x\OT1/cmr/m/n/2
+0.74 )$ Glob-ally
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1552--1552
+[]$\OML/cmm/m/it/20.74 f\OT1/cmr/m/n/20.74 (\OT1/cmr/bx/n/20.74 x\OT1/cmr/m/n/2
+0.74 )$ Glob-ally
+ []
+
+[59]pdfTeX warning (ext4): destination with the same identifier (name{equation.
+5.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1578   \beqa
+              
+Overfull \hbox (2.00122pt too wide) in paragraph at lines 1584--1586
+\OT1/cmr/m/n/20.74 the Hes-sian is pos-i-tive or neg-a-tive def-i-nite. The
+ []
+
+[60]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1604.
+ [61]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1604.
+ (./12lecture2BIG.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1604.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1604.
+
+
+
+Package rerunfilecheck Warning: File `12lecture2BIG.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `12lecture2BIG.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  FDF8DE4430D1F9E9E7789E3190907B2B;1981.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1604.
+ ) 
+Here is how much of TeX's memory you used:
+ 6390 strings out of 493633
+ 91692 string characters out of 3143378
+ 169435 words of memory out of 3000000
+ 9349 multiletter control sequences out of 15000+200000
+ 17181 words of font info for 65 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 34i,15n,32p,259b,545s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
+/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/
+local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
+ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on 12lecture2BIG.pdf (61 pages, 1139861 bytes).
+PDF statistics:
+ 584 PDF objects out of 1000 (max. 8388607)
+ 481 compressed objects within 5 object streams
+ 254 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+
