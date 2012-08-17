@@ -1231,19 +1231,19 @@ $$=x^3y^4 + 24x-y^{monkey}$$
 
 \item When solving formal models or problems in microeconomics we often want to minimize of maximize functions, for example your utility function! Yet, often in life we can't get everything we want. And so we need to constrain our optimization. 
 
-\item Take the function $f(x) = xy$. We want to find the maximum but to the constraint that $h(x) \equiv x +4x = 16$ 
-\item Write out the Lagrangian $L(x,y,\lambda) = xy - \lambda (x + 4y -16)$ 
+\item Take the function $f(x) = x^2 + y^2$. We want to find the maximum but to the constraint that $h(x) \equiv x +2x = 10$ 
+\item Write out the Lagrangian $L(x,y,\lambda) = x^2 + y^2 - \lambda (x + 2y -1)$ 
 \item Now we take the derivatives with respect to $x,y,\lambda$ and set each of the partials equal to zero
 \be
-\item $\frac{\partial L}{\partial x} = y - \lambda  = 0$
-\item $\frac{\partial L}{\partial y} = x - 4\lambda = 0$
-\item $\frac{\partial L}{\partial \lambda} =  -(x + 4y -16) = 0$
+\item $\frac{\partial L}{\partial x} = 2x - \lambda  = 0$
+\item $\frac{\partial L}{\partial y} =  2y -2\lambda = 0$
+\item $\frac{\partial L}{\partial \lambda} =  -( x + 2y -10) = 0$
 \ee
-\item From the first equation: $y=\lambda$
-\item From the second equation: $\frac{x}{4}= \lambda$, thus $y=\frac{x}{4}$
-\item Thus: $-(4y+4y-16)=0$ 
+\item From the first equation: $x=\frac{\lambda}{2}$
+\item From the second equation: $ y= \lambda$, thus $y=2x$
+\item Thus: $-(x+2(2x)-10)=0$ 
 \item now we can solve for $y, x$, and $\lambda$!
-\item $y=2$, $x=8$, $\lambda=8$, so max $f(x,y) = 16$ s.t. $ x + 4y=16$
+\item $x=2$, $y=4$, $\lambda=4$, so max $f(x,y) = 18$ s.t. $ x + 2y=10$
 \ei
 
 \subsection{Vector representation of calculus}
