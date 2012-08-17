@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  9 AUG 2012 11:52
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  16 AUG 2012 22:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -263,7 +263,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip46
 )
-No file 12lecture2.aux.
+(./12lecture2.aux)
 \openout1 = `12lecture2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
@@ -280,6 +280,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
 LaTeX Font Info:    ... okay on input line 66.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
 LaTeX Font Info:    ... okay on input line 66.
+
 (/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count110
@@ -322,6 +323,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 66.
 LaTeX Info: Redefining \pageref on input line 66.
 LaTeX Info: Redefining \nameref on input line 66.
+
+(./12lecture2.out) (./12lecture2.out)
 \@outlinefile=\write3
 \openout3 = `12lecture2.out'.
 
@@ -343,7 +346,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
 
-<Limits.jpg, id=6, 120.45pt x 87.4467pt>
+<Limits.jpg, id=122, 120.45pt x 87.4467pt>
 File: Limits.jpg Graphic file (type jpg)
  <use Limits.jpg>
 Package pdftex.def Info: Limits.jpg used on input line 124.
@@ -351,7 +354,7 @@ Package pdftex.def Info: Limits.jpg used on input line 124.
  [1
 
 {/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<abs2.jpeg, id=21, 613.29124pt x 793.96625pt>
+<abs2.jpeg, id=137, 613.29124pt x 793.96625pt>
 File: abs2.jpeg Graphic file (type jpg)
  <use abs2.jpeg>
 Package pdftex.def Info: abs2.jpeg used on input line 145.
@@ -361,19 +364,19 @@ Overfull \hbox (21.28152pt too wide) in paragraph at lines 145--145
 [][] 
  []
 
-<this.pdf, id=22, 444.66125pt x 443.6575pt>
+<this.pdf, id=138, 444.66125pt x 443.6575pt>
 File: this.pdf Graphic file (type pdf)
  <use this.pdf>
 Package pdftex.def Info: this.pdf used on input line 147.
 (pdftex.def)             Requested size: 72.26999pt x 72.10364pt.
- [2 <./Limits.jpg> <./abs2.jpeg> <./this.pdf>] <sqrtJ.pdf, id=42, 444.66125pt x
- 443.6575pt>
+ [2 <./Limits.jpg> <./abs2.jpeg> <./this.pdf>] <sqrtJ.pdf, id=157, 444.66125pt 
+x 443.6575pt>
 File: sqrtJ.pdf Graphic file (type pdf)
 
 <use sqrtJ.pdf>
 Package pdftex.def Info: sqrtJ.pdf used on input line 170.
 (pdftex.def)             Requested size: 72.26999pt x 72.10364pt.
- <1ovrxJ.jpeg, id=43, 613.29124pt x 793.96625pt>
+ <1ovrxJ.jpeg, id=158, 613.29124pt x 793.96625pt>
 File: 1ovrxJ.jpeg Graphic file (type jpg)
 
 <use 1ovrxJ.jpeg>
@@ -384,7 +387,7 @@ File: sqrtJ.pdf Graphic file (type pdf)
 Package pdftex.def Info: sqrtJ.pdf used on input line 197.
 (pdftex.def)             Requested size: 72.26999pt x 72.10364pt.
 
-<expJ.jpeg, id=44, 613.29124pt x 793.96625pt>
+<expJ.jpeg, id=159, 613.29124pt x 793.96625pt>
 File: expJ.jpeg Graphic file (type jpg)
  <use expJ.jpeg>
 Package pdftex.def Info: expJ.jpeg used on input line 198.
@@ -394,7 +397,7 @@ Overfull \hbox (21.28152pt too wide) in paragraph at lines 198--198
 [][] 
  []
 
-<floorJ.jpeg, id=45, 613.29124pt x 793.96625pt>
+<floorJ.jpeg, id=160, 613.29124pt x 793.96625pt>
 File: floorJ.jpeg Graphic file (type jpg)
  <use floorJ.jpeg>
 Package pdftex.def Info: floorJ.jpeg used on input line 200.
@@ -404,7 +407,7 @@ Overfull \hbox (21.28152pt too wide) in paragraph at lines 200--200
 [][] 
  []
 
-<1p1ovrx2J.jpeg, id=46, 613.29124pt x 793.96625pt>
+<1p1ovrx2J.jpeg, id=161, 613.29124pt x 793.96625pt>
 File: 1p1ovrx2J.jpeg Graphic file (type jpg)
  <use 1p1ovrx2J.jpeg>
 Package pdftex.def Info: 1p1ovrx2J.jpeg used on input line 201.
@@ -415,7 +418,7 @@ Overfull \hbox (21.28152pt too wide) in paragraph at lines 201--201
  []
 
 [3 <./sqrtJ.pdf> <./1ovrxJ.jpeg> <./expJ.jpeg>]
-<limitJ.jpeg, id=63, 137.51375pt x 107.40125pt>
+<limitJ.jpeg, id=177, 137.51375pt x 107.40125pt>
 File: limitJ.jpeg Graphic file (type jpg)
  <use limitJ.jpeg>
 Package pdftex.def Info: limitJ.jpeg used on input line 304.
@@ -425,7 +428,7 @@ Overfull \hbox (36.13501pt too wide) in paragraph at lines 304--304
 [][] 
  []
 
-<unboundJ.jpeg, id=64, 135.50626pt x 107.40125pt>
+<unboundJ.jpeg, id=178, 135.50626pt x 107.40125pt>
 File: unboundJ.jpeg Graphic file (type jpg)
  <use unboundJ.jpeg>
 Package pdftex.def Info: unboundJ.jpeg used on input line 306.
@@ -435,7 +438,7 @@ Overfull \hbox (36.13501pt too wide) in paragraph at lines 306--306
 [][] 
  []
 
-<altrnateJ.jpeg, id=65, 134.5025pt x 100.375pt>
+<altrnateJ.jpeg, id=179, 134.5025pt x 100.375pt>
 File: altrnateJ.jpeg Graphic file (type jpg)
  <use altrnateJ.jpeg>
 Package pdftex.def Info: altrnateJ.jpeg used on input line 308.
@@ -446,7 +449,7 @@ Overfull \hbox (36.13501pt too wide) in paragraph at lines 308--308
  []
 
 [4 <./floorJ.jpeg> <./1p1ovrx2J.jpeg> <./limitJ.jpeg> <./unboundJ.jpeg> <./altr
-nateJ.jpeg>] <limit2J.jpeg, id=78, 135.50626pt x 107.40125pt>
+nateJ.jpeg>] <limit2J.jpeg, id=192, 135.50626pt x 107.40125pt>
 File: limit2J.jpeg Graphic file (type jpg)
 
 <use limit2J.jpeg>
@@ -457,7 +460,7 @@ Overfull \hbox (36.13501pt too wide) in paragraph at lines 345--345
 [][] 
  []
 
-[5 <./limit2J.jpeg>] <newton.png, id=96, 703.68158pt x 207.3008pt>
+[5 <./limit2J.jpeg>] <newton.png, id=209, 703.68158pt x 207.3008pt>
 File: newton.png Graphic file (type png)
 
 <use newton.png>
@@ -473,7 +476,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 411--412
 
  []
 
-[6 <./newton.png>] <derivxJ.jpeg, id=106, 613.29124pt x 793.96625pt>
+[6 <./newton.png>] <derivxJ.jpeg, id=217, 613.29124pt x 793.96625pt>
 File: derivxJ.jpeg Graphic file (type jpg)
 
 <use derivxJ.jpeg>
@@ -484,7 +487,7 @@ Overfull \hbox (21.28152pt too wide) in paragraph at lines 472--472
 [][] 
  []
 
-<derivx2J.jpeg, id=107, 613.29124pt x 793.96625pt>
+<derivx2J.jpeg, id=218, 613.29124pt x 793.96625pt>
 File: derivx2J.jpeg Graphic file (type jpg)
  <use derivx2J.jpeg>
 Package pdftex.def Info: derivx2J.jpeg used on input line 477.
@@ -494,7 +497,7 @@ Overfull \hbox (21.28152pt too wide) in paragraph at lines 477--477
 [][] 
  []
 
-<derivx3J.jpeg, id=108, 613.29124pt x 793.96625pt>
+<derivx3J.jpeg, id=219, 613.29124pt x 793.96625pt>
 File: derivx3J.jpeg Graphic file (type jpg)
  <use derivx3J.jpeg>
 Package pdftex.def Info: derivx3J.jpeg used on input line 483.
@@ -519,7 +522,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 535--541
 
  []
 
-[8 <./derivx3J.jpeg>] <deriv1J.jpeg, id=130, 613.29124pt x 793.96625pt>
+[8 <./derivx3J.jpeg>] <deriv1J.jpeg, id=241, 613.29124pt x 793.96625pt>
 File: deriv1J.jpeg Graphic file (type jpg)
 
 <use deriv1J.jpeg>
@@ -530,7 +533,7 @@ Overfull \hbox (21.28152pt too wide) in paragraph at lines 596--596
 [][] 
  []
 
-<deriv2J.jpeg, id=131, 613.29124pt x 793.96625pt>
+<deriv2J.jpeg, id=242, 613.29124pt x 793.96625pt>
 File: deriv2J.jpeg Graphic file (type jpg)
  <use deriv2J.jpeg>
 Package pdftex.def Info: deriv2J.jpeg used on input line 598.
@@ -550,80 +553,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 659--659
 
  []
 
-[10 <./deriv2J.jpeg>] <absx2m1J.jpeg, id=158, 613.29124pt x 793.96625pt>
-File: absx2m1J.jpeg Graphic file (type jpg)
-
-<use absx2m1J.jpeg>
-Package pdftex.def Info: absx2m1J.jpeg used on input line 674.
-(pdftex.def)             Requested size: 72.26999pt x 93.55151pt.
- [11 <./absx2m1J.jpeg>]pdfTeX warning (ext4): destination with the same identif
-ier (name{equation.3.1}) has been already used, duplicate ignored
+[10 <./deriv2J.jpeg>]pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.724 \beqa
-           pdfTeX warning (ext4): destination with the same identifier (name{eq
-uation.3.1}) has been already used, duplicate ignored
+l.702 \beqa
+            [11]pdfTeX warning (ext4): destination with the same identifier (na
+me{equation.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.732 \beqa
-            [12] [13] <integrand.jpg, id=200, 240.9pt x 167.1846pt>
+l.710 \beqa
+            [12] <integrand.jpg, id=292, 240.9pt x 167.1846pt>
 File: integrand.jpg Graphic file (type jpg)
 
 <use integrand.jpg>
-Package pdftex.def Info: integrand.jpg used on input line 842.
+Package pdftex.def Info: integrand.jpg used on input line 820.
 (pdftex.def)             Requested size: 289.07999pt x 200.6409pt.
- <Area.pdf, id=201, 444.66125pt x 443.6575pt>
+ [13] <Area.pdf, id=304, 444.66125pt x 443.6575pt>
 File: Area.pdf Graphic file (type pdf)
 
 <use Area.pdf>
-Package pdftex.def Info: Area.pdf used on input line 851.
+Package pdftex.def Info: Area.pdf used on input line 829.
 (pdftex.def)             Requested size: 144.54pt x 144.21405pt.
  [14 <./integrand.jpg> <./Area.pdf>]
-<derintegJ.jpeg, id=210, 613.29124pt x 793.96625pt>
+<derintegJ.jpeg, id=312, 613.29124pt x 793.96625pt>
 File: derintegJ.jpeg Graphic file (type jpg)
  <use derintegJ.jpeg>
-Package pdftex.def Info: derintegJ.jpeg used on input line 904.
+Package pdftex.def Info: derintegJ.jpeg used on input line 882.
 (pdftex.def)             Requested size: 72.26999pt x 93.55151pt.
 
-Overfull \hbox (21.28152pt too wide) in paragraph at lines 904--904
+Overfull \hbox (21.28152pt too wide) in paragraph at lines 882--882
 [][] 
  []
 
-[15 <./derintegJ.jpeg>] <riemann.png, id=227, 421.575pt x 316.18124pt>
+[15 <./derintegJ.jpeg>] <riemann.png, id=331, 421.575pt x 316.18124pt>
 File: riemann.png Graphic file (type png)
 
 <use riemann.png>
-Package pdftex.def Info: riemann.png used on input line 948.
+Package pdftex.def Info: riemann.png used on input line 926.
 (pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
  [16 <./riemann.png (PNG copy)>]
-Overfull \hbox (15.33008pt too wide) in paragraph at lines 994--995
+Overfull \hbox (15.33008pt too wide) in paragraph at lines 972--973
 [][][] 
  []
 
 
-Overfull \hbox (15.33008pt too wide) in paragraph at lines 995--997
+Overfull \hbox (15.33008pt too wide) in paragraph at lines 973--975
 [][][] 
  []
 
-[17] [18] [19pdfTeX warning (ext4): destination with the same identifier (name{
-equation.4.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1091 du$$ 
-            where $du=u'(x)dx$ and $dv=v'(x)dx$.]pdfTeX warning (ext4): destina
-tion with the same identifier (name{equation.4.1}) has been already used, dupli
-cate ignored
+[17] [18]pdfTeX warning (ext4): destination with the same identifier (name{equa
+tion.4.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1106 \beqa
+l.1051 \beqa
+             [19]pdfTeX warning (ext4): destination with the same identifier (n
+ame{equation.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1084 \beqa
             pdfTeX warning (ext4): destination with the same identifier (name{e
 quation.4.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1116 \beqa
+l.1094 \beqa
             
-Underfull \hbox (badness 10000) in paragraph at lines 1122--1127
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1105
 
  []
 
@@ -631,119 +626,112 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1135 \beqa
-             [20] <signs.jpg, id=278, 340.27126pt x 501.875pt>
+l.1113 \beqa
+             [20] <signs.jpg, id=375, 340.27126pt x 501.875pt>
 File: signs.jpg Graphic file (type jpg)
  <use signs.jpg>
-Package pdftex.def Info: signs.jpg used on input line 1151.
+Package pdftex.def Info: signs.jpg used on input line 1129.
 (pdftex.def)             Requested size: 216.81pt x 319.78217pt.
 
-[21 <./signs.jpg>] [22]
+[21 <./signs.jpg>] [22] [23]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1286.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 1286.
+(hyperref)                removing `math shift' on input line 1282.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1286.
+(hyperref)                removing `superscript' on input line 1282.
 
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 1352--1354
 
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1282.
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 1357--1360
+Underfull \hbox (badness 10000) in paragraph at lines 1348--1350
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1362--1365
+Underfull \hbox (badness 10000) in paragraph at lines 1353--1356
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1358--1361
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 1453--1453
+Underfull \hbox (badness 10000) in paragraph at lines 1449--1449
 
  []
 
-<posdefJ.jpeg, id=332, 613.29124pt x 793.96625pt>
+<posdefJ.jpeg, id=422, 613.29124pt x 793.96625pt>
 File: posdefJ.jpeg Graphic file (type jpg)
  <use posdefJ.jpeg>
-Package pdftex.def Info: posdefJ.jpeg used on input line 1454.
+Package pdftex.def Info: posdefJ.jpeg used on input line 1450.
 (pdftex.def)             Requested size: 613.28973pt x 793.96431pt.
 
-Overfull \hbox (36.13pt too wide) in paragraph at lines 1454--1454
+Overfull \hbox (36.13pt too wide) in paragraph at lines 1450--1450
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1457
 
  []
 
-<possemJ.jpeg, id=333, 613.29124pt x 793.96625pt>
+<possemJ.jpeg, id=423, 613.29124pt x 793.96625pt>
 File: possemJ.jpeg Graphic file (type jpg)
  <use possemJ.jpeg>
-Package pdftex.def Info: possemJ.jpeg used on input line 1462.
+Package pdftex.def Info: possemJ.jpeg used on input line 1458.
 (pdftex.def)             Requested size: 613.28973pt x 793.96431pt.
 
-Overfull \hbox (36.13pt too wide) in paragraph at lines 1462--1462
+Overfull \hbox (36.13pt too wide) in paragraph at lines 1458--1458
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1469--1469
+[26 <./posdefJ.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1465--1465
 
  []
 
-<indefJ.jpeg, id=334, 613.29124pt x 793.96625pt>
+<indefJ.jpeg, id=433, 613.29124pt x 793.96625pt>
 File: indefJ.jpeg Graphic file (type jpg)
  <use indefJ.jpeg>
-Package pdftex.def Info: indefJ.jpeg used on input line 1470.
+Package pdftex.def Info: indefJ.jpeg used on input line 1466.
 (pdftex.def)             Requested size: 613.28973pt x 793.96431pt.
 
-Overfull \hbox (36.13pt too wide) in paragraph at lines 1470--1470
+Overfull \hbox (36.13pt too wide) in paragraph at lines 1466--1466
 [][] 
  []
 
-[26 <./posdefJ.jpeg> <./possemJ.jpeg> <./indefJ.jpeg>] [27]pdfTeX warning (ext4
-): destination with the same identifier (name{equation.5.1}) has been already u
-sed, duplicate ignored
+[27 <./possemJ.jpeg> <./indefJ.jpeg>]pdfTeX warning (ext4): destination with th
+e same identifier (name{equation.5.1}) has been already used, duplicate ignored
+
 <to be read again> 
                    \relax 
-l.1578   \beqa
-              
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1604.
- [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1604.
+l.1574   \beqa
+               [28]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1600.
+ [29]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1600.
  (./12lecture2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1604.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1604.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1600.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1600.
 
-
-
-Package rerunfilecheck Warning: File `12lecture2.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `12lecture2.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  FDF8DE4430D1F9E9E7789E3190907B2B;1981.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1604.
+Package rerunfilecheck Info: File `12lecture2.out' has not changed.
+(rerunfilecheck)             Checksum: A472256D5A569E98530A7CBA0C0FFBBB;2097.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1600.
  ) 
 Here is how much of TeX's memory you used:
- 6331 strings out of 493633
- 89123 string characters out of 3143378
- 179207 words of memory out of 3000000
- 9314 multiletter control sequences out of 15000+200000
+ 6366 strings out of 493633
+ 89611 string characters out of 3143378
+ 179311 words of memory out of 3000000
+ 9340 multiletter control sequences out of 15000+200000
  15525 words of font info for 58 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 34i,15n,32p,256b,545s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,15n,32p,279b,473s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
@@ -761,10 +749,10 @@ ive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive
 1/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2011/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2011/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on 12lecture2.pdf (28 pages, 1212166 bytes).
+Output written on 12lecture2.pdf (29 pages, 1192358 bytes).
 PDF statistics:
- 472 PDF objects out of 1000 (max. 8388607)
- 394 compressed objects within 4 object streams
- 221 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 568 PDF objects out of 1000 (max. 8388607)
+ 489 compressed objects within 5 object streams
+ 225 named destinations out of 1000 (max. 500000)
+ 363 words of extra memory for PDF output out of 10000 (max. 10000000)
 

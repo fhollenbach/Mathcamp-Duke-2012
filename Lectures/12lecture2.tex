@@ -657,28 +657,6 @@ The maxima and minima will be a subset of the critical points.
      or values of $f''(x)$ around $x=0$, we would find that $x=0$ is in fact a
      saddle point.  Since $f(x)$ is unbounded above or below, there are
      no maxima or minima.\\}
-     \item \parbox[t]{3in}{$f(x)=|x^2-1|$, $x\in [-2,2]$\\[6pt]
-      $f'(x)=\left\{
-      \begin{array}{rll}
-      2x & & -2<x<-1, 1<x<2 \\
-      -2x& & -1<x<1
-      \end{array}
-      \right.$\\
-      $f''(x)=\left\{
-      \begin{array}{rll}
-      2 & & -2<x<-1, 1<x<2 \\
-      -2& & -1<x<1
-      \end{array}
-      \right.$\\
-      \epsfxsize=1.25in
-      {\,  {\includegraphics[width=1in, angle = 270]{absx2m1J}}}}
-      \parbox[t]{2.75in}{There are five critical points.  The two endpoints
-      are $(-2,3)$ and $(2,3)$.  $f'(x)$ is not defined for $x=\pm 1$, so
-      $(-1,0)$ and $(1,0)$ are also critical points.  Additionally, $f'(x)=0$
-      for $x=0$, so $(0,1)$ is a critical point.  Since $f''(0)$ is negative,
-      $(0,1)$ is a local maximum.  Comparing $f(x)$ for these five points, we
-      conclude that $(-2,3)$ and $(2,3)$ are global maxima and $(-1,0)$ and
-      $(1,0)$ are global minima.}
   \ee
 \ei
 
@@ -776,8 +754,8 @@ that $dx/dx=1$, but let's double check.)  Let $u(x)=e^x$.  Then
 $u'(x)=e^x$ and $dy/dx=u'(x)/u(x)=e^x/e^x=1$.}
   \ee
 
-\item For any positive base $b$, $\frac{d}{dx} b^x = (\ln
-b)\left(b^x\right)$.
+%\item For any positive base $b$, $\frac{d}{dx} log_b^x = (\ln
+%b)\left(b^x\right)$.
 
 \ei
 
@@ -1248,7 +1226,25 @@ $$=x^3y^4 + 24x-y^{monkey}$$
 
 \ei
 
+\subsection{A quick look at Constraint Optimization with Lagrange Multipliers}
+\bi 
 
+\item When solving formal models or problems in microeconomics we often want to minimize of maximize functions, for example your utility function! Yet, often in life we can't get everything we want. And so we need to constrain our optimization. 
+
+\item Take the function $f(x) = xy$. We want to find the maximum but to the constraint that $h(x) \equiv x +4x = 16$ 
+\item Write out the Lagrangian $L(x,y,\lambda) = xy - \lambda (x + 4y -16)$ 
+\item Now we take the derivatives with respect to $x,y,\lambda$ and set each of the partials equal to zero
+\be
+\item $\frac{\partial L}{\partial x} = y - \lambda  = 0$
+\item $\frac{\partial L}{\partial y} = x - 4\lambda = 0$
+\item $\frac{\partial L}{\partial \lambda} =  -(x + 4y -16) = 0$
+\ee
+\item From the first equation: $y=\lambda$
+\item From the second equation: $\frac{x}{4}= \lambda$, thus $y=\frac{x}{4}$
+\item Thus: $-(4y+4y-16)=0$ 
+\item now we can solve for $y, x$, and $\lambda$!
+\item $y=2$, $x=8$, $\lambda=8$, so max $f(x,y) = 16$ s.t. $ x + 4y=16$
+\ei
 
 \subsection{Vector representation of calculus}
 
